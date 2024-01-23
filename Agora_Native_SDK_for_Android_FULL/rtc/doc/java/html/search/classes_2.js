@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['cachestatistics_1753',['CacheStatistics',['../classio_1_1agora_1_1mediaplayer_1_1data_1_1_cache_statistics.html',1,'io::agora::mediaplayer::data']]],
+  ['camera_5fdirection_1754',['CAMERA_DIRECTION',['../enumio_1_1agora_1_1rtc2_1_1video_1_1_camera_capturer_configuration_1_1_c_a_m_e_r_a___d_i_r_e_c_t_i_o_n.html',1,'io::agora::rtc2::video::CameraCapturerConfiguration']]],
+  ['cameracapturerconfiguration_1755',['CameraCapturerConfiguration',['../classio_1_1agora_1_1rtc2_1_1video_1_1_camera_capturer_configuration.html',1,'io::agora::rtc2::video']]],
+  ['canvas_1756',['Canvas',['../classio_1_1agora_1_1rtc2_1_1video_1_1_video_compositing_layout_1_1_canvas.html',1,'io::agora::rtc2::video::VideoCompositingLayout']]],
+  ['captureformat_1757',['CaptureFormat',['../classio_1_1agora_1_1rtc2_1_1video_1_1_camera_capturer_configuration_1_1_capture_format.html',1,'io::agora::rtc2::video::CameraCapturerConfiguration']]],
+  ['channelmediainfo_1758',['ChannelMediaInfo',['../classio_1_1agora_1_1rtc2_1_1video_1_1_channel_media_info.html',1,'io::agora::rtc2::video']]],
+  ['channelmediaoptions_1759',['ChannelMediaOptions',['../classio_1_1agora_1_1rtc2_1_1_channel_media_options.html',1,'io::agora::rtc2']]],
+  ['channelmediarelayconfiguration_1760',['ChannelMediaRelayConfiguration',['../classio_1_1agora_1_1rtc2_1_1video_1_1_channel_media_relay_configuration.html',1,'io::agora::rtc2::video']]],
+  ['clientrole_1761',['ClientRole',['../classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_client_role.html',1,'io::agora::rtc2::IRtcEngineEventHandler']]],
+  ['clientroleoptions_1762',['ClientRoleOptions',['../classio_1_1agora_1_1rtc2_1_1_client_role_options.html',1,'io::agora::rtc2']]],
+  ['cloudspatialaudioconfig_1763',['CloudSpatialAudioConfig',['../classio_1_1agora_1_1spatialaudio_1_1_cloud_spatial_audio_config.html',1,'io::agora::spatialaudio']]],
+  ['colorenhanceoptions_1764',['ColorEnhanceOptions',['../classio_1_1agora_1_1rtc2_1_1video_1_1_color_enhance_options.html',1,'io::agora::rtc2::video']]],
+  ['colorspace_1765',['ColorSpace',['../interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_color_space.html',1,'io::agora::base::VideoFrame']]],
+  ['connection_5fstate_5ftype_1766',['CONNECTION_STATE_TYPE',['../enumio_1_1agora_1_1rtc2_1_1_rtc_connection_1_1_c_o_n_n_e_c_t_i_o_n___s_t_a_t_e___t_y_p_e.html',1,'io::agora::rtc2::RtcConnection']]],
+  ['connectionchangedreason_1767',['ConnectionChangedReason',['../classio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_1_1_connection_changed_reason.html',1,'io.agora.metachat.IMetachatEventHandler.ConnectionChangedReason'],['../classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_event_handler_1_1_connection_changed_reason.html',1,'io.agora.spatialaudio.ICloudSpatialAudioEventHandler.ConnectionChangedReason']]],
+  ['connectionstate_1768',['ConnectionState',['../classio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_1_1_connection_state.html',1,'io.agora.metachat.IMetachatEventHandler.ConnectionState'],['../classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_event_handler_1_1_connection_state.html',1,'io.agora.spatialaudio.ICloudSpatialAudioEventHandler.ConnectionState']]],
+  ['constants_1769',['Constants',['../classio_1_1agora_1_1rtc2_1_1_constants.html',1,'io.agora.rtc2.Constants'],['../classio_1_1agora_1_1mediaplayer_1_1_constants.html',1,'io.agora.mediaplayer.Constants']]],
+  ['contentinspectconfig_1770',['ContentInspectConfig',['../classio_1_1agora_1_1rtc2_1_1video_1_1_content_inspect_config.html',1,'io::agora::rtc2::video']]],
+  ['contentinspectmodule_1771',['ContentInspectModule',['../classio_1_1agora_1_1rtc2_1_1video_1_1_content_inspect_config_1_1_content_inspect_module.html',1,'io::agora::rtc2::video::ContentInspectConfig']]],
+  ['contexttype_1772',['ContextType',['../enumio_1_1agora_1_1base_1_1_video_frame_1_1_texture_buffer_1_1_context_type.html',1,'io::agora::base::VideoFrame::TextureBuffer']]]
+];

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_dialog_lightcolor"
+    android:padding="30dp">
+
+    <RelativeLayout
+        android:id="@+id/Layout_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    <TextView
+        android:id="@+id/classroom_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/newClassroom_Name"
+        android:paddingVertical="8dp"
+        android:text="房间名称: "
+        android:textSize="20sp"
+        android:textColor="@color/dark"
+        android:fontFamily="@font/cute_font"/>
+
+    <EditText
+        android:id="@+id/newClassroom_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/classroom_name"
+        android:background="#ffff"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingHorizontal="10dp"
+        android:hint="请输入房间名称"
+        android:fontFamily="@font/cute_font"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Layout_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_name"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/classroom_choosePass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="密码设置: "
+            android:textSize="20sp"
+            android:textColor="@color/dark"
+            android:fontFamily="@font/cute_font"/>
+
+
+        <RadioGroup
+            android:id="@+id/radio_pass"
+            android:layout_marginVertical="4dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/classroom_choosePass"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/yesPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"
+                android:textSize="20sp"
+                android:textColor="@color/dark"
+                android:fontFamily="@font/cute_font"/>
+
+            <RadioButton
+                android:id="@+id/noPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="否"
+                android:textSize="20sp"
+                android:textColor="@color/dark"
+                android:fontFamily="@font/cute_font"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editClassroomPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/classroom_choosePass"
+            android:layout_toRightOf="@id/radio_pass"
+            android:background="#ffff"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingHorizontal="10dp"
+            android:hint="请输入房间密码"
+            android:fontFamily="@font/cute_font"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/classroom_photo"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@id/Layout_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/light_yellow"
+        android:fontFamily="@font/cute_font"
+        android:text="上 传 封 面" />
+
+    <RelativeLayout
+        android:id="@+id/Layout_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_pass">
+
+    <TextView
+        android:id="@+id/classroom_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8dp"
+        android:text="讲授语言: "
+        android:textSize="20sp"
+        android:textColor="@color/dark"
+        android:fontFamily="@font/cute_font"/>
+
+    <TextView
+        android:id="@+id/classroom_chooseLanguage"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/classroom_language"
+        android:paddingVertical="8dp"
+        android:text="英 语"
+        android:textSize="20sp"
+        android:textColor="@color/dark"
+        android:fontFamily="@font/cute_font"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/newClassroom_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/classroom_chooseLanguage"
+        android:background="#ffff"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingHorizontal="10dp"
+        android:hint="请输入讲授语言"
+        android:fontFamily="@font/cute_font"
+        android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Layout_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_language"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/classroom_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="房间简介: "
+            android:textSize="20sp"
+            android:textColor="@color/dark"
+            android:fontFamily="@font/cute_font"/>
+
+        <EditText
+            android:id="@+id/newClassroom_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/classroom_introduction"
+            android:background="#ffff"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingHorizontal="10dp"
+            android:hint="请输入房间简介              "
+            android:fontFamily="@font/cute_font" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_introduction"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/room_createOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_dialog_darkcolor"
+            android:paddingVertical="10dp"
+            android:text="开启课程"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/cute_font"
+            android:paddingHorizontal="40dp"/>
+    </RelativeLayout>
+</RelativeLayout>

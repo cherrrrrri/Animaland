@@ -1,0 +1,759 @@
+\hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler}{}\doxysection{io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler Interface Reference}
+\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler}\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+Inheritance diagram for io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ac6d28d25814a7a4b4bdb160662ed6916}{on\+Warning}} (int warn)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a39bc59ea4c07472a80b912d8f6385d26}{on\+Error}} (int err)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a65439349a5c44d9ef6320d1e1314d620}{on\+Api\+Call\+Executed}} (int error, String api, String result)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a53ff30f9078e4bab0c8d8fdbe5489f69}{on\+Camera\+Ready}} ()
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ae1daa658f7a7c7fe539a090b2e003135}{on\+Camera\+Focus\+Area\+Changed}} (Rect rect)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_abf7d20b2c6d3ee0086afcced17b788d1}{on\+Camera\+Exposure\+Area\+Changed}} (Rect rect)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a3d03b8882a76522b829a319c2f967ea5}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a3d03b8882a76522b829a319c2f967ea5}} 
+void {\bfseries on\+Content\+Inspect\+Result} (int result)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ae5ded82fd5809905f8dc4e44df01d1a3}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ae5ded82fd5809905f8dc4e44df01d1a3}} 
+void {\bfseries on\+Snapshot\+Taken} (int uid, String file\+Path, int width, int height, int err\+Code)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a33e7ac1c09bfd95ab42cd6254c574138}{on\+Face\+Position\+Changed}} (int image\+Width, int image\+Height, I\+Rtc\+Engine\+Event\+Handler.\+Agora\+Face\+Position\+Info\mbox{[}$\,$\mbox{]} face\+Rect\+Arr)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab2f3cbd1acfa19acc31630b5dc169905}{on\+Video\+Stopped}} ()
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_aec79c9d42c231a25fed90b9f340e6038}{on\+Leave\+Channel}} (I\+Rtc\+Engine\+Event\+Handler.\+Rtc\+Stats stats)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a46d9584d762e3e160e7d970450a70522}{on\+Rtc\+Stats}} (I\+Rtc\+Engine\+Event\+Handler.\+Rtc\+Stats stats)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab2f483c775fe96d5981da49e98b168b0}{on\+Audio\+Volume\+Indication}} (I\+Rtc\+Engine\+Event\+Handler.\+Audio\+Volume\+Info\mbox{[}$\,$\mbox{]} speakers, int total\+Volume)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a9f81a278247cd9c3ba4daa3bedc738b2}{on\+Lastmile\+Quality}} (int quality)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a047bf67d613c41ebc3b30615daeddf29}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a047bf67d613c41ebc3b30615daeddf29}} 
+void {\bfseries on\+Lastmile\+Probe\+Result} (I\+Rtc\+Engine\+Event\+Handler.\+Lastmile\+Probe\+Result result)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a1c6403358862f6eaf59e8f0bafb82da8}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a1c6403358862f6eaf59e8f0bafb82da8}} 
+void {\bfseries on\+Local\+Video\+Stat} (int sent\+Bitrate, int sent\+Frame\+Rate)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a0821b75401520707cf02198d83bcfef8}{on\+Remote\+Video\+Stats}} (I\+Rtc\+Engine\+Event\+Handler.\+Remote\+Video\+Stats stats)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ae840f55b43f712aa4998870d4bdc1e79}{on\+Remote\+Audio\+Stats}} (I\+Rtc\+Engine\+Event\+Handler.\+Remote\+Audio\+Stats stats)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a0c44a9d825574a194194f3f088d3e093}{on\+Local\+Video\+Stats}} (Constants.\+Video\+Source\+Type source, I\+Rtc\+Engine\+Event\+Handler.\+Local\+Video\+Stats stats)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a4484f5d49b9cc8e18c1d07123f569165}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a4484f5d49b9cc8e18c1d07123f569165}} 
+void {\bfseries on\+Local\+Audio\+Stats} (I\+Rtc\+Engine\+Event\+Handler.\+Local\+Audio\+Stats stats)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a2b7297eb7dbce8d7707786599f81ebbb}{on\+First\+Local\+Video\+Frame}} (Constants.\+Video\+Source\+Type source, int width, int height, int elapsed)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a97f6bf8ce0ad9cb3bfadc4e389888582}{on\+Connection\+Lost}} ()
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a5bcca25ed6596090759676856bc1bf50}{on\+Connection\+Interrupted}} ()
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab5c756d0d7713124e0cc130c45e9d8d6}{on\+Connection\+State\+Changed}} (int state, int reason)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ae0c5586a374ed5247e4266b0c4858557}{on\+Network\+Type\+Changed}} (int type)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_afd6223ec9d536dab3f65cc2d284dc1fe}{on\+Connection\+Banned}} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab49bbc1beedd1e62fea121998a7e938b}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab49bbc1beedd1e62fea121998a7e938b}} 
+void {\bfseries on\+Media\+Engine\+Load\+Success} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a0d190c7ace0c8885b9e0c45557012e90}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a0d190c7ace0c8885b9e0c45557012e90}} 
+void {\bfseries on\+Media\+Engine\+Start\+Call\+Success} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a4072b3748bc5f70e53bb45c7dde1ede1}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a4072b3748bc5f70e53bb45c7dde1ede1}} 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a4072b3748bc5f70e53bb45c7dde1ede1}{on\+Audio\+Mixing\+Finished}} ()
+\begin{DoxyCompactList}\small\item\em When audio mixing file playback finished, this callback will be triggered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ade0d689ad67e691e220d9efafe546861}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ade0d689ad67e691e220d9efafe546861}} 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ade0d689ad67e691e220d9efafe546861}{on\+Request\+Token}} ()
+\begin{DoxyCompactList}\small\item\em when token is enabled, and specified token is invalid or expired, this function will be called. A\+PP should generate a new token and call renew\+Token() to refresh the token. N\+O\+TE\+: to be compatible with previous version, E\+R\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+\+E\+X\+P\+I\+R\+ED and E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+O\+K\+EN are also reported via \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a39bc59ea4c07472a80b912d8f6385d26}{on\+Error()}} callback. You should move renew of token logic into this callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a6edce21501b95afb90031349d2e55712}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a6edce21501b95afb90031349d2e55712}} 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a6edce21501b95afb90031349d2e55712}{on\+Audio\+Route\+Changed}} (int routing)
+\begin{DoxyCompactList}\small\item\em \+: when sdk is responsible for monitoring audio routing, this function will be called by sdk to notify app that audio routing changed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a6e09e7c5f278ddc061abaaefdedf4565}{on\+Audio\+Mixing\+State\+Changed}} (int state, int reason\+Code)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_adc8419ea20eb6e6285ad9276000f2014}{on\+Audio\+Mixing\+Position\+Changed}} (long position)
+\begin{DoxyCompactList}\small\item\em Reports current Audio\+Mixing progress. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a618cb7b553423596267bb427ab590ae9}{on\+First\+Local\+Audio\+Frame\+Published}} (int elapsed)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a48f7547e1f52c6951438b9e69a602d97}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a48f7547e1f52c6951438b9e69a602d97}} 
+void {\bfseries on\+First\+Remote\+Audio\+Frame} (int uid, int elapsed)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_aecc6d4f08fc5dcebbc25878540f5056b}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_aecc6d4f08fc5dcebbc25878540f5056b}} 
+void {\bfseries on\+First\+Remote\+Audio\+Decoded} (int uid, int elapsed)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a06bd5f88e362eb1d5a2d8dd1ba2f68bb}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a06bd5f88e362eb1d5a2d8dd1ba2f68bb}} 
+void {\bfseries on\+Audio\+Effect\+Finished} (int sound\+Id)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ac146d5ce6d39720202d7310fb6f5be97}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ac146d5ce6d39720202d7310fb6f5be97}} 
+void {\bfseries on\+Client\+Role\+Changed} (int old\+Role, int new\+Role)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a18a2076ef3dc688463d240821ebc4770}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a18a2076ef3dc688463d240821ebc4770}} 
+void {\bfseries on\+Client\+Role\+Change\+Failed} (int reason, int current\+Role)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a70fc61e54a41cef17d9a82c655428bdf}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a70fc61e54a41cef17d9a82c655428bdf}} 
+void {\bfseries on\+Rtmp\+Streaming\+State\+Changed} (String url, int state, int err\+Code)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a3f32f040b3031c5918167f52b7b94b9c}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a3f32f040b3031c5918167f52b7b94b9c}} 
+void {\bfseries on\+Rtmp\+Streaming\+Event} (String url, int event)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_abd2528a4b5552db1a6eda2c57ea21ab0}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_abd2528a4b5552db1a6eda2c57ea21ab0}} 
+void {\bfseries on\+Transcoding\+Updated} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a7e220ce51e44dc2f4b28c4ff6afade22}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a7e220ce51e44dc2f4b28c4ff6afade22}} 
+void {\bfseries on\+Token\+Privilege\+Will\+Expire} (String token)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_afcae820c70faabebe679eff9731f6022}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_afcae820c70faabebe679eff9731f6022}} 
+void {\bfseries on\+Local\+Publish\+Fallback\+To\+Audio\+Only} (boolean is\+Fallback\+Or\+Recover)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a8e5a8d9debd496aa3f6307c64a41334b}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a8e5a8d9debd496aa3f6307c64a41334b}} 
+void {\bfseries on\+Channel\+Media\+Relay\+State\+Changed} (int state, int code)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ac6957f05e60b463516d3d23dcee2f28d}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ac6957f05e60b463516d3d23dcee2f28d}} 
+void {\bfseries on\+Channel\+Media\+Relay\+Event} (int code)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a3f07b408ea67d8fd6763837749248309}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a3f07b408ea67d8fd6763837749248309}} 
+void {\bfseries on\+Intra\+Request\+Received} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_aee3a6984f5f7d815a11996dea3ac3e4d}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_aee3a6984f5f7d815a11996dea3ac3e4d}} 
+void {\bfseries on\+Uplink\+Network\+Info\+Updated} (I\+Rtc\+Engine\+Event\+Handler.\+Uplink\+Network\+Info info)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a9f1abd9abad494ce553af2c700af4aca}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a9f1abd9abad494ce553af2c700af4aca}} 
+void {\bfseries on\+Downlink\+Network\+Info\+Updated} (I\+Rtc\+Engine\+Event\+Handler.\+Downlink\+Network\+Info info)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_acb0b71017852012077735e9c69eda631}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_acb0b71017852012077735e9c69eda631}} 
+void {\bfseries on\+Encryption\+Error} (int error\+Type)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a5a938a3400f264b68335e0923ef9b8fa}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a5a938a3400f264b68335e0923ef9b8fa}} 
+void {\bfseries on\+Permission\+Error} (int permission)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a9e4b82fe053fa9de933c55a591282c70}{on\+Local\+User\+Registered}} (int uid, String user\+Account)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a15067eb62a2a6ef2d65f8087f4c1e5b6}{on\+User\+Info\+Updated}} (int uid, \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_user_info}{User\+Info}} info)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a340e04b399d160e11216c3762d6e1355}{on\+User\+State\+Changed}} (int uid, int state)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a7a6c6c6c77f2ffd9d4e0a8c2524d1602}{on\+First\+Local\+Video\+Frame\+Published}} (Constants.\+Video\+Source\+Type source, int elapsed)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a99f14a81ebf242d4405e5093f4766015}{on\+Audio\+Subscribe\+State\+Changed}} (String channel, int uid, int old\+State, int new\+State, int elapse\+Since\+Last\+State)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a0f87f2334c3caa710c03705ac018f140}{on\+Video\+Subscribe\+State\+Changed}} (String channel, int uid, int old\+State, int new\+State, int elapse\+Since\+Last\+State)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_acd727036c53760d694c176764d339c2e}{on\+Audio\+Publish\+State\+Changed}} (String channel, int old\+State, int new\+State, int elapse\+Since\+Last\+State)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab90bc55cfd661a496acf8b9da0de3b49}{on\+Video\+Publish\+State\+Changed}} (Constants.\+Video\+Source\+Type source, String channel, int old\+State, int new\+State, int elapse\+Since\+Last\+State)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a75e35574f1a44a82273f990d43facbfb}{on\+Upload\+Log\+Result}} (String request\+Id, boolean success, int reason)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a3f42605a628e9dfe66bd21614cb49535}{on\+Wl\+Acc\+Message}} (int reason, int action, String wl\+Acc\+Msg)
+\item 
+void \mbox{\hyperlink{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a5f5aaee9ab4e4e4bd7cf6c88b8ce6c42}{on\+Wl\+Acc\+Stats}} (\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_wl_acc_stats}{Wl\+Acc\+Stats}} current\+Stats, \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_wl_acc_stats}{Wl\+Acc\+Stats}} average\+Stats)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Created by eaglewangy on 29/03/2018. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ac6d28d25814a7a4b4bdb160662ed6916}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ac6d28d25814a7a4b4bdb160662ed6916}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onWarning@{onWarning}}
+\index{onWarning@{onWarning}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onWarning()}{onWarning()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Warning (\begin{DoxyParamCaption}\item[{int}]{warn }\end{DoxyParamCaption})}
+
+警告信息回调 
+\begin{DoxyParams}{Parameters}
+{\em warn} & 警告号 \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a38e6a89a1f808c31dfe27d80e40504da}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a39bc59ea4c07472a80b912d8f6385d26}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a39bc59ea4c07472a80b912d8f6385d26}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onError@{onError}}
+\index{onError@{onError}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onError()}{onError()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Error (\begin{DoxyParamCaption}\item[{int}]{err }\end{DoxyParamCaption})}
+
+错误信息回调 
+\begin{DoxyParams}{Parameters}
+{\em err} & 错误号 \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a6944f0b187993f39cf1235cf3bbed949}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a65439349a5c44d9ef6320d1e1314d620}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a65439349a5c44d9ef6320d1e1314d620}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onApiCallExecuted@{onApiCallExecuted}}
+\index{onApiCallExecuted@{onApiCallExecuted}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onApiCallExecuted()}{onApiCallExecuted()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Api\+Call\+Executed (\begin{DoxyParamCaption}\item[{int}]{error,  }\item[{String}]{api,  }\item[{String}]{result }\end{DoxyParamCaption})}
+
+A\+P\+I执行完毕后，该回调会被触发 
+\begin{DoxyParams}{Parameters}
+{\em error} & 如果调用失败这里返回错误号，0为成功 \\
+\hline
+{\em api} & 所调用的\+A\+PI \\
+\hline
+{\em result} & 调用结果 \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_ad8e980c684606a5257a6f261b0ae7f37}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a53ff30f9078e4bab0c8d8fdbe5489f69}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a53ff30f9078e4bab0c8d8fdbe5489f69}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onCameraReady@{onCameraReady}}
+\index{onCameraReady@{onCameraReady}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onCameraReady()}{onCameraReady()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Camera\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+摄像头设备就绪之后，该回调将被触发 
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a23f6de603ad02640a06e7144a7fc6fe8}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ae1daa658f7a7c7fe539a090b2e003135}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ae1daa658f7a7c7fe539a090b2e003135}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onCameraFocusAreaChanged@{onCameraFocusAreaChanged}}
+\index{onCameraFocusAreaChanged@{onCameraFocusAreaChanged}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onCameraFocusAreaChanged()}{onCameraFocusAreaChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Camera\+Focus\+Area\+Changed (\begin{DoxyParamCaption}\item[{Rect}]{rect }\end{DoxyParamCaption})}
+
+摄像头对焦区域或状态发生变化之后，该回调将会被触发 
+\begin{DoxyParams}{Parameters}
+{\em rect} & 对焦的区域 \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a989f10ab210047ae44b9d21815b84cd5}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_abf7d20b2c6d3ee0086afcced17b788d1}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_abf7d20b2c6d3ee0086afcced17b788d1}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onCameraExposureAreaChanged@{onCameraExposureAreaChanged}}
+\index{onCameraExposureAreaChanged@{onCameraExposureAreaChanged}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onCameraExposureAreaChanged()}{onCameraExposureAreaChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Camera\+Exposure\+Area\+Changed (\begin{DoxyParamCaption}\item[{Rect}]{rect }\end{DoxyParamCaption})}
+
+The camera exposure area has changed.
+
+The S\+DK triggers this callback when the local user changes the camera exposure position by calling the \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_rtc_engine_a3aaa1ddf935a415b78884d97dfa866c9}{set\+Camera\+Exposure\+Position}} method. \begin{DoxySince}{Since}
+v2.\+3.\+2. 
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & Rectangular area in the camera zoom specifying the exposure area. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_abb9832896d40cee749866375c84e753b}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a33e7ac1c09bfd95ab42cd6254c574138}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a33e7ac1c09bfd95ab42cd6254c574138}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onFacePositionChanged@{onFacePositionChanged}}
+\index{onFacePositionChanged@{onFacePositionChanged}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onFacePositionChanged()}{onFacePositionChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Face\+Position\+Changed (\begin{DoxyParamCaption}\item[{int}]{image\+Width,  }\item[{int}]{image\+Height,  }\item[{I\+Rtc\+Engine\+Event\+Handler.\+Agora\+Face\+Position\+Info\mbox{[}$\,$\mbox{]}}]{face\+Rect\+Arr }\end{DoxyParamCaption})}
+
+Occurs when the camera exposure area has changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Width} & width of output image. \\
+\hline
+{\em image\+Height} & height of output image. \\
+\hline
+{\em face\+Rect\+Arr} & Rectangular area in the camera zoom that specifies the focus area. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a2fbb5c93c21e84859c348d85884adc26}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab2f3cbd1acfa19acc31630b5dc169905}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab2f3cbd1acfa19acc31630b5dc169905}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onVideoStopped@{onVideoStopped}}
+\index{onVideoStopped@{onVideoStopped}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onVideoStopped()}{onVideoStopped()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Video\+Stopped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+所有视频流都停止之后，该回调会被触发 \begin{DoxyNote}{Note}
+可在该回调被触发时重绘视频窗口 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_ac14aad764dc710a05b6cad4c3838c706}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_aec79c9d42c231a25fed90b9f340e6038}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_aec79c9d42c231a25fed90b9f340e6038}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onLeaveChannel@{onLeaveChannel}}
+\index{onLeaveChannel@{onLeaveChannel}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLeaveChannel()}{onLeaveChannel()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Leave\+Channel (\begin{DoxyParamCaption}\item[{I\+Rtc\+Engine\+Event\+Handler.\+Rtc\+Stats}]{stats }\end{DoxyParamCaption})}
+
+退出频道的回调 
+\begin{DoxyParams}{Parameters}
+{\em stats} & 状态信息 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Rec\+Stats类细节请参考其定义 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_ae8d95d70238163de3d89399bee8061a1}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a46d9584d762e3e160e7d970450a70522}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a46d9584d762e3e160e7d970450a70522}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onRtcStats@{onRtcStats}}
+\index{onRtcStats@{onRtcStats}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRtcStats()}{onRtcStats()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Rtc\+Stats (\begin{DoxyParamCaption}\item[{I\+Rtc\+Engine\+Event\+Handler.\+Rtc\+Stats}]{stats }\end{DoxyParamCaption})}
+
+状态信息回调 
+\begin{DoxyParams}{Parameters}
+{\em stats} & 状态信息 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Rec\+Stats类细节请参考其定义 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a6476a17632eab584aa291aa869663d13}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab2f483c775fe96d5981da49e98b168b0}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab2f483c775fe96d5981da49e98b168b0}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onAudioVolumeIndication@{onAudioVolumeIndication}}
+\index{onAudioVolumeIndication@{onAudioVolumeIndication}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioVolumeIndication()}{onAudioVolumeIndication()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Audio\+Volume\+Indication (\begin{DoxyParamCaption}\item[{I\+Rtc\+Engine\+Event\+Handler.\+Audio\+Volume\+Info\mbox{[}$\,$\mbox{]}}]{speakers,  }\item[{int}]{total\+Volume }\end{DoxyParamCaption})}
+
+远端音频流音量强度回调 
+\begin{DoxyParams}{Parameters}
+{\em speakers} & 音频信息数组，包含每个远端用户的\+U\+I\+D及其音量 \\
+\hline
+{\em total\+Volume} & 所有音频流信息混音后总音量强度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+必须事先调用enable\+Audio\+Volume\+Indication后该回调才会被触发 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a6b9a1f4de49ef268b2be15b269ee7c47}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a9f81a278247cd9c3ba4daa3bedc738b2}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a9f81a278247cd9c3ba4daa3bedc738b2}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onLastmileQuality@{onLastmileQuality}}
+\index{onLastmileQuality@{onLastmileQuality}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLastmileQuality()}{onLastmileQuality()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Lastmile\+Quality (\begin{DoxyParamCaption}\item[{int}]{quality }\end{DoxyParamCaption})}
+
+Lastmile测试得到的网络质量回调 
+\begin{DoxyParams}{Parameters}
+{\em quality} & 网络质量评分 \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a8b68b163b0b6f8bdbf2f52e320a04739}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a0821b75401520707cf02198d83bcfef8}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a0821b75401520707cf02198d83bcfef8}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onRemoteVideoStats@{onRemoteVideoStats}}
+\index{onRemoteVideoStats@{onRemoteVideoStats}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRemoteVideoStats()}{onRemoteVideoStats()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Remote\+Video\+Stats (\begin{DoxyParamCaption}\item[{I\+Rtc\+Engine\+Event\+Handler.\+Remote\+Video\+Stats}]{stats }\end{DoxyParamCaption})}
+
+远端视频流质量回调 
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a7f00d7a396872dc02008ea5f7487917e}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ae840f55b43f712aa4998870d4bdc1e79}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ae840f55b43f712aa4998870d4bdc1e79}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onRemoteAudioStats@{onRemoteAudioStats}}
+\index{onRemoteAudioStats@{onRemoteAudioStats}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRemoteAudioStats()}{onRemoteAudioStats()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Remote\+Audio\+Stats (\begin{DoxyParamCaption}\item[{I\+Rtc\+Engine\+Event\+Handler.\+Remote\+Audio\+Stats}]{stats }\end{DoxyParamCaption})}
+
+远端音频流质量回调 
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_aced11e711bdda1ea24415da27c5bc5fa}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a0c44a9d825574a194194f3f088d3e093}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a0c44a9d825574a194194f3f088d3e093}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onLocalVideoStats@{onLocalVideoStats}}
+\index{onLocalVideoStats@{onLocalVideoStats}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLocalVideoStats()}{onLocalVideoStats()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Local\+Video\+Stats (\begin{DoxyParamCaption}\item[{Constants.\+Video\+Source\+Type}]{source,  }\item[{I\+Rtc\+Engine\+Event\+Handler.\+Local\+Video\+Stats}]{stats }\end{DoxyParamCaption})}
+
+近端视频流质量回调 
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_ab5180ba91a1c81c5470e2ec1a7e18a01}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a2b7297eb7dbce8d7707786599f81ebbb}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a2b7297eb7dbce8d7707786599f81ebbb}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onFirstLocalVideoFrame@{onFirstLocalVideoFrame}}
+\index{onFirstLocalVideoFrame@{onFirstLocalVideoFrame}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onFirstLocalVideoFrame()}{onFirstLocalVideoFrame()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+First\+Local\+Video\+Frame (\begin{DoxyParamCaption}\item[{Constants.\+Video\+Source\+Type}]{source,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{elapsed }\end{DoxyParamCaption})}
+
+当引擎获取到本地首帧视频信息之后，该回调会被调用 
+\begin{DoxyParams}{Parameters}
+{\em width} & 帧宽度 \\
+\hline
+{\em height} & 帧高度 \\
+\hline
+{\em elapsed} & 此刻距离用户发出登陆请求包的时间间隔 \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a18073dc2bcd1e4a4df8f741014fc3106}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a97f6bf8ce0ad9cb3bfadc4e389888582}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a97f6bf8ce0ad9cb3bfadc4e389888582}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onConnectionLost@{onConnectionLost}}
+\index{onConnectionLost@{onConnectionLost}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onConnectionLost()}{onConnectionLost()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Connection\+Lost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+确认连接不可用后，该回调会被调用 \begin{DoxyNote}{Note}
+意外掉线之后，\+S\+D\+K会自动进行重连，重连多次都失败之后，该回调会被触发，判定为连接不可用 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a3c40049545254582b454eea461b166f4}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a5bcca25ed6596090759676856bc1bf50}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a5bcca25ed6596090759676856bc1bf50}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onConnectionInterrupted@{onConnectionInterrupted}}
+\index{onConnectionInterrupted@{onConnectionInterrupted}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onConnectionInterrupted()}{onConnectionInterrupted()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Connection\+Interrupted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+连接意外断开后，该回调会被触发 \begin{DoxyNote}{Note}
+意外断开之后，\+S\+D\+K会自动尝试掉线重连 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_ae295db0a95c7d6409b19b00dfef9ed20}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab5c756d0d7713124e0cc130c45e9d8d6}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab5c756d0d7713124e0cc130c45e9d8d6}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onConnectionStateChanged@{onConnectionStateChanged}}
+\index{onConnectionStateChanged@{onConnectionStateChanged}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onConnectionStateChanged()}{onConnectionStateChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Connection\+State\+Changed (\begin{DoxyParamCaption}\item[{int}]{state,  }\item[{int}]{reason }\end{DoxyParamCaption})}
+
+连接状态改变后，该回调会被触发 
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_acf3ab9feae0d9a6001da31e95363aa22}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ae0c5586a374ed5247e4266b0c4858557}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ae0c5586a374ed5247e4266b0c4858557}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onNetworkTypeChanged@{onNetworkTypeChanged}}
+\index{onNetworkTypeChanged@{onNetworkTypeChanged}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onNetworkTypeChanged()}{onNetworkTypeChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Network\+Type\+Changed (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+网络类型改变后，该回调会被触发 
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a123fdecc812f7931578afd2f40d48d13}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_afd6223ec9d536dab3f65cc2d284dc1fe}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_afd6223ec9d536dab3f65cc2d284dc1fe}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onConnectionBanned@{onConnectionBanned}}
+\index{onConnectionBanned@{onConnectionBanned}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onConnectionBanned()}{onConnectionBanned()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Connection\+Banned (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+连接被服务器禁止，该回调会被触发 \begin{DoxyNote}{Note}
+连接禁止后，\+S\+D\+K不会重新连接服务器 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a3699579c7e341ea19e185b967748ddd4}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a6e09e7c5f278ddc061abaaefdedf4565}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a6e09e7c5f278ddc061abaaefdedf4565}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onAudioMixingStateChanged@{onAudioMixingStateChanged}}
+\index{onAudioMixingStateChanged@{onAudioMixingStateChanged}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioMixingStateChanged()}{onAudioMixingStateChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Audio\+Mixing\+State\+Changed (\begin{DoxyParamCaption}\item[{int}]{state,  }\item[{int}]{reason\+Code }\end{DoxyParamCaption})}
+
+Occurs when the state of the local user\textquotesingle{}s audio mixing file changes.
+
+When the audio mixing file plays, pauses playing, or stops playing, this callback returns 710, 711, or 713 in state, and 0 in error\+Code. When exceptions occur during playback, this callback returns 714 in state and an error in error\+Code. If the local audio mixing file does not exist, or if the S\+DK does not support the file format or cannot access the music file U\+RL, the S\+DK returns W\+A\+R\+N\+\_\+\+A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+O\+P\+E\+N\+\_\+\+E\+R\+R\+OR = 701.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The state code. See \#\+A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+$\ast$. \\
+\hline
+{\em reason\+Code} & The error code. See \#\+A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+$\ast$. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_aad11908ae1e0b8447b13e20989f334d2}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_adc8419ea20eb6e6285ad9276000f2014}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_adc8419ea20eb6e6285ad9276000f2014}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onAudioMixingPositionChanged@{onAudioMixingPositionChanged}}
+\index{onAudioMixingPositionChanged@{onAudioMixingPositionChanged}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioMixingPositionChanged()}{onAudioMixingPositionChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Audio\+Mixing\+Position\+Changed (\begin{DoxyParamCaption}\item[{long}]{position }\end{DoxyParamCaption})}
+
+
+
+Reports current Audio\+Mixing progress. 
+
+The callback occurs once every one second during the playback and reports the current playback progress. 
+\begin{DoxyParams}{Parameters}
+{\em position} & Current Audio\+Mixing progress (millisecond). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a74c7ede84d5fb4464687aaacc0cbf142}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a618cb7b553423596267bb427ab590ae9}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a618cb7b553423596267bb427ab590ae9}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onFirstLocalAudioFramePublished@{onFirstLocalAudioFramePublished}}
+\index{onFirstLocalAudioFramePublished@{onFirstLocalAudioFramePublished}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onFirstLocalAudioFramePublished()}{onFirstLocalAudioFramePublished()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+First\+Local\+Audio\+Frame\+Published (\begin{DoxyParamCaption}\item[{int}]{elapsed }\end{DoxyParamCaption})}
+
+当引擎发送本地首帧音频帧时，该回调会被调用 
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & 此刻距离用户发出登陆请求包的时间间隔 \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_ac12497babde9ba725c873ba3b1fe76ab}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a9e4b82fe053fa9de933c55a591282c70}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a9e4b82fe053fa9de933c55a591282c70}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onLocalUserRegistered@{onLocalUserRegistered}}
+\index{onLocalUserRegistered@{onLocalUserRegistered}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLocalUserRegistered()}{onLocalUserRegistered()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Local\+User\+Registered (\begin{DoxyParamCaption}\item[{int}]{uid,  }\item[{String}]{user\+Account }\end{DoxyParamCaption})}
+
+Occurs when the local user successfully registers a user account by calling the register\+Local\+User\+Account method or joins a channel by calling the join\+Channel\+With\+User\+Account method. This callback reports the user ID and user account of the local user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & The ID of the local user. \\
+\hline
+{\em user\+Account} & The user account of the local user. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a8643b8a54c5aa30e22209a54274fbcf3}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a15067eb62a2a6ef2d65f8087f4c1e5b6}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a15067eb62a2a6ef2d65f8087f4c1e5b6}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onUserInfoUpdated@{onUserInfoUpdated}}
+\index{onUserInfoUpdated@{onUserInfoUpdated}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUserInfoUpdated()}{onUserInfoUpdated()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+User\+Info\+Updated (\begin{DoxyParamCaption}\item[{int}]{uid,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_user_info}{User\+Info}}}]{info }\end{DoxyParamCaption})}
+
+Occurs when the S\+DK gets the user ID and user account of the remote user.
+
+After a remote user joins the channel, the S\+DK gets the U\+ID and user account of the remote user, caches them in a mapping table object ({\ttfamily user\+Info}), and triggers this callback on the local client.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & The ID of the remote user. \\
+\hline
+{\em info} & The {\ttfamily \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_user_info}{User\+Info}}} object that contains the user ID and user account of the remote user. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a0cd49bb3b8733f04ecaacf1df091e07f}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a340e04b399d160e11216c3762d6e1355}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a340e04b399d160e11216c3762d6e1355}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onUserStateChanged@{onUserStateChanged}}
+\index{onUserStateChanged@{onUserStateChanged}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUserStateChanged()}{onUserStateChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+User\+State\+Changed (\begin{DoxyParamCaption}\item[{int}]{uid,  }\item[{int}]{state }\end{DoxyParamCaption})}
+
+Occurs when the remote user state is updated. 
+\begin{DoxyParams}{Parameters}
+{\em uid} & The uid of the remote user. \\
+\hline
+{\em state} & The remote user state. Just \& \#\+R\+E\+M\+O\+T\+E\+\_\+\+U\+S\+E\+R\+\_\+\+S\+T\+A\+TE \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_adcc5cddc796788d6fb300895f604e8a7}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a7a6c6c6c77f2ffd9d4e0a8c2524d1602}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a7a6c6c6c77f2ffd9d4e0a8c2524d1602}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onFirstLocalVideoFramePublished@{onFirstLocalVideoFramePublished}}
+\index{onFirstLocalVideoFramePublished@{onFirstLocalVideoFramePublished}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onFirstLocalVideoFramePublished()}{onFirstLocalVideoFramePublished()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+First\+Local\+Video\+Frame\+Published (\begin{DoxyParamCaption}\item[{Constants.\+Video\+Source\+Type}]{source,  }\item[{int}]{elapsed }\end{DoxyParamCaption})}
+
+Occurs when the first video frame is published. 
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & The time elapsed (ms) from the local user calling join\+Channel to the S\+DK triggers this callback. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a5cb5cf5ecef5eb955c65959620c843e3}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a99f14a81ebf242d4405e5093f4766015}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a99f14a81ebf242d4405e5093f4766015}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onAudioSubscribeStateChanged@{onAudioSubscribeStateChanged}}
+\index{onAudioSubscribeStateChanged@{onAudioSubscribeStateChanged}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioSubscribeStateChanged()}{onAudioSubscribeStateChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Audio\+Subscribe\+State\+Changed (\begin{DoxyParamCaption}\item[{String}]{channel,  }\item[{int}]{uid,  }\item[{int}]{old\+State,  }\item[{int}]{new\+State,  }\item[{int}]{elapse\+Since\+Last\+State }\end{DoxyParamCaption})}
+
+Occurs when the audio subscribe state changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name of user joined. \\
+\hline
+{\em uid} & The remote user ID that is subscribed to. \\
+\hline
+{\em old\+State} & The old state of the audio stream subscribe \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em new\+State} & The new state of the audio stream subscribe \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em elapse\+Since\+Last\+State} & The time elapsed (ms) from the old state to the new state. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_af99f6ab9132fc82d8198fa325601dd9e}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a0f87f2334c3caa710c03705ac018f140}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a0f87f2334c3caa710c03705ac018f140}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onVideoSubscribeStateChanged@{onVideoSubscribeStateChanged}}
+\index{onVideoSubscribeStateChanged@{onVideoSubscribeStateChanged}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onVideoSubscribeStateChanged()}{onVideoSubscribeStateChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Video\+Subscribe\+State\+Changed (\begin{DoxyParamCaption}\item[{String}]{channel,  }\item[{int}]{uid,  }\item[{int}]{old\+State,  }\item[{int}]{new\+State,  }\item[{int}]{elapse\+Since\+Last\+State }\end{DoxyParamCaption})}
+
+Occurs when the video subscribe state changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name of user joined. \\
+\hline
+{\em uid} & The remote user ID that is subscribed to. \\
+\hline
+{\em old\+State} & The old state of the video stream subscribe \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em new\+State} & The new state of the video stream subscribe \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em elapse\+Since\+Last\+State} & The time elapsed (ms) from the old state to the new state. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a83dc1b71944119fd1f78055a9ca7f8ab}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_acd727036c53760d694c176764d339c2e}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_acd727036c53760d694c176764d339c2e}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onAudioPublishStateChanged@{onAudioPublishStateChanged}}
+\index{onAudioPublishStateChanged@{onAudioPublishStateChanged}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioPublishStateChanged()}{onAudioPublishStateChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Audio\+Publish\+State\+Changed (\begin{DoxyParamCaption}\item[{String}]{channel,  }\item[{int}]{old\+State,  }\item[{int}]{new\+State,  }\item[{int}]{elapse\+Since\+Last\+State }\end{DoxyParamCaption})}
+
+Occurs when the audio publish state changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name of user joined. \\
+\hline
+{\em old\+State} & The old state of the audio stream publish \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em new\+State} & The new state of the audio stream publish \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em elapse\+Since\+Last\+State} & The time elapsed (ms) from the old state to the new state. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_ad6a5250389c780cb6e37b9534822a27b}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab90bc55cfd661a496acf8b9da0de3b49}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_ab90bc55cfd661a496acf8b9da0de3b49}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onVideoPublishStateChanged@{onVideoPublishStateChanged}}
+\index{onVideoPublishStateChanged@{onVideoPublishStateChanged}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onVideoPublishStateChanged()}{onVideoPublishStateChanged()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Video\+Publish\+State\+Changed (\begin{DoxyParamCaption}\item[{Constants.\+Video\+Source\+Type}]{source,  }\item[{String}]{channel,  }\item[{int}]{old\+State,  }\item[{int}]{new\+State,  }\item[{int}]{elapse\+Since\+Last\+State }\end{DoxyParamCaption})}
+
+Occurs when the video publish state changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & source type of the originated video source. \\
+\hline
+{\em channel} & The channel name of user joined. \\
+\hline
+{\em old\+State} & The old state of the video stream publish \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em new\+State} & The new state of the video stream publish \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em elapse\+Since\+Last\+State} & The time elapsed (ms) from the old state to the new state. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_afaeef3162faac616eda2f18bfbd5f214}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a75e35574f1a44a82273f990d43facbfb}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a75e35574f1a44a82273f990d43facbfb}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onUploadLogResult@{onUploadLogResult}}
+\index{onUploadLogResult@{onUploadLogResult}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUploadLogResult()}{onUploadLogResult()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Upload\+Log\+Result (\begin{DoxyParamCaption}\item[{String}]{request\+Id,  }\item[{boolean}]{success,  }\item[{int}]{reason }\end{DoxyParamCaption})}
+
+Reports the user log upload result 
+\begin{DoxyParams}{Parameters}
+{\em request\+Id} & Request\+Id of the upload \\
+\hline
+{\em success} & Is upload success \\
+\hline
+{\em reason} & Reason of the upload, 0\+: OK, 1 Network Error, 2 Server Error. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_ad802bd7311b1fd7b3f6cb853a567fd34}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a3f42605a628e9dfe66bd21614cb49535}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a3f42605a628e9dfe66bd21614cb49535}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onWlAccMessage@{onWlAccMessage}}
+\index{onWlAccMessage@{onWlAccMessage}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onWlAccMessage()}{onWlAccMessage()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Wl\+Acc\+Message (\begin{DoxyParamCaption}\item[{int}]{reason,  }\item[{int}]{action,  }\item[{String}]{wl\+Acc\+Msg }\end{DoxyParamCaption})}
+
+Occurs when the W\+I\+FI message need be sent to the user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reason} & The reason of notifying the user of a message. \\
+\hline
+{\em action} & Suggest an action for the user. \\
+\hline
+{\em wl\+Acc\+Msg} & Notification message to the user. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_aa0c0290b16674ef79efc89e2709d7ec5}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a5f5aaee9ab4e4e4bd7cf6c88b8ce6c42}\label{interfaceio_1_1agora_1_1rtc2_1_1_i_agora_event_handler_a5f5aaee9ab4e4e4bd7cf6c88b8ce6c42}} 
+\index{io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}!onWlAccStats@{onWlAccStats}}
+\index{onWlAccStats@{onWlAccStats}!io.agora.rtc2.IAgoraEventHandler@{io.agora.rtc2.IAgoraEventHandler}}
+\doxysubsubsection{\texorpdfstring{onWlAccStats()}{onWlAccStats()}}
+{\footnotesize\ttfamily void io.\+agora.\+rtc2.\+I\+Agora\+Event\+Handler.\+on\+Wl\+Acc\+Stats (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_wl_acc_stats}{Wl\+Acc\+Stats}}}]{current\+Stats,  }\item[{\mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_wl_acc_stats}{Wl\+Acc\+Stats}}}]{average\+Stats }\end{DoxyParamCaption})}
+
+Occurs when S\+DK statistics W\+I\+FI acceleration optimization effect.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Stats} & Instantaneous value of optimization effect. \\
+\hline
+{\em average\+Stats} & Average value of cumulative optimization effect. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_a1ce7e00ae3220df1d78dc4e5d51d6e74}{io.\+agora.\+rtc2.\+I\+Rtc\+Engine\+Event\+Handler}}.
+

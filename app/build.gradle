@@ -1,0 +1,150 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()//弹幕
+      // maven { url "https://mvn.mob.com/android"}
+
+    }
+    dependencies {
+
+    }
+}
+
+plugins {
+    id 'com.android.application'
+    id 'com.mob.sdk'
+}
+
+MobSDK {
+    appKey "36f6ec89fd6bb"
+    appSecret "4f1e8699e586bba3fb3d657c2cbb6d30"
+    SMSSDK {}
+}
+
+allprojects {
+    repositories {
+      jcenter()//弹幕
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }  //添加jitpack仓库
+    }
+}
+android {
+    namespace 'com.example.animaland'
+    compileSdk 32
+    dataBinding{
+        enable = true
+    }
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    defaultConfig {
+        applicationId "com.example.animaland"
+        minSdk 26
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+}
+
+// 自定义打包名称
+android.applicationVariants.all { variant ->
+    variant.outputs.all {
+        outputFileName = "Animaland.apk"
+    }
+}
+
+
+
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+        implementation 'org.testng:testng:6.9.6'
+    implementation files('libs\\mysql-connector-java-5.1.49.jar')
+    implementation files('libs\\rt.jar')
+
+    implementation fileTree(dir: 'libs',include:['*.aar'])
+    implementation files('libs\\lint-gradle-30.3.1.jar')
+    implementation files('libs\\uast-30.3.1.jar')
+    implementation files('libs\\Msc.jar')
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    // x.y.z，请填写具体的 SDK 版本号，如：4.0.0 或 4.0.0.4。
+    // 通过发版说明获取最新版本号。
+
+    //短信sdk
+    implementation 'io.github.bmob:android-sdk:3.8.13'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.8.1'
+    implementation 'com.squareup.okio:okio:2.2.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+
+    implementation 'io.agora.rtc:full-sdk:4.0.1'
+    implementation 'com.google.guava:guava:27.0.1-android'
+    implementation 'org.hamcrest:hamcrest-core:1.1'
+    implementation 'junit:junit:4.12'
+    implementation 'com.github.Hitomis:CircleMenu:v1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.airbnb.android:lottie:3.4.1'
+    implementation "androidx.slidingpanelayout:slidingpanelayout:1.2.0"
+    implementation 'com.jakewharton:butterknife:7.0.0'
+    implementation 'com.etebarian:meow-bottom-navigation:1.3.1'
+    implementation 'com.github.Chrisvin:LiquidSwipe:1.3'
+    //新手引导
+    implementation 'com.github.huburt-Hu:NewbieGuide:v2.4.0'
+    implementation 'com.github.wooplr:Spotlight:1.2.3'
+    implementation 'com.github.faruktoptas:FancyShowCaseView:1.3.9'
+
+    implementation 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
+     'com.lovedise:permissiongen:0.0.6'
+    //图片工具库
+    implementation 'com.jph.takephoto:takephoto_library:4.0.3'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    //生成pdf
+    implementation 'com.itextpdf:itextg:5.5.10'
+
+    //弹幕
+    implementation 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
+    implementation 'com.github.ctiao:ndkbitmap-armv7a:0.9.21'
+
+    implementation 'com.github.ctiao:ndkbitmap-armv5:0.9.21'
+    implementation 'com.github.ctiao:ndkbitmap-x86:0.9.21'
+
+    implementation 'q.rorbin:VerticalTabLayout:1.2.5'
+
+    implementation 'com.github.bigdongdong:ChatView:2.0'
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+
+//gpt和语音
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation files('libs/Msc.jar')
+
+}

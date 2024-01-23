@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['rawpixelbuffer_1796',['RawPixelBuffer',['../structagora_1_1rtc_1_1_raw_pixel_buffer.html',1,'agora::rtc']]],
+  ['recorderinfo_1797',['RecorderInfo',['../structagora_1_1media_1_1_recorder_info.html',1,'agora::media']]],
+  ['rectangle_1798',['Rectangle',['../structagora_1_1rtc_1_1_rectangle.html',1,'agora::rtc']]],
+  ['refcountedobject_1799',['RefCountedObject',['../classagora_1_1_ref_counted_object.html',1,'agora']]],
+  ['refcounter_1800',['RefCounter',['../classagora_1_1_ref_counter.html',1,'agora']]],
+  ['refcountinterface_1801',['RefCountInterface',['../classagora_1_1_ref_count_interface.html',1,'agora']]],
+  ['region_1802',['Region',['../structagora_1_1rtc_1_1_video_compositing_layout_1_1_region.html',1,'agora::rtc::VideoCompositingLayout']]],
+  ['remoteaudiostats_1803',['RemoteAudioStats',['../structagora_1_1rtc_1_1_remote_audio_stats.html',1,'agora::rtc']]],
+  ['remoteaudiotrackstats_1804',['RemoteAudioTrackStats',['../structagora_1_1rtc_1_1_remote_audio_track_stats.html',1,'agora::rtc']]],
+  ['remotevideostats_1805',['RemoteVideoStats',['../structagora_1_1rtc_1_1_remote_video_stats.html',1,'agora::rtc']]],
+  ['remotevideotrackstats_1806',['RemoteVideoTrackStats',['../structagora_1_1rtc_1_1_remote_video_track_stats.html',1,'agora::rtc']]],
+  ['rtcconnection_1807',['RtcConnection',['../structagora_1_1rtc_1_1_rtc_connection.html',1,'agora::rtc']]],
+  ['rtcconnectionconfiguration_1808',['RtcConnectionConfiguration',['../structagora_1_1rtc_1_1_rtc_connection_configuration.html',1,'agora::rtc']]],
+  ['rtcenginecontext_1809',['RtcEngineContext',['../structagora_1_1rtc_1_1_rtc_engine_context.html',1,'agora::rtc']]],
+  ['rtcimage_1810',['RtcImage',['../structagora_1_1rtc_1_1_rtc_image.html',1,'agora::rtc']]],
+  ['rtcstats_1811',['RtcStats',['../structagora_1_1rtc_1_1_rtc_stats.html',1,'agora::rtc']]],
+  ['rtmpconnectionconfiguration_1812',['RtmpConnectionConfiguration',['../structagora_1_1rtc_1_1_rtmp_connection_configuration.html',1,'agora::rtc']]],
+  ['rtmpconnectioninfo_1813',['RtmpConnectionInfo',['../structagora_1_1rtc_1_1_rtmp_connection_info.html',1,'agora::rtc']]],
+  ['rtmpstreamingaudioconfiguration_1814',['RtmpStreamingAudioConfiguration',['../structagora_1_1rtc_1_1_rtmp_streaming_audio_configuration.html',1,'agora::rtc']]],
+  ['rtmpstreamingvideoconfiguration_1815',['RtmpStreamingVideoConfiguration',['../structagora_1_1rtc_1_1_rtmp_streaming_video_configuration.html',1,'agora::rtc']]]
+];

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".School.School"
+    android:orientation="vertical"
+    android:background="@drawable/school">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/closet_arrow"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"/>
+
+    <com.example.animaland.PassThroughButton
+        android:id="@+id/teacher_desk"
+        android:layout_width="231dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="400dp"
+        android:background="@drawable/btn_desk"
+        android:transitionName="desk"/>
+
+    <com.example.animaland.PassThroughButton
+        android:id="@+id/student_chair"
+        android:layout_width="170dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="550dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/btn_chair"
+        android:transitionName="chair"/>
+<!-->
+        <Button
+            android:id="@+id/desk_giveClasses"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".6"
+            app:layout_constraintHorizontal_bias=".2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".1" />
+
+        <Button
+            android:id="@+id/desk_timetable"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".3" />
+
+        <Button
+            android:id="@+id/desk_photo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".3"
+            app:layout_constraintHorizontal_bias=".9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".15" />
+<-->
+</LinearLayout>

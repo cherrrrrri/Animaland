@@ -1,0 +1,130 @@
+\hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters}{}\doxysection{agora\+::rtc\+::Screen\+Capture\+Parameters Struct Reference}
+\label{structagora_1_1rtc_1_1_screen_capture_parameters}\index{agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_a6283b0f5e0225a02cd485f58b1767863}\label{structagora_1_1rtc_1_1_screen_capture_parameters_a6283b0f5e0225a02cd485f58b1767863}} 
+{\bfseries Screen\+Capture\+Parameters} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_dimensions}{Video\+Dimensions}} \&d, int f, int b)
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_a6ed66ba8ff7c51ff9352b19f2ff2ceae}\label{structagora_1_1rtc_1_1_screen_capture_parameters_a6ed66ba8ff7c51ff9352b19f2ff2ceae}} 
+{\bfseries Screen\+Capture\+Parameters} (int width, int height, int f, int b)
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_a4dc0f28c32851a90638b3f8e2111b9a2}\label{structagora_1_1rtc_1_1_screen_capture_parameters_a4dc0f28c32851a90638b3f8e2111b9a2}} 
+{\bfseries Screen\+Capture\+Parameters} (int width, int height, int f, int b, bool cur, bool fcs)
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_a9fb92ebdfafceaab323485530b7db3cb}\label{structagora_1_1rtc_1_1_screen_capture_parameters_a9fb92ebdfafceaab323485530b7db3cb}} 
+{\bfseries Screen\+Capture\+Parameters} (int width, int height, int f, int b, view\+\_\+t $\ast$ex, int cnt)
+\item 
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_a0889517faaff02ee1aa51576c5c01a71}\label{structagora_1_1rtc_1_1_screen_capture_parameters_a0889517faaff02ee1aa51576c5c01a71}} 
+{\bfseries Screen\+Capture\+Parameters} (int width, int height, int f, int b, bool cur, bool fcs, view\+\_\+t $\ast$ex, int cnt)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_video_dimensions}{Video\+Dimensions}} \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters_a9ee8c96bbfe031e8c614d7b2e49ddbb8}{dimensions}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters_a4872b7367bc6112429391474cd9c9cd4}{frame\+Rate}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters_a68b41628a90544e78d1f0ab45c9300a5}{bitrate}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters_aa68157203616423bad85f852f3816c1f}{capture\+Mouse\+Cursor}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters_ace45151f5601ff006708135de1323daf}{window\+Focus}}
+\item 
+view\+\_\+t $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters_a9d7422f28a60d3217996557c30079ca4}{exclude\+Window\+List}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters_a16dcc43342b5db0489e1a45edafcb23f}{exclude\+Window\+Count}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters_a93bbd85bc8120298095b1fb5bdc72b3b}{high\+Light\+Width}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters_a1e8d5e822c7dfcaa45ea71a0f186f581}{high\+Light\+Color}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_screen_capture_parameters_ad05439540b82ad7768631f105a6dff65}{enable\+High\+Light}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The screen sharing encoding parameters. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_a9ee8c96bbfe031e8c614d7b2e49ddbb8}\label{structagora_1_1rtc_1_1_screen_capture_parameters_a9ee8c96bbfe031e8c614d7b2e49ddbb8}} 
+\index{agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}!dimensions@{dimensions}}
+\index{dimensions@{dimensions}!agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{dimensions}{dimensions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_video_dimensions}{Video\+Dimensions}} agora\+::rtc\+::\+Screen\+Capture\+Parameters\+::dimensions}
+
+The dimensions of the shared region in terms of width {$\times$} height. The default value is 0, which means the original dimensions of the shared screen. \mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_a4872b7367bc6112429391474cd9c9cd4}\label{structagora_1_1rtc_1_1_screen_capture_parameters_a4872b7367bc6112429391474cd9c9cd4}} 
+\index{agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}!frameRate@{frameRate}}
+\index{frameRate@{frameRate}!agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{frameRate}{frameRate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Screen\+Capture\+Parameters\+::frame\+Rate}
+
+The frame rate (fps) of the shared region. The default value is 5. We do not recommend setting this to a value greater than 15. \mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_a68b41628a90544e78d1f0ab45c9300a5}\label{structagora_1_1rtc_1_1_screen_capture_parameters_a68b41628a90544e78d1f0ab45c9300a5}} 
+\index{agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}!bitrate@{bitrate}}
+\index{bitrate@{bitrate}!agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{bitrate}{bitrate}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Screen\+Capture\+Parameters\+::bitrate}
+
+The bitrate (Kbps) of the shared region. The default value is 0 (the S\+DK works out a bitrate according to the dimensions of the current screen). \mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_aa68157203616423bad85f852f3816c1f}\label{structagora_1_1rtc_1_1_screen_capture_parameters_aa68157203616423bad85f852f3816c1f}} 
+\index{agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}!captureMouseCursor@{captureMouseCursor}}
+\index{captureMouseCursor@{captureMouseCursor}!agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{captureMouseCursor}{captureMouseCursor}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Screen\+Capture\+Parameters\+::capture\+Mouse\+Cursor}
+
+Sets whether or not to capture the mouse for screen sharing\+:
+\begin{DoxyItemize}
+\item true\+: (Default) Capture the mouse.
+\item false\+: Do not capture the mouse. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_ace45151f5601ff006708135de1323daf}\label{structagora_1_1rtc_1_1_screen_capture_parameters_ace45151f5601ff006708135de1323daf}} 
+\index{agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}!windowFocus@{windowFocus}}
+\index{windowFocus@{windowFocus}!agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{windowFocus}{windowFocus}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Screen\+Capture\+Parameters\+::window\+Focus}
+
+Whether to bring the window to the front when calling start\+Screen\+Capture\+By\+Window\+Id to share the window\+:
+\begin{DoxyItemize}
+\item true\+: Bring the window to the front.
+\item false\+: (Default) Do not bring the window to the front. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_a9d7422f28a60d3217996557c30079ca4}\label{structagora_1_1rtc_1_1_screen_capture_parameters_a9d7422f28a60d3217996557c30079ca4}} 
+\index{agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}!excludeWindowList@{excludeWindowList}}
+\index{excludeWindowList@{excludeWindowList}!agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{excludeWindowList}{excludeWindowList}}
+{\footnotesize\ttfamily view\+\_\+t$\ast$ agora\+::rtc\+::\+Screen\+Capture\+Parameters\+::exclude\+Window\+List}
+
+A list of I\+Ds of windows to be blocked. \mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_a16dcc43342b5db0489e1a45edafcb23f}\label{structagora_1_1rtc_1_1_screen_capture_parameters_a16dcc43342b5db0489e1a45edafcb23f}} 
+\index{agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}!excludeWindowCount@{excludeWindowCount}}
+\index{excludeWindowCount@{excludeWindowCount}!agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{excludeWindowCount}{excludeWindowCount}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Screen\+Capture\+Parameters\+::exclude\+Window\+Count}
+
+The number of windows to be blocked. \mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_a93bbd85bc8120298095b1fb5bdc72b3b}\label{structagora_1_1rtc_1_1_screen_capture_parameters_a93bbd85bc8120298095b1fb5bdc72b3b}} 
+\index{agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}!highLightWidth@{highLightWidth}}
+\index{highLightWidth@{highLightWidth}!agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{highLightWidth}{highLightWidth}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Screen\+Capture\+Parameters\+::high\+Light\+Width}
+
+(mac\+OS only) The width (px) of the border. Defaults to 0, and the value range is \mbox{[}0,50\mbox{]}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_a1e8d5e822c7dfcaa45ea71a0f186f581}\label{structagora_1_1rtc_1_1_screen_capture_parameters_a1e8d5e822c7dfcaa45ea71a0f186f581}} 
+\index{agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}!highLightColor@{highLightColor}}
+\index{highLightColor@{highLightColor}!agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{highLightColor}{highLightColor}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+Screen\+Capture\+Parameters\+::high\+Light\+Color}
+
+(mac\+OS only) The color of the border in R\+G\+BA format. The default value is 0x\+F\+F8\+C\+B\+F26. \mbox{\Hypertarget{structagora_1_1rtc_1_1_screen_capture_parameters_ad05439540b82ad7768631f105a6dff65}\label{structagora_1_1rtc_1_1_screen_capture_parameters_ad05439540b82ad7768631f105a6dff65}} 
+\index{agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}!enableHighLight@{enableHighLight}}
+\index{enableHighLight@{enableHighLight}!agora::rtc::ScreenCaptureParameters@{agora::rtc::ScreenCaptureParameters}}
+\doxysubsubsection{\texorpdfstring{enableHighLight}{enableHighLight}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Screen\+Capture\+Parameters\+::enable\+High\+Light}
+
+(mac\+OS only) Determines whether to place a border around the shared window or screen\+:
+\begin{DoxyItemize}
+\item true\+: Place a border.
+\item false\+: (Default) Do not place a border.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+When you share a part of a window or screen, the S\+DK places a border around the entire window or screen if you set {\ttfamily enable\+High\+Light} as true. 
+\end{DoxyNote}

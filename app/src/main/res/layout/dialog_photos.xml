@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:id="@+id/photo_full">
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:padding="5dp"
+        android:text="拍 照"
+        android:textSize="20sp"
+        android:textColor="@color/dark"
+        android:fontFamily="@font/cute_font"
+        android:background="@color/light_yellow"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dark"/>
+
+    <Button
+        android:id="@+id/album"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:text="从 相 册 选 择"
+        android:textSize="20sp"
+        android:textColor="@color/dark"
+        android:fontFamily="@font/cute_font"
+        android:padding="5dp"
+        android:background="@color/light_yellow"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/transparent"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:text="取 消"
+        android:textSize="20sp"
+        android:textColor="@color/dark"
+        android:fontFamily="@font/cute_font"
+        android:padding="5dp"
+        android:background="@color/light_yellow"/>
+</LinearLayout>

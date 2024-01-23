@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="330dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide_pudding" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="135dp"
+        android:fontFamily="@font/font2"
+        android:text="布丁"
+        android:textColor="@color/colorAccent"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="看你那么小小的一只,"
+        android:fontFamily="@font/font2"
+        android:textSize="19dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="170dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="竟然敢来大树这边 "
+        android:fontFamily="@font/font2"
+        android:textSize="19dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="190dp"
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="继续"
+        android:fontFamily="@font/font2"
+        android:textSize="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="220dp"
+        android:textColor="@color/colorAccent"/>
+
+</RelativeLayout>

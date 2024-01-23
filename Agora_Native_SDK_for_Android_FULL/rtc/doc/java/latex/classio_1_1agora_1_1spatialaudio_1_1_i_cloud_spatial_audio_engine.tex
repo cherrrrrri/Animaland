@@ -1,0 +1,61 @@
+\hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine}{}\doxysection{io.\+agora.\+spatialaudio.\+I\+Cloud\+Spatial\+Audio\+Engine Class Reference}
+\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine}\index{io.agora.spatialaudio.ICloudSpatialAudioEngine@{io.agora.spatialaudio.ICloudSpatialAudioEngine}}
+Inheritance diagram for io.\+agora.\+spatialaudio.\+I\+Cloud\+Spatial\+Audio\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_1_1_audio_range_mode}{Audio\+Range\+Mode}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a53acbe0befffb07c4d73db2b06d0e6cd}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a53acbe0befffb07c4d73db2b06d0e6cd}} 
+abstract int {\bfseries add\+Event\+Handler} (\mbox{\hyperlink{interfaceio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_event_handler}{I\+Cloud\+Spatial\+Audio\+Event\+Handler}} event\+Handler)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_ad1fc8483884ada7f596020c68ecd2790}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_ad1fc8483884ada7f596020c68ecd2790}} 
+abstract int {\bfseries remove\+Event\+Handler} (\mbox{\hyperlink{interfaceio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_event_handler}{I\+Cloud\+Spatial\+Audio\+Event\+Handler}} event\+Handler)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a7cba4d7fe6df73d20ebd2b265f11c9e8}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a7cba4d7fe6df73d20ebd2b265f11c9e8}} 
+abstract int {\bfseries initialize} (\mbox{\hyperlink{classio_1_1agora_1_1spatialaudio_1_1_cloud_spatial_audio_config}{Cloud\+Spatial\+Audio\+Config}} config)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_ac2f3caf6cad05cc038ce4746a066105b}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_ac2f3caf6cad05cc038ce4746a066105b}} 
+abstract int {\bfseries enable\+Spatializer} (boolean enable, boolean apply\+To\+Team)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a6b69890e95dec8f401db268397590362}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a6b69890e95dec8f401db268397590362}} 
+abstract int {\bfseries set\+Team\+Id} (int team\+Id)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a79571acd08e545b4c7e8e3b809519765}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a79571acd08e545b4c7e8e3b809519765}} 
+abstract int {\bfseries set\+Audio\+Range\+Mode} (int range\+Mode)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_ad517df48707f2bd8b4ed586ac447db0e}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_ad517df48707f2bd8b4ed586ac447db0e}} 
+abstract int {\bfseries enter\+Room} (String token, String room\+Name, int uid)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a6d3a0333df9d3c33941a61a041d0ad7d}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a6d3a0333df9d3c33941a61a041d0ad7d}} 
+abstract int {\bfseries renew\+Token} (String token)
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_aecdb2dd5b06c423fb0fcfc570822e617}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_aecdb2dd5b06c423fb0fcfc570822e617}} 
+abstract int {\bfseries exit\+Room} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a1e064965ac83715a2c1c9aa66d0581e7}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a1e064965ac83715a2c1c9aa66d0581e7}} 
+abstract int {\bfseries get\+Teammates} (Array\+List$<$ Integer $>$ uids)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_ae4e560afa88bf99663c328684cfcb400}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_ae4e560afa88bf99663c328684cfcb400}} 
+static synchronized \mbox{\hyperlink{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine}{I\+Cloud\+Spatial\+Audio\+Engine}} {\bfseries create} ()
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a53711ab8cd31f356051568674cb75bb7}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_a53711ab8cd31f356051568674cb75bb7}} 
+static synchronized void {\bfseries destroy} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_aad0b6f42e5e3adc5292867d81ddf62c7}\label{classio_1_1agora_1_1spatialaudio_1_1_i_cloud_spatial_audio_engine_aad0b6f42e5e3adc5292867d81ddf62c7}} 
+abstract int {\bfseries release} ()
+\end{DoxyCompactItemize}

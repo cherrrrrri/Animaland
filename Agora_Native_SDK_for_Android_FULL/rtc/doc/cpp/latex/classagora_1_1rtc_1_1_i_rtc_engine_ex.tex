@@ -1,0 +1,467 @@
+\hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex}{}\doxysection{agora\+::rtc\+::I\+Rtc\+Engine\+Ex Class Reference}
+\label{classagora_1_1rtc_1_1_i_rtc_engine_ex}\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+Inheritance diagram for agora\+::rtc\+::I\+Rtc\+Engine\+Ex\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classagora_1_1rtc_1_1_i_rtc_engine_ex}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_aea0d3d4fd0c5e50a684b8e08af56bfee}{join\+Channel\+Ex}} (const char $\ast$token, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, const \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_options}{Channel\+Media\+Options}} \&options, \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler}{I\+Rtc\+Engine\+Event\+Handler}} $\ast$event\+Handler)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_a32a7b59b5a79b8c7fcf2523fef500f77}{leave\+Channel\+Ex}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_a8334b0d0f5f2c3632eaa9358de14900d}{update\+Channel\+Media\+Options\+Ex}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_options}{Channel\+Media\+Options}} \&options, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_af075e5e718c6c66e94076daf20dcc818}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_af075e5e718c6c66e94076daf20dcc818}} 
+virtual int {\bfseries set\+Video\+Encoder\+Configuration\+Ex} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_encoder_configuration}{Video\+Encoder\+Configuration}} \&config, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a9b440849431c01df80df39c2b18ff54e}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a9b440849431c01df80df39c2b18ff54e}} 
+virtual int {\bfseries setup\+Remote\+Video\+Ex} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_canvas}{Video\+Canvas}} \&canvas, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_ae964daa0d8f236dea59c75545a7e861a}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_ae964daa0d8f236dea59c75545a7e861a}} 
+virtual int {\bfseries mute\+Remote\+Audio\+Stream\+Ex} (uid\+\_\+t uid, bool mute, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_abd81f06feeaf8d8ec2744adf74af3655}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_abd81f06feeaf8d8ec2744adf74af3655}} 
+virtual int {\bfseries mute\+Remote\+Video\+Stream\+Ex} (uid\+\_\+t uid, bool mute, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a245d6219f67386235fd24598374b4c55}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a245d6219f67386235fd24598374b4c55}} 
+virtual int {\bfseries set\+Remote\+Video\+Stream\+Type\+Ex} (uid\+\_\+t uid, V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+T\+Y\+PE stream\+Type, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_ad6fa009b0bad3ebe4a09059bbf44ac45}{set\+Subscribe\+Audio\+Blacklist\+Ex}} (uid\+\_\+t $\ast$uid\+List, int uid\+Number, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_ae3fe6d5f860a82ed0432cd27428c94ef}{set\+Subscribe\+Audio\+Whitelist\+Ex}} (uid\+\_\+t $\ast$uid\+List, int uid\+Number, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_a907092bfb6fe58bf5fb5eacd82a909b2}{set\+Subscribe\+Video\+Blacklist\+Ex}} (uid\+\_\+t $\ast$uid\+List, int uid\+Number, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_a8d4bf5f60ffee99250d32beacaea565f}{set\+Subscribe\+Video\+Whitelist\+Ex}} (uid\+\_\+t $\ast$uid\+List, int uid\+Number, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a198048296a6f9b3e702c895eff3ecc91}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a198048296a6f9b3e702c895eff3ecc91}} 
+virtual int {\bfseries set\+Remote\+Video\+Subscription\+Options\+Ex} (uid\+\_\+t uid, const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_subscription_options}{Video\+Subscription\+Options}} \&options, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a83936bd67ca063ac968d0e89f60af5d5}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a83936bd67ca063ac968d0e89f60af5d5}} 
+virtual int {\bfseries set\+Remote\+Voice\+Position\+Ex} (uid\+\_\+t uid, double pan, double gain, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a7c1a8b5a0816340f7c05534e51859630}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a7c1a8b5a0816340f7c05534e51859630}} 
+virtual int {\bfseries set\+Remote\+User\+Spatial\+Audio\+Params\+Ex} (uid\+\_\+t uid, const \mbox{\hyperlink{structagora_1_1_spatial_audio_params}{agora\+::\+Spatial\+Audio\+Params}} \&params, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a6af2cfc66d271e37f784313822b7cb9a}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a6af2cfc66d271e37f784313822b7cb9a}} 
+virtual int {\bfseries set\+Remote\+Render\+Mode\+Ex} (uid\+\_\+t uid, media\+::base\+::\+R\+E\+N\+D\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE render\+Mode, V\+I\+D\+E\+O\+\_\+\+M\+I\+R\+R\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE mirror\+Mode, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_ad056b11c74ee1fa06f06774ef81dbfc5}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_ad056b11c74ee1fa06f06774ef81dbfc5}} 
+virtual int {\bfseries enable\+Loopback\+Recording\+Ex} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, bool enabled, const char $\ast$device\+Name=N\+U\+LL)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_ac24f03787cfe422852a5dcf5ada82a9e}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_ac24f03787cfe422852a5dcf5ada82a9e}} 
+virtual C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE {\bfseries get\+Connection\+State\+Ex} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_aa5a67d72404e0e9320e58a39bff0f160}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_aa5a67d72404e0e9320e58a39bff0f160}} 
+virtual int {\bfseries enable\+Encryption\+Ex} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, bool enabled, const \mbox{\hyperlink{structagora_1_1rtc_1_1_encryption_config}{Encryption\+Config}} \&config)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a3411b5f2f6e70cc4ed8607f8597cfea0}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a3411b5f2f6e70cc4ed8607f8597cfea0}} 
+virtual int {\bfseries create\+Data\+Stream\+Ex} (int $\ast$stream\+Id, bool reliable, bool ordered, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_ad5bcb2dc347202582d409af3a442e7c8}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_ad5bcb2dc347202582d409af3a442e7c8}} 
+virtual int {\bfseries create\+Data\+Stream\+Ex} (int $\ast$stream\+Id, \mbox{\hyperlink{structagora_1_1rtc_1_1_data_stream_config}{Data\+Stream\+Config}} \&config, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_acb5aa2c150630a2949b803bbe2fcb219}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_acb5aa2c150630a2949b803bbe2fcb219}} 
+virtual int {\bfseries send\+Stream\+Message\+Ex} (int stream\+Id, const char $\ast$data, size\+\_\+t length, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a3236771daf7b826f41718e0e477b37e7}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a3236771daf7b826f41718e0e477b37e7}} 
+virtual int {\bfseries add\+Video\+Watermark\+Ex} (const char $\ast$watermark\+Url, const \mbox{\hyperlink{structagora_1_1rtc_1_1_watermark_options}{Watermark\+Options}} \&options, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_aabeeb90f0eab9224614994b4aefd85fa}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_aabeeb90f0eab9224614994b4aefd85fa}} 
+virtual int {\bfseries clear\+Video\+Watermark\+Ex} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_ad2b162bf448070754386f52a4ccadce1}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_ad2b162bf448070754386f52a4ccadce1}} 
+virtual int {\bfseries send\+Custom\+Report\+Message\+Ex} (const char $\ast$id, const char $\ast$category, const char $\ast$event, const char $\ast$label, int value, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_ae17f2728556a209f394d31b3f00b97bf}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_ae17f2728556a209f394d31b3f00b97bf}} 
+virtual int {\bfseries enable\+Audio\+Volume\+Indication\+Ex} (int interval, int smooth, bool report\+Vad, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_a9cbb0b4985356bf89ccfe4bec6ae53e9}{get\+User\+Info\+By\+User\+Account\+Ex}} (const char $\ast$user\+Account, \mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{rtc\+::\+User\+Info}} $\ast$user\+Info, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_a1b05424979241a61cd3ede056c808812}{get\+User\+Info\+By\+Uid\+Ex}} (uid\+\_\+t uid, \mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{rtc\+::\+User\+Info}} $\ast$user\+Info, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_af2d8ea5d8f84e75dc2158778936340a7}{set\+Video\+Profile\+Ex}} (int width, int height, int frame\+Rate, int bitrate)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_a4d7a88053b9874b7fbd2ab6d8ecc034b}{enable\+Dual\+Stream\+Mode\+Ex}} (bool enabled, const \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_stream_config}{Simulcast\+Stream\+Config}} \&stream\+Config, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_a7264a77658ad9ad5563d15fba63991a2}{set\+Dual\+Stream\+Mode\+Ex}} (S\+I\+M\+U\+L\+C\+A\+S\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE mode, const \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_stream_config}{Simulcast\+Stream\+Config}} \&stream\+Config, const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_a30967384b6a1fe53f4204ec30f7b4a2f}{enable\+Wireless\+Accelerate}} (bool enabled)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ex_ab44ff5921d69865c76a830eeba1b03a7}{take\+Snapshot\+Ex}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, uid\+\_\+t uid, const char $\ast$file\+Path)=0
+\begin{DoxyCompactList}\small\item\em save current time video frame to jpeg and write as a jpeg \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_aea0d3d4fd0c5e50a684b8e08af56bfee}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_aea0d3d4fd0c5e50a684b8e08af56bfee}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!joinChannelEx@{joinChannelEx}}
+\index{joinChannelEx@{joinChannelEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{joinChannelEx()}{joinChannelEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::join\+Channel\+Ex (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&}]{connection,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_options}{Channel\+Media\+Options}} \&}]{options,  }\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler}{I\+Rtc\+Engine\+Event\+Handler}} $\ast$}]{event\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Joins a channel with the connection ID.
+
+You can call this method multiple times to join more than one channels at a time.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item If you are already in a channel, you cannot rejoin it with the same uid.
+\item We recommend using different user I\+Ds for different channels.
+\item If you want to join the same channel from different devices, ensure that the user I\+Ds in all devices are different.
+\item Ensure that the app ID you use to generate the token is the same with the app ID used when creating the Rtc\+Engine instance. 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \\
+\hline
+{\em options} & The channel media options\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_options}{Channel\+Media\+Options}}. \\
+\hline
+{\em event\+Handler} & The pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine}{I\+Rtc\+Engine}} event handler\+: \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler}{I\+Rtc\+Engine\+Event\+Handler}}. you join the same channel multiple times.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a32a7b59b5a79b8c7fcf2523fef500f77}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a32a7b59b5a79b8c7fcf2523fef500f77}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!leaveChannelEx@{leaveChannelEx}}
+\index{leaveChannelEx@{leaveChannelEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{leaveChannelEx()}{leaveChannelEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::leave\+Channel\+Ex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Leaves the channel with the connection ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & connection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a8334b0d0f5f2c3632eaa9358de14900d}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a8334b0d0f5f2c3632eaa9358de14900d}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!updateChannelMediaOptionsEx@{updateChannelMediaOptionsEx}}
+\index{updateChannelMediaOptionsEx@{updateChannelMediaOptionsEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{updateChannelMediaOptionsEx()}{updateChannelMediaOptionsEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::update\+Channel\+Media\+Options\+Ex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_options}{Channel\+Media\+Options}} \&}]{options,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Updates the channel media options after joining the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & The channel media options\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_options}{Channel\+Media\+Options}}. \\
+\hline
+{\em connection} & \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_ad6fa009b0bad3ebe4a09059bbf44ac45}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_ad6fa009b0bad3ebe4a09059bbf44ac45}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!setSubscribeAudioBlacklistEx@{setSubscribeAudioBlacklistEx}}
+\index{setSubscribeAudioBlacklistEx@{setSubscribeAudioBlacklistEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{setSubscribeAudioBlacklistEx()}{setSubscribeAudioBlacklistEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::set\+Subscribe\+Audio\+Blacklist\+Ex (\begin{DoxyParamCaption}\item[{uid\+\_\+t $\ast$}]{uid\+List,  }\item[{int}]{uid\+Number,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the blacklist of subscribe remote stream audio.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid\+List} & The id list of users who do not subscribe to audio. \\
+\hline
+{\em uid\+Number} & The number of uid in uid\+List. \\
+\hline
+{\em connection} & \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If uid is in uid\+List, the remote user\textquotesingle{}s audio will not be subscribed, even if mute\+Remote\+Audio\+Stream(uid, false) and mute\+All\+Remote\+Audio\+Streams(false) are operated.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_ae3fe6d5f860a82ed0432cd27428c94ef}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_ae3fe6d5f860a82ed0432cd27428c94ef}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!setSubscribeAudioWhitelistEx@{setSubscribeAudioWhitelistEx}}
+\index{setSubscribeAudioWhitelistEx@{setSubscribeAudioWhitelistEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{setSubscribeAudioWhitelistEx()}{setSubscribeAudioWhitelistEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::set\+Subscribe\+Audio\+Whitelist\+Ex (\begin{DoxyParamCaption}\item[{uid\+\_\+t $\ast$}]{uid\+List,  }\item[{int}]{uid\+Number,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the whitelist of subscribe remote stream audio.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid\+List} & The id list of users who do subscribe to audio. \\
+\hline
+{\em uid\+Number} & The number of uid in uid\+List. \\
+\hline
+{\em connection} & \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If uid is in uid\+List, the remote user\textquotesingle{}s audio will be subscribed, even if mute\+Remote\+Audio\+Stream(uid, true) and mute\+All\+Remote\+Audio\+Streams(true) are operated.
+\end{DoxyNote}
+If a user is in the blacklist and whitelist at the same time, the user will not subscribe to audio.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a907092bfb6fe58bf5fb5eacd82a909b2}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a907092bfb6fe58bf5fb5eacd82a909b2}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!setSubscribeVideoBlacklistEx@{setSubscribeVideoBlacklistEx}}
+\index{setSubscribeVideoBlacklistEx@{setSubscribeVideoBlacklistEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{setSubscribeVideoBlacklistEx()}{setSubscribeVideoBlacklistEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::set\+Subscribe\+Video\+Blacklist\+Ex (\begin{DoxyParamCaption}\item[{uid\+\_\+t $\ast$}]{uid\+List,  }\item[{int}]{uid\+Number,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the blacklist of subscribe remote stream video.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid\+List} & The id list of users who do not subscribe to video. \\
+\hline
+{\em uid\+Number} & The number of uid in uid\+List. \\
+\hline
+{\em connection} & \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If uid is in uid\+List, the remote user\textquotesingle{}s video will not be subscribed, even if mute\+Remote\+Video\+Stream(uid, false) and mute\+All\+Remote\+Video\+Streams(false) are operated.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a8d4bf5f60ffee99250d32beacaea565f}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a8d4bf5f60ffee99250d32beacaea565f}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!setSubscribeVideoWhitelistEx@{setSubscribeVideoWhitelistEx}}
+\index{setSubscribeVideoWhitelistEx@{setSubscribeVideoWhitelistEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{setSubscribeVideoWhitelistEx()}{setSubscribeVideoWhitelistEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::set\+Subscribe\+Video\+Whitelist\+Ex (\begin{DoxyParamCaption}\item[{uid\+\_\+t $\ast$}]{uid\+List,  }\item[{int}]{uid\+Number,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the whitelist of subscribe remote stream video.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid\+List} & The id list of users who do subscribe to video. \\
+\hline
+{\em uid\+Number} & The number of uid in uid\+List. \\
+\hline
+{\em connection} & \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If uid is in uid\+List, the remote user\textquotesingle{}s video will be subscribed, even if mute\+Remote\+Video\+Stream(uid, true) and mute\+All\+Remote\+Video\+Streams(true) are operated.
+\end{DoxyNote}
+If a user is in the blacklist and whitelist at the same time, the user will not subscribe to video.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a9cbb0b4985356bf89ccfe4bec6ae53e9}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a9cbb0b4985356bf89ccfe4bec6ae53e9}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!getUserInfoByUserAccountEx@{getUserInfoByUserAccountEx}}
+\index{getUserInfoByUserAccountEx@{getUserInfoByUserAccountEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{getUserInfoByUserAccountEx()}{getUserInfoByUserAccountEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::get\+User\+Info\+By\+User\+Account\+Ex (\begin{DoxyParamCaption}\item[{const char $\ast$}]{user\+Account,  }\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{rtc\+::\+User\+Info}} $\ast$}]{user\+Info,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the user information by passing in the user account. It is same as \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_acba378be5f666f84c64713197587dc43}{agora\+::rtc\+::\+I\+Rtc\+Engine\+::get\+User\+Info\+By\+User\+Account}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em user\+Account} & The user account of the user. Ensure that you set this parameter. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em user\+Info} & A user\+Info object that identifies the user\+:
+\begin{DoxyItemize}
+\item Input\+: A user\+Info object.
+\item Output\+: A user\+Info object that contains the user account and user ID of the user. 
+\end{DoxyItemize}\\
+\hline
+ & {\em connection} & The connection of the remote user account\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a1b05424979241a61cd3ede056c808812}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a1b05424979241a61cd3ede056c808812}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!getUserInfoByUidEx@{getUserInfoByUidEx}}
+\index{getUserInfoByUidEx@{getUserInfoByUidEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{getUserInfoByUidEx()}{getUserInfoByUidEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::get\+User\+Info\+By\+Uid\+Ex (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{rtc\+::\+User\+Info}} $\ast$}]{user\+Info,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the user information by passing in the user ID. It is same as \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a7a34efc30c42f0c200aacd6a6f1dc386}{agora\+::rtc\+::\+I\+Rtc\+Engine\+::get\+User\+Info\+By\+Uid}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em uid} & The user ID of the remote user. Ensure that you set this parameter. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em user\+Info} & A user\+Info object that identifies the user\+:
+\begin{DoxyItemize}
+\item Input\+: A user\+Info object.
+\item Output\+: A user\+Info object that contains the user account and user ID of the user. 
+\end{DoxyItemize}\\
+\hline
+ & {\em connection} & The connection of the remote user ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_af2d8ea5d8f84e75dc2158778936340a7}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_af2d8ea5d8f84e75dc2158778936340a7}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!setVideoProfileEx@{setVideoProfileEx}}
+\index{setVideoProfileEx@{setVideoProfileEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{setVideoProfileEx()}{setVideoProfileEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::set\+Video\+Profile\+Ex (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{frame\+Rate,  }\item[{int}]{bitrate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Specify video stream parameters based on video profile 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em width} & width of video resolution in pixel \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & height of video resolution in pixel \\
+\hline
+\mbox{\texttt{ in}}  & {\em frame\+Rate} & frame rate in fps \\
+\hline
+\mbox{\texttt{ in}}  & {\em bitrate} & bit rate in kbps \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return 0 if success or an error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a4d7a88053b9874b7fbd2ab6d8ecc034b}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a4d7a88053b9874b7fbd2ab6d8ecc034b}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!enableDualStreamModeEx@{enableDualStreamModeEx}}
+\index{enableDualStreamModeEx@{enableDualStreamModeEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{enableDualStreamModeEx()}{enableDualStreamModeEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::enable\+Dual\+Stream\+Mode\+Ex (\begin{DoxyParamCaption}\item[{bool}]{enabled,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_stream_config}{Simulcast\+Stream\+Config}} \&}]{stream\+Config,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enables or disables the dual video stream mode.
+
+If dual-\/stream mode is enabled, the subscriber can choose to receive the high-\/stream (high-\/resolution high-\/bitrate video stream) or low-\/stream (low-\/resolution low-\/bitrate video stream) video using \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a7c4564b1f4a00658b4f54960ede571a9}{set\+Remote\+Video\+Stream\+Type}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & 
+\begin{DoxyItemize}
+\item true\+: Enable the dual-\/stream mode.
+\item false\+: (default) Disable the dual-\/stream mode. 
+\end{DoxyItemize}\\
+\hline
+{\em stream\+Config} & The minor stream config \\
+\hline
+{\em connection} & An output parameter which is used to control different connection instances. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a7264a77658ad9ad5563d15fba63991a2}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a7264a77658ad9ad5563d15fba63991a2}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!setDualStreamModeEx@{setDualStreamModeEx}}
+\index{setDualStreamModeEx@{setDualStreamModeEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{setDualStreamModeEx()}{setDualStreamModeEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::set\+Dual\+Stream\+Mode\+Ex (\begin{DoxyParamCaption}\item[{S\+I\+M\+U\+L\+C\+A\+S\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE}]{mode,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_simulcast_stream_config}{Simulcast\+Stream\+Config}} \&}]{stream\+Config,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enables, disables or auto enable the dual video stream mode.
+
+If dual-\/stream mode is enabled, the subscriber can choose to receive the high-\/stream (high-\/resolution high-\/bitrate video stream) or low-\/stream (low-\/resolution low-\/bitrate video stream) video using \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a7c4564b1f4a00658b4f54960ede571a9}{set\+Remote\+Video\+Stream\+Type}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The dual stream mode \\
+\hline
+{\em stream\+Config} & The minor stream config \\
+\hline
+{\em connection} & An output parameter which is used to control different connection instances. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_a30967384b6a1fe53f4204ec30f7b4a2f}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_a30967384b6a1fe53f4204ec30f7b4a2f}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!enableWirelessAccelerate@{enableWirelessAccelerate}}
+\index{enableWirelessAccelerate@{enableWirelessAccelerate}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{enableWirelessAccelerate()}{enableWirelessAccelerate()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::enable\+Wireless\+Accelerate (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Turn W\+I\+FI acceleration on or off.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item This method is called before and after joining a channel.
+\item Users check the W\+I\+FI router app for information about acceleration. Therefore, if this interface is invoked, the caller accepts that the caller\textquotesingle{}s name will be displayed to the user in the W\+I\+FI router application on behalf of the caller.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & 
+\begin{DoxyItemize}
+\item true：\+Turn W\+I\+FI acceleration on.
+\item false：\+Turn W\+I\+FI acceleration off.
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a90cf9cbde4bd5db0eb344e2198e86b29}{agora\+::rtc\+::\+I\+Rtc\+Engine}}.
+
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_ex_ab44ff5921d69865c76a830eeba1b03a7}\label{classagora_1_1rtc_1_1_i_rtc_engine_ex_ab44ff5921d69865c76a830eeba1b03a7}} 
+\index{agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}!takeSnapshotEx@{takeSnapshotEx}}
+\index{takeSnapshotEx@{takeSnapshotEx}!agora::rtc::IRtcEngineEx@{agora::rtc::IRtcEngineEx}}
+\doxysubsubsection{\texorpdfstring{takeSnapshotEx()}{takeSnapshotEx()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Rtc\+Engine\+Ex\+::take\+Snapshot\+Ex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&}]{connection,  }\item[{uid\+\_\+t}]{uid,  }\item[{const char $\ast$}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+save current time video frame to jpeg and write as a jpeg 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & The connection of the user ID \\
+\hline
+{\em uid} & save remote picture with user id. if uid = 0 save local user\textquotesingle{}s picture \\
+\hline
+{\em file\+Path} & save file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\begin{DoxyItemize}
+\item 0 \+: Success.
+\item $<$0 \+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

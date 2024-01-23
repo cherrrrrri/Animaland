@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light">
+
+    <ImageButton
+        android:id="@+id/avater_teacher"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".15"
+        app:layout_constraintHorizontal_bias=".3"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/avater_teacher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".2"
+        app:layout_constraintStart_toEndOf="@+id/avater_teacher"
+        app:layout_constraintTop_toTopOf="@+id/avater_teacher"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent=".3">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:fontFamily="@font/cute_font"
+            android:gravity="center"
+            android:text="开朗的网友"
+            android:textSize="30sp"
+            android:textColor="@color/dark"/>
+
+        <ImageView
+            android:id="@+id/edit_data"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avater_teacher"
+        app:layout_constraintWidth_percent=".5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/cute_font"
+            android:gravity="right"
+            android:text="金币"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/coin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/cute_font"
+            android:gravity="center"
+            android:text="10"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avater_teacher"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintWidth_percent=".5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cute_font"
+            android:text="已购课时"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/courseBuy"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cute_font"
+            android:text="10"
+            android:textSize="30sp"
+            android:gravity="left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintWidth_percent=".5"
+        android:paddingHorizontal="20dp">
+
+        <Button
+            android:id="@+id/back_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/cute_font"
+            android:paddingVertical="10dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_dialog_darkcolor"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/exit_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/cute_font"
+            android:paddingVertical="10dp"
+            android:gravity="center"
+            android:text="退出"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_dialog_darkcolor" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

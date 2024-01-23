@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="290dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide_pudding2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="115dp"
+        android:fontFamily="@font/font2"
+        android:text="布丁"
+        android:textColor="@color/colorAccent"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对不起，不知道这里是你的家(´._.｀)"
+        android:fontFamily="@font/font2"
+        android:textSize="19dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="150dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="（悄悄）这些海洋里的家伙说的都是"
+        android:fontFamily="@font/font2"
+        android:textSize="19dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="178dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="海洋语，你还没有学过吧"
+        android:fontFamily="@font/font2"
+        android:textSize="19dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="205dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="继续"
+        android:fontFamily="@font/font2"
+        android:textSize="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="240dp"
+        android:textColor="@color/colorAccent"/>
+
+</RelativeLayout>

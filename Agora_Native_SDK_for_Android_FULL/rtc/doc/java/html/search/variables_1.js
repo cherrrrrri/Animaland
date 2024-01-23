@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['background_5fblur_2578',['BACKGROUND_BLUR',['../classio_1_1agora_1_1rtc2_1_1video_1_1_virtual_background_source.html#a68472e70b99aba339821e80d9f6be91e',1,'io::agora::rtc2::video::VirtualBackgroundSource']]],
+  ['background_5fcolor_2579',['BACKGROUND_COLOR',['../classio_1_1agora_1_1rtc2_1_1video_1_1_virtual_background_source.html#a52790d0f2cfbe336a95caa45c3030589',1,'io::agora::rtc2::video::VirtualBackgroundSource']]],
+  ['background_5fimg_2580',['BACKGROUND_IMG',['../classio_1_1agora_1_1rtc2_1_1video_1_1_virtual_background_source.html#ac23f8511eda39d9160a3b356a7e9fc25',1,'io::agora::rtc2::video::VirtualBackgroundSource']]],
+  ['backgroundcolor_2581',['backgroundColor',['../classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding.html#a51735c6155b2f1fc4ce66f7af52236b7',1,'io::agora::rtc2::live::LiveTranscoding']]],
+  ['backgroundimage_2582',['backgroundImage',['../classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding.html#a49a05614c493bac45f3118e1633ff602',1,'io::agora::rtc2::live::LiveTranscoding']]],
+  ['backgroundsourcetype_2583',['backgroundSourceType',['../classio_1_1agora_1_1rtc2_1_1video_1_1_virtual_background_source.html#ae17ef9216ce0e45bfc94d2635b99bee8',1,'io::agora::rtc2::video::VirtualBackgroundSource']]],
+  ['bad_5fname_2584',['BAD_NAME',['../enumio_1_1agora_1_1rtc2_1_1_direct_cdn_streaming_error.html#a16952b734790d9bbfd27ced2c9cba0fa',1,'io::agora::rtc2::DirectCdnStreamingError']]],
+  ['bandwidth_5festimation_5fbps_2585',['bandwidth_estimation_bps',['../classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_downlink_network_info.html#acbaa88b84922f313cb6e56028d2a826e',1,'io::agora::rtc2::IRtcEngineEventHandler::DownlinkNetworkInfo']]],
+  ['baseline_2586',['BASELINE',['../enumio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding_1_1_video_codec_profile_type.html#abe1ddc1c16df65f44b777ea594a42703',1,'io::agora::rtc2::live::LiveTranscoding::VideoCodecProfileType']]],
+  ['beatspermeasure_2587',['beatsPerMeasure',['../classio_1_1agora_1_1rtc2_1_1audio_1_1_agora_rhythm_player_config.html#a3a09689e767310a70a5fae5e14e38453',1,'io::agora::rtc2::audio::AgoraRhythmPlayerConfig']]],
+  ['bitrate_2588',['bitrate',['../classio_1_1agora_1_1rtc2_1_1_screen_capture_parameters_1_1_video_capture_parameters.html#adaf9dce3e32a8bfe653a29b29195b341',1,'io.agora.rtc2.ScreenCaptureParameters.VideoCaptureParameters.bitrate()'],['../classio_1_1agora_1_1rtc2_1_1_simulcast_stream_config.html#a263bbc9aa82e6c8078b749a83debc0c8',1,'io.agora.rtc2.SimulcastStreamConfig.bitrate()'],['../classio_1_1agora_1_1rtc2_1_1video_1_1_video_encoder_configuration.html#af56e8dd931eca762b66d1a08d7982498',1,'io.agora.rtc2.video.VideoEncoderConfiguration.bitrate()']]],
+  ['blur_5fdegree_5fhigh_2589',['BLUR_DEGREE_HIGH',['../classio_1_1agora_1_1rtc2_1_1video_1_1_virtual_background_source.html#a2479eda1953f754432e05479f8598c9b',1,'io::agora::rtc2::video::VirtualBackgroundSource']]],
+  ['blur_5fdegree_5flow_2590',['BLUR_DEGREE_LOW',['../classio_1_1agora_1_1rtc2_1_1video_1_1_virtual_background_source.html#ac848779b61f5b2ac2a0ddc61c55a5bf5',1,'io::agora::rtc2::video::VirtualBackgroundSource']]],
+  ['blur_5fdegree_5fmedium_2591',['BLUR_DEGREE_MEDIUM',['../classio_1_1agora_1_1rtc2_1_1video_1_1_virtual_background_source.html#a646ecab356ad8948fc2a381c13bbffbd',1,'io::agora::rtc2::video::VirtualBackgroundSource']]],
+  ['blurdegree_2592',['blurDegree',['../classio_1_1agora_1_1rtc2_1_1video_1_1_virtual_background_source.html#a29266d3877cf7c02b43dbc36ad96ed8c',1,'io::agora::rtc2::video::VirtualBackgroundSource']]],
+  ['buf_2593',['buf',['../classio_1_1agora_1_1rtc2_1_1video_1_1_agora_video_frame.html#a9c91c2df165c2e820799106572adf17c',1,'io::agora::rtc2::video::AgoraVideoFrame']]],
+  ['buffer_5ftype_5farray_2594',['BUFFER_TYPE_ARRAY',['../classio_1_1agora_1_1rtc2_1_1video_1_1_agora_video_frame.html#a2a5a506f783250b1d0094c8fac870772',1,'io::agora::rtc2::video::AgoraVideoFrame']]],
+  ['buffer_5ftype_5fbuffer_2595',['BUFFER_TYPE_BUFFER',['../classio_1_1agora_1_1rtc2_1_1video_1_1_agora_video_frame.html#abb0db072d3df78a0c7f171e50fd8995c',1,'io::agora::rtc2::video::AgoraVideoFrame']]],
+  ['buffer_5ftype_5fnone_2596',['BUFFER_TYPE_NONE',['../classio_1_1agora_1_1rtc2_1_1video_1_1_agora_video_frame.html#a6d811756114e1f87c26c032e72045643',1,'io::agora::rtc2::video::AgoraVideoFrame']]],
+  ['buffer_5ftype_5ftexture_2597',['BUFFER_TYPE_TEXTURE',['../classio_1_1agora_1_1rtc2_1_1video_1_1_agora_video_frame.html#a689d8648a1d207844cf2fd29fdfb85df',1,'io::agora::rtc2::video::AgoraVideoFrame']]]
+];

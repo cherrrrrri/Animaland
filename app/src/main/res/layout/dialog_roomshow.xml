@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_dialog_lightcolor"
+    android:id="@+id/Layout_name"
+    android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/myRoomName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="我是名字"
+            android:fontFamily="@font/font2"
+            android:textSize="20sp"
+            android:textColor="#2f231d"/>
+
+        <ScrollView
+            android:id="@+id/scv_myRoomAnnouncement"
+            android:layout_below="@id/myRoomName"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_dialog_darkcolor"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/myRoomAnnoucement"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:text="暂无"
+                android:fontFamily="@font/font2"
+                android:textSize="16sp"
+                android:textColor="#2f231d"/>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/roomshow_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/enterRoom"
+            android:layout_marginLeft="15dp"
+            android:text="ID:"
+            android:fontFamily="@font/font2"
+            android:textSize="18sp"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:id="@+id/myRoomID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/roomshow_ID"
+            android:layout_alignBottom="@+id/roomshow_ID"
+            android:paddingLeft="2dp"
+            android:text="我是ID"
+            android:fontFamily="@font/font2"
+            android:textSize="18sp"
+            android:textColor="#999999"/>
+
+        <Button
+            android:id="@+id/enterRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scv_myRoomAnnouncement"
+            android:layout_alignRight="@+id/scv_myRoomAnnouncement"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_dialog_darkcolor"
+            android:padding="10dp"
+            android:text="进入房间"
+            android:fontFamily="@font/font2"
+            android:textSize="16sp" />
+
+</RelativeLayout>

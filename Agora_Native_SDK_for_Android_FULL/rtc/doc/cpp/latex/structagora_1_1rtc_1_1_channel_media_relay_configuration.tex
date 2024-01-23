@@ -1,0 +1,55 @@
+\hypertarget{structagora_1_1rtc_1_1_channel_media_relay_configuration}{}\doxysection{agora\+::rtc\+::Channel\+Media\+Relay\+Configuration Struct Reference}
+\label{structagora_1_1rtc_1_1_channel_media_relay_configuration}\index{agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}}
+
+
+{\ttfamily \#include $<$Agora\+Base.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}} $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_relay_configuration_af2a51196e174ee47a82092d53e9e1dc7}{src\+Info}}
+\item 
+\mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}} $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_relay_configuration_ae2c49f93de131ba36b41e191d3540570}{dest\+Infos}}
+\item 
+int \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_relay_configuration_ad413ace6e670b016bcc342657a7af6bf}{dest\+Count}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The definition of \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_relay_configuration}{Channel\+Media\+Relay\+Configuration}}. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_channel_media_relay_configuration_af2a51196e174ee47a82092d53e9e1dc7}\label{structagora_1_1rtc_1_1_channel_media_relay_configuration_af2a51196e174ee47a82092d53e9e1dc7}} 
+\index{agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}!srcInfo@{srcInfo}}
+\index{srcInfo@{srcInfo}!agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}}
+\doxysubsubsection{\texorpdfstring{srcInfo}{srcInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}}$\ast$ agora\+::rtc\+::\+Channel\+Media\+Relay\+Configuration\+::src\+Info}
+
+Pointer to the source channel\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}}.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item {\ttfamily uid}\+: ID of the user whose media stream you want to relay. We recommend setting it as 0, which means that the S\+DK relays the media stream of the current broadcaster.
+\item If you do not use a token, we recommend using the default values of the parameters in \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}}.
+\item If you use a token, set uid as 0, and ensure that the token is generated with the uid set as 0. 
+\end{DoxyItemize}
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_channel_media_relay_configuration_ae2c49f93de131ba36b41e191d3540570}\label{structagora_1_1rtc_1_1_channel_media_relay_configuration_ae2c49f93de131ba36b41e191d3540570}} 
+\index{agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}!destInfos@{destInfos}}
+\index{destInfos@{destInfos}!agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}}
+\doxysubsubsection{\texorpdfstring{destInfos}{destInfos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}}$\ast$ agora\+::rtc\+::\+Channel\+Media\+Relay\+Configuration\+::dest\+Infos}
+
+Pointer to the destination channel\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}}. If you want to relay the media stream to multiple channels, define as many \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}} structs (at most four).
+
+\begin{DoxyNote}{Note}
+{\ttfamily uid}\+: ID of the user who is in the source channel. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_channel_media_relay_configuration_ad413ace6e670b016bcc342657a7af6bf}\label{structagora_1_1rtc_1_1_channel_media_relay_configuration_ad413ace6e670b016bcc342657a7af6bf}} 
+\index{agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}!destCount@{destCount}}
+\index{destCount@{destCount}!agora::rtc::ChannelMediaRelayConfiguration@{agora::rtc::ChannelMediaRelayConfiguration}}
+\doxysubsubsection{\texorpdfstring{destCount}{destCount}}
+{\footnotesize\ttfamily int agora\+::rtc\+::\+Channel\+Media\+Relay\+Configuration\+::dest\+Count}
+
+The number of destination channels. The default value is 0, and the value range is \mbox{[}0,4). Ensure that the value of this parameter corresponds to the number of \mbox{\hyperlink{structagora_1_1rtc_1_1_channel_media_info}{Channel\+Media\+Info}} structs you define in {\ttfamily dest\+Infos}. 

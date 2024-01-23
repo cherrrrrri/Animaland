@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/music_layout"
+    android:layout_marginTop="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_round_edge"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+
+        android:layout_gravity="center_horizontal"
+        android:layout_width="500dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="话题"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="27dp"
+            android:fontFamily="@font/cute_font"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:padding="15dp"
+                android:background="@drawable/shape_search_bg">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

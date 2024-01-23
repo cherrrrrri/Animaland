@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--计数TextView-->
+    <declare-styleable name="CountTextView">
+        <attr name="z_ctv_font_size" format="reference|dimension"/>
+        <attr name="z_ctv_num" format="integer"/>
+        <attr name="z_bg_color" format="reference|color"/>
+        <attr name="z_txt_color" format="reference|color"/>
+    </declare-styleable>
+</resources>

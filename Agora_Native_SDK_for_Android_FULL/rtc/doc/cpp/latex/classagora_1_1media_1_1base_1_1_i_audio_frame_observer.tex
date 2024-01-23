@@ -1,0 +1,23 @@
+\hypertarget{classagora_1_1media_1_1base_1_1_i_audio_frame_observer}{}\doxysection{agora\+::media\+::base\+::I\+Audio\+Frame\+Observer Class Reference}
+\label{classagora_1_1media_1_1base_1_1_i_audio_frame_observer}\index{agora::media::base::IAudioFrameObserver@{agora::media::base::IAudioFrameObserver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_audio_frame_observer_ab5f3d29f2f2355c683ae7dc300359187}{on\+Frame}} (\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{Audio\+Pcm\+Frame}} $\ast$frame)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1media_1_1base_1_1_i_audio_frame_observer_ab5f3d29f2f2355c683ae7dc300359187}\label{classagora_1_1media_1_1base_1_1_i_audio_frame_observer_ab5f3d29f2f2355c683ae7dc300359187}} 
+\index{agora::media::base::IAudioFrameObserver@{agora::media::base::IAudioFrameObserver}!onFrame@{onFrame}}
+\index{onFrame@{onFrame}!agora::media::base::IAudioFrameObserver@{agora::media::base::IAudioFrameObserver}}
+\doxysubsubsection{\texorpdfstring{onFrame()}{onFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::media\+::base\+::\+I\+Audio\+Frame\+Observer\+::on\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{Audio\+Pcm\+Frame}} $\ast$}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs when each time the player receives an audio frame.
+
+After registering the audio frame observer, the callback occurs when each time the player receives an audio frame, reporting the detailed information of the audio frame. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & The detailed information of the audio frame. See \mbox{\hyperlink{structagora_1_1media_1_1base_1_1_audio_pcm_frame}{Audio\+Pcm\+Frame}}. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.Animaland"
+        tools:targetApi="32"
+        android:requestLegacyExternalStorage="true"
+        tools:replace="android:allowBackup"
+        android:name="com.example.animaland.tool.User">
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name="com.darsh.multipleimageselect.activities.AlbumSelectActivity"
+            android:exported="true" />
+        <activity android:name="com.darsh.multipleimageselect.activities.ImageSelectActivity"
+            android:exported="true" />
+
+
+        <activity android:name="com.example.animaland.LoginAndSignUp.LoginAndSignUp"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LoginAndSignUp.Introductory"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.animaland.Register" />
+        <activity android:name="com.example.animaland.LoginAndSignUp.ForgetPass"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.animaland.Map"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.example.animaland.room.UndergroundStudyRoom"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.example.animaland.room.ShellStudyRoom"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name="com.example.animaland.selfroom.selfRoomMainActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.example.animaland.selfroom.Dress"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.example.animaland.GuideStart"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.animaland.Guide_shell"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.example.animaland.Island"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.example.animaland.MyAccount"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.example.animaland.School.Auditorium_student"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.example.animaland.School.Auditorium_teacher"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.example.animaland.School.Student_chair"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.example.animaland.School.School"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.example.animaland.School.Student"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.example.animaland.oral.Oral"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.example.animaland.oral.Oral_resident"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name="com.example.animaland.room.TreeHouseStudyRoom"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.example.animaland.chatgpt.GPTMainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.animaland.School.Teacher"
+            android:screenOrientation="landscape" />
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="891" />
+
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="411" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 对于 Android 12.0 及以上设备，还需要添加如下权限： -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"  />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许读取手机状态（必须） -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许访问网络状态（必须） -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许写手机存储（必须） -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- GUI自动填充验证码功能（非必须） -->
+    <uses-permission android:name="android.permission.READ_SMS" /> <!-- 从短信中读取验证码接口（非必须） -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--获取照片权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+</manifest>

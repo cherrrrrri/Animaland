@@ -1,0 +1,184 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 26 min SDK version: x86_64",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -831478002
+  },
+  {
+    "level_": 0,
+    "message_": "rebuilding JSON E:\\coding\\Animaland\\open\\.cxx\\Debug\\3jh602z4\\x86_64\\android_gradle_build.json due to:",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1919000452
+  },
+  {
+    "level_": 0,
+    "message_": "- expected json E:\\coding\\Animaland\\open\\.cxx\\Debug\\3jh602z4\\x86_64\\android_gradle_build.json file is not present, will remove stale json folder",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1531872876
+  },
+  {
+    "level_": 0,
+    "message_": "- missing previous command file E:\\coding\\Animaland\\open\\.cxx\\Debug\\3jh602z4\\x86_64\\metadata_generation_command.txt, will remove stale json folder",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 998326002
+  },
+  {
+    "level_": 0,
+    "message_": "- command changed from previous, will remove stale json folder",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1500822096
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027E:\\coding\\Animaland\\open\\.cxx\\Debug\\3jh602z4\\x86_64\u0027",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 575032732
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027E:\\coding\\Animaland\\open\\.cxx\\Debug\\3jh602z4\\x86_64\u0027",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1133360808
+  },
+  {
+    "level_": 0,
+    "message_": "executing cmake @echo off\n\"D:\\\\AndroidTool\\\\AndroidSDK\\\\cmake\\\\3.18.1\\\\bin\\\\cmake.exe\" ^\n  \"-HE:\\\\coding\\\\Animaland\\\\open\\\\libcxx_helper\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d26\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-26\" ^\n  \"-DANDROID_ABI\u003dx86_64\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003dx86_64\" ^\n  \"-DANDROID_NDK\u003dD:\\\\AndroidTool\\\\AndroidSDK\\\\ndk\\\\23.1.7779620\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dD:\\\\AndroidTool\\\\AndroidSDK\\\\ndk\\\\23.1.7779620\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dD:\\\\AndroidTool\\\\AndroidSDK\\\\ndk\\\\23.1.7779620\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dD:\\\\AndroidTool\\\\AndroidSDK\\\\cmake\\\\3.18.1\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dE:\\\\coding\\\\Animaland\\\\open\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\3jh602z4\\\\obj\\\\x86_64\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dE:\\\\coding\\\\Animaland\\\\open\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\3jh602z4\\\\obj\\\\x86_64\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-BE:\\\\coding\\\\Animaland\\\\open\\\\.cxx\\\\Debug\\\\3jh602z4\\\\x86_64\" ^\n  -GNinja ^\n  \"-DANDROID_STL\u003dc++_shared\"\n",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1943677176
+  },
+  {
+    "level_": 0,
+    "message_": "@echo off\n\"D:\\\\AndroidTool\\\\AndroidSDK\\\\cmake\\\\3.18.1\\\\bin\\\\cmake.exe\" ^\n  \"-HE:\\\\coding\\\\Animaland\\\\open\\\\libcxx_helper\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d26\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-26\" ^\n  \"-DANDROID_ABI\u003dx86_64\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003dx86_64\" ^\n  \"-DANDROID_NDK\u003dD:\\\\AndroidTool\\\\AndroidSDK\\\\ndk\\\\23.1.7779620\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dD:\\\\AndroidTool\\\\AndroidSDK\\\\ndk\\\\23.1.7779620\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dD:\\\\AndroidTool\\\\AndroidSDK\\\\ndk\\\\23.1.7779620\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dD:\\\\AndroidTool\\\\AndroidSDK\\\\cmake\\\\3.18.1\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dE:\\\\coding\\\\Animaland\\\\open\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\3jh602z4\\\\obj\\\\x86_64\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dE:\\\\coding\\\\Animaland\\\\open\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\3jh602z4\\\\obj\\\\x86_64\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-BE:\\\\coding\\\\Animaland\\\\open\\\\.cxx\\\\Debug\\\\3jh602z4\\\\x86_64\" ^\n  -GNinja ^\n  \"-DANDROID_STL\u003dc++_shared\"\n",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1216735369
+  },
+  {
+    "level_": 0,
+    "message_": "Exiting generation of E:\\coding\\Animaland\\open\\.cxx\\Debug\\3jh602z4\\x86_64\\compile_commands.json.bin normally",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -563428610
+  },
+  {
+    "level_": 0,
+    "message_": "done executing cmake",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1188475845
+  },
+  {
+    "level_": 0,
+    "message_": "write command file E:\\coding\\Animaland\\open\\.cxx\\Debug\\3jh602z4\\x86_64\\metadata_generation_command.txt",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1008824880
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed without problems",
+    "file_": "E:\\coding\\Animaland\\open\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86_64",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1168418367
+  }
+]

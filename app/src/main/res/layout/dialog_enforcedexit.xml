@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/music_layout"
+    android:layout_width="350dp"
+    android:layout_height="140dp"
+    android:layout_gravity="center"
+    android:background="@drawable/drawable_round_edge"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/question_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="25dp"
+            android:fontFamily="@font/font2"
+            android:imeOptions="actionSearch"
+            android:hint="聊天已结束"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="离开"
+            android:fontFamily="@font/font2"
+            android:textSize="20sp"
+            android:id="@+id/exit"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_dialog_darkcolor"
+            android:layout_marginLeft="130dp"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

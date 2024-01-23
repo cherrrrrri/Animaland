@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="450dp"
+    android:layout_height="320dp"
+    android:background="@drawable/btn_dialog_lightcolor"
+    tools:context=".oral.dialog_language">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            android:gravity="top">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="top">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="20sp"
+                        android:textColor="@color/dark"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/cute_font"/>
+
+                    <EditText
+                        android:id="@+id/introduction"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_background"
+                        android:backgroundTint="@color/light_yellow"
+                        android:paddingHorizontal="5dp"
+                        android:hint="单击可修改~"
+                        android:textColor="@color/dark"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/cute_font"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/delete"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:text="母 语"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="2dp"
+                android:gravity="center"
+                android:background="@drawable/btn_dialog_lightcolor"
+                android:backgroundTint="@color/light_red"
+                android:fontFamily="@font/cute_font"
+                android:layout_alignParentLeft="true"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_motherLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6" />
+
+                <EditText
+                    android:id="@+id/etOther_mother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:inputType="text"
+                    android:background="@drawable/edit_background"
+                    android:backgroundTint="@color/light_yellow"
+                    android:hint="单击输入语言 有多门语言请用空格隔开"
+                    android:textSize="13sp"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/cute_font"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginVertical="1dp"
+                android:layout_marginHorizontal="5dp"
+                android:text="擅 长"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="2dp"
+                android:gravity="center"
+                android:background="@drawable/btn_dialog_lightcolor"
+                android:backgroundTint="@color/light_green"
+                android:fontFamily="@font/cute_font"
+                android:layout_alignParentLeft="true"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_LanguageGoodAt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"/>
+
+                <EditText
+                    android:id="@+id/etOther_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:inputType="text"
+                    android:background="@drawable/edit_background"
+                    android:backgroundTint="@color/light_yellow"
+                    android:hint="单击输入语言 有多门语言请用空格隔开"
+                    android:textSize="13sp"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/cute_font"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_LanguageWantToLearn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginVertical="1dp"
+                android:layout_marginHorizontal="5dp"
+                android:text="学 习"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="2dp"
+                android:gravity="center"
+                android:background="@drawable/btn_dialog_lightcolor"
+                android:backgroundTint="@color/light_orange"
+                android:fontFamily="@font/cute_font"
+                android:layout_alignParentLeft="true"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_LanguageLearn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"/>
+
+                <EditText
+                    android:id="@+id/etOther_learn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:inputType="text"
+                    android:background="@drawable/edit_background"
+                    android:backgroundTint="@color/light_yellow"
+                    android:hint="单击输入语言 有多门语言请用空格隔开"
+                    android:textSize="13sp"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/cute_font"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

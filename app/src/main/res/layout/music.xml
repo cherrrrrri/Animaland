@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/music_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_round_edge"
+    android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/text_bgm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:text="bgm :"
+                android:fontFamily="@font/font1"
+                android:textSize="40dp" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/music_1"
+                android:layout_toRightOf="@+id/text_bgm"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                app:cardBackgroundColor="#8B7765"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_gravity="center"
+                    android:layout_width="85dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sea"/>
+                <ImageView
+                    android:id="@+id/i11"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_play_arrow_24"
+                    app:tint="#8B7765"
+                    android:focusable="true"
+                    android:clickable="true"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_toRightOf="@+id/text_bgm"
+                android:id="@+id/music_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="400dp"
+                app:cardBackgroundColor="#8B7765"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:id="@+id/i2"
+                    android:layout_gravity="center"
+                    android:layout_width="85dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/forest"/>
+                <ImageView
+                    android:id="@+id/i22"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_play_arrow_24"
+                    android:focusable="true"
+                    android:clickable="true"/>
+            </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/music_1"
+                android:layout_marginLeft="200dp"
+                android:background="@drawable/close_selector"
+                android:focusable="true"
+                android:clickable="true"/>
+        </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/music_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="167dp"
+            app:cardBackgroundColor="#8B7765"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/i3"
+                android:layout_gravity="center"
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cave"/>
+            <ImageView
+                android:id="@+id/i33"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_play_arrow_24"
+                android:focusable="true"
+                android:clickable="true"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_toRightOf="@+id/music_3"
+            android:layout_height="100dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="70dp"
+            app:cardBackgroundColor="#8B7765"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/i4"
+                android:layout_gravity="center"
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sky"/>
+            <ImageView
+                android:id="@+id/i44"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_play_arrow_24"
+                app:tint="#8B7765"
+                android:focusable="true"
+                android:clickable="true"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+\hypertarget{classagora_1_1rtc_1_1_i_recording_device_source}{}\doxysection{agora\+::rtc\+::I\+Recording\+Device\+Source Class Reference}
+\label{classagora_1_1rtc_1_1_i_recording_device_source}\index{agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}}
+Inheritance diagram for agora\+::rtc\+::I\+Recording\+Device\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_recording_device_source}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_recording_device_source_aa73e32964b546e106b269716c6581c02}{init\+Recording}} (const char $\ast$device\+Name=N\+U\+LL)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_recording_device_source_ae511c3678125b99666d944f5727f4b4e}{start\+Recording}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_recording_device_source_a0029cae9c6f0222f8a5f46496c99123c}{stop\+Recording}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_recording_device_source_af9fb8ed044f9c40d8adee5a772033f61}{register\+Audio\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_audio_frame_observer}{media\+::base\+::\+I\+Audio\+Frame\+Observer}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_recording_device_source_a4d666615ca2a7ed7e99edc012030c37f}{unregister\+Audio\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_audio_frame_observer}{media\+::base\+::\+I\+Audio\+Frame\+Observer}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_recording_device_source_a4f89bfa8e3a674ca9121c13bd974d385}{set\+Loopback\+Device\+Parameter}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_loopback_recording_option}{Loopback\+Recording\+Option}} \&option)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_recording_device_source_aa73e32964b546e106b269716c6581c02}\label{classagora_1_1rtc_1_1_i_recording_device_source_aa73e32964b546e106b269716c6581c02}} 
+\index{agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}!initRecording@{initRecording}}
+\index{initRecording@{initRecording}!agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}}
+\doxysubsubsection{\texorpdfstring{initRecording()}{initRecording()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Recording\+Device\+Source\+::init\+Recording (\begin{DoxyParamCaption}\item[{const char $\ast$}]{device\+Name = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Initialize the recording device source. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_recording_device_source_ae511c3678125b99666d944f5727f4b4e}\label{classagora_1_1rtc_1_1_i_recording_device_source_ae511c3678125b99666d944f5727f4b4e}} 
+\index{agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}!startRecording@{startRecording}}
+\index{startRecording@{startRecording}!agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}}
+\doxysubsubsection{\texorpdfstring{startRecording()}{startRecording()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Recording\+Device\+Source\+::start\+Recording (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Start the recording device. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_recording_device_source_a0029cae9c6f0222f8a5f46496c99123c}\label{classagora_1_1rtc_1_1_i_recording_device_source_a0029cae9c6f0222f8a5f46496c99123c}} 
+\index{agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}!stopRecording@{stopRecording}}
+\index{stopRecording@{stopRecording}!agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}}
+\doxysubsubsection{\texorpdfstring{stopRecording()}{stopRecording()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Recording\+Device\+Source\+::stop\+Recording (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stop the recording device. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_recording_device_source_af9fb8ed044f9c40d8adee5a772033f61}\label{classagora_1_1rtc_1_1_i_recording_device_source_af9fb8ed044f9c40d8adee5a772033f61}} 
+\index{agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}!registerAudioFrameObserver@{registerAudioFrameObserver}}
+\index{registerAudioFrameObserver@{registerAudioFrameObserver}!agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}}
+\doxysubsubsection{\texorpdfstring{registerAudioFrameObserver()}{registerAudioFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Recording\+Device\+Source\+::register\+Audio\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_audio_frame_observer}{media\+::base\+::\+I\+Audio\+Frame\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an audio frame observer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the I\+Audio\+Frame\+Observer object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_recording_device_source_a4d666615ca2a7ed7e99edc012030c37f}\label{classagora_1_1rtc_1_1_i_recording_device_source_a4d666615ca2a7ed7e99edc012030c37f}} 
+\index{agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}!unregisterAudioFrameObserver@{unregisterAudioFrameObserver}}
+\index{unregisterAudioFrameObserver@{unregisterAudioFrameObserver}!agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}}
+\doxysubsubsection{\texorpdfstring{unregisterAudioFrameObserver()}{unregisterAudioFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Recording\+Device\+Source\+::unregister\+Audio\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_audio_frame_observer}{media\+::base\+::\+I\+Audio\+Frame\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the registered I\+Audio\+Frame\+Observer object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the I\+Audio\+Frame\+Observer object created by the {\ttfamily register\+Audio\+Pcm\+Data\+Callback} method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_recording_device_source_a4f89bfa8e3a674ca9121c13bd974d385}\label{classagora_1_1rtc_1_1_i_recording_device_source_a4f89bfa8e3a674ca9121c13bd974d385}} 
+\index{agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}!setLoopbackDeviceParameter@{setLoopbackDeviceParameter}}
+\index{setLoopbackDeviceParameter@{setLoopbackDeviceParameter}!agora::rtc::IRecordingDeviceSource@{agora::rtc::IRecordingDeviceSource}}
+\doxysubsubsection{\texorpdfstring{setLoopbackDeviceParameter()}{setLoopbackDeviceParameter()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Recording\+Device\+Source\+::set\+Loopback\+Device\+Parameter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_loopback_recording_option}{Loopback\+Recording\+Option}} \&}]{option }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set parameter to object loopback device; 
+\begin{DoxyParams}{Parameters}
+{\em option} & ~\newline
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}

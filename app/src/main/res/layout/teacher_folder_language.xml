@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="英 语"
+        android:textColor="@color/dark"
+        android:fontFamily="@font/cute_font"
+        android:background="@color/light_yellow"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dark"/>
+
+    <Button
+        android:id="@+id/album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="法 语"
+        android:textColor="@color/dark"
+        android:fontFamily="@font/cute_font"
+        android:padding="5dp"
+        android:background="@color/light_yellow"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dark"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="日 语"
+        android:textColor="@color/dark"
+        android:fontFamily="@font/cute_font"
+        android:padding="5dp"
+        android:background="@color/light_yellow"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dark"/>
+
+    <Button
+        android:id="@+id/lan_others"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其 他"
+        android:textColor="@color/dark"
+        android:fontFamily="@font/cute_font"
+        android:padding="5dp"
+        android:background="@color/light_yellow"/>
+</LinearLayout>

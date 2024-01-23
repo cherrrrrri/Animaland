@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dictionary_layout"
+   android:orientation="vertical"
+    android:background="@drawable/drawable_round_edge">
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp">
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/Data1"
+           android:layout_weight="0.6"
+            android:spinnerMode="dropdown"
+            android:dropDownWidth="50dp"
+            android:popupBackground="@color/lightYello"
+            android:background="@color/lightBrown"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_chevron_right_24"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/lightBrown"
+            android:dropDownWidth="50dp"
+            android:entries="@array/Data2"
+            android:popupBackground="@color/lightYello"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/shape_search_bg"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp"
+       >
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/dictionary_hint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="27dp"
+            android:fontFamily="@font/font2"
+            android:imeOptions="actionSearch"
+            android:hint="输入要翻译的单词..."
+            />
+
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="0.2"
+            android:onClick="onClick"
+            android:src="@drawable/ic_baseline_close_24" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/单词"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text=""
+        android:fontFamily="@font/font2"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/音标"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text=""
+        android:fontFamily="@font/font2"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/翻译"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text=""
+        android:fontFamily="@font/font2"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/例句"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/font2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+
+
+</LinearLayout>

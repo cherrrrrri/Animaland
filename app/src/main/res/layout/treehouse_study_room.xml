@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/sc_tree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@id/parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_treehouse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_root"
+                            android:layout_width="891dp"
+                            android:layout_height="411dp"
+                            android:layout_below="@+id/rv_treehouse">
+
+                                <ImageView
+                                    android:id="@+id/rv_treeroot"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/treehousestudyroom"></ImageView>
+                        </RelativeLayout>
+
+                </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/room_search"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:paddingLeft="20sp"
+                    android:background="@drawable/buttonstyle"
+                    android:hint="输入房间ID或房间名进行查找"
+                    android:fontFamily="@font/cute_font"
+                    android:textSize="16sp">
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/check_cave"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/search"
+                    android:baselineAligned="false" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/room_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/closet_arrow"
+            ></Button>
+
+        <Button
+            android:id="@+id/room_create"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:textSize="25sp"
+            android:background="@drawable/create"
+            ></Button>
+
+        <Button
+            android:id="@+id/room_down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/room_create"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/down"
+            android:textSize="25sp"></Button>
+</RelativeLayout>

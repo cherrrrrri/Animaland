@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_dialog_lightcolor"
+    android:id="@+id/Layout_name"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/myRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:hint="单击此处编辑房间名称"
+        android:fontFamily="@font/font2"
+        android:textColorHint="#999999"
+        android:textSize="20sp"
+        android:textColor="#2f231d"/>
+
+    <ScrollView
+        android:id="@+id/scv_myRoomAnnouncement"
+        android:layout_below="@id/myRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_dialog_darkcolor"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/myRoomAnnoucement"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/transparent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="单击此处编辑房间公告"
+            android:fontFamily="@font/font2"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            android:textColor="#2f231d"/>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/roomcheck_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/scv_myRoomAnnouncement"
+        android:layout_marginLeft="15dp"
+        android:text="ID:"
+        android:fontFamily="@font/font2"
+        android:textSize="18sp"
+        android:textColor="#999999"/>
+
+    <TextView
+        android:id="@+id/myRoomID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/roomcheck_ID"
+        android:layout_alignBottom="@+id/roomcheck_ID"
+        android:paddingLeft="2dp"
+        android:text="我是ID"
+        android:fontFamily="@font/font2"
+        android:textSize="18sp"
+        android:textColor="#999999"/>
+
+    <ImageButton
+        android:id="@+id/check_editable"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/scv_myRoomAnnouncement"
+        android:layout_alignTop="@+id/myRoomID"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit"
+        android:scaleType="fitCenter"/>
+
+</RelativeLayout>

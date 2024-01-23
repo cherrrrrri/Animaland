@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/btn_dialog_lightcolor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="为了保证自习效率，不要离开太久喔~"
+        android:fontFamily="@font/font2"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="以下为暂停限制时间"
+        android:fontFamily="@font/font2"
+        android:textSize="20sp"/>
+
+    <Chronometer
+        android:id="@+id/FiveMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/font2"
+        android:textColor="@color/tomato"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+
+        <Button
+            android:id="@+id/focus_goon"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_2state"
+            android:text="继续计时"
+            android:fontFamily="@font/font2"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+</LinearLayout>

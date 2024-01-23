@@ -1,0 +1,2 @@
+ninja: Entering directory `D:\Animaland\open\.cxx\Debug\5d2q3s6e\armeabi-v7a'
+ninja: no work to do.

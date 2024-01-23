@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide_pudding3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="105dp"
+        android:fontFamily="@font/font2"
+        android:text="\???"
+        android:textColor="@color/colorAccent"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="布丁你别总来这里赖着啦！"
+        android:fontFamily="@font/font2"
+        android:textSize="19dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="140dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="（低头）不过这么可爱的小动物倒是"
+        android:fontFamily="@font/font2"
+        android:textSize="19dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="162dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="随时都很欢迎 "
+        android:fontFamily="@font/font2"
+        android:textSize="19dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="185dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="继续"
+        android:fontFamily="@font/font2"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="223dp"
+        android:textColor="@color/colorAccent"/>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+   //repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { allowInsecureProtocol = true  //加这个是因为mob会被判定为不安全的协议而无法引入
+            url "http://mvn.mob.com/android"}
+        maven { url "https://jitpack.io" }
+        jcenter()
+    }
+
+}
+
+rootProject.name = "Animaland"
+include ':app'

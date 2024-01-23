@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    tools:context=".Account.MyAccount">
+
+    <RelativeLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/light">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/closet_arrow"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"/>
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="195.5dp"
+            android:background="@drawable/shape_search_bg"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/searchBox"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:singleLine="true"
+                android:fontFamily="@font/font2"
+                android:textSize="27dp"
+                android:textColor="@color/dark"
+                android:textColorHint="@color/dark"
+                android:imeOptions="actionSearch"
+                android:hint="输入房间ID或xxx查找" />
+
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_close_24" />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_search_24" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/calendar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:src="@drawable/calendar"
+            app:tint="@color/black" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_top"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <q.rorbin.verticaltablayout.VerticalTabLayout
+            android:id="@+id/tl_classTags"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_search"
+            app:indicator_color="@color/light_yellow"
+            app:indicator_gravity="fill"
+            app:indicator_width="130dp"
+            app:tab_height="50dp"
+            app:tab_mode="scrollable" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="300dp"
+            android:background="@color/dark"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_classes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tl_classTags"
+            android:layout_marginLeft="1dp"
+            android:background="@color/light_yellow"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

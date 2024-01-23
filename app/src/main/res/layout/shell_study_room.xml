@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+<HorizontalScrollView
+    android:id="@+id/sc_shell"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/room_background1"
+                    android:layout_width="800dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/beach1">
+
+                </ImageView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_shell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/room_background1"
+                    android:background="@drawable/bg_shell"
+            ></androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+</HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/room_search_SHELL"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:paddingLeft="20sp"
+                    android:background="@drawable/buttonstyle"
+                    android:hint="输入房间ID或房间名进行查找"
+                    android:fontFamily="@font/cute_font"
+                    android:textSize="16sp">
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/check_cave"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/search"
+                    android:baselineAligned="false" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/room_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/closet_arrow"
+            ></Button>
+
+        <Button
+            android:id="@+id/room_create_SHELL"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/room_back"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="25sp"
+            android:background="@drawable/create"
+            ></Button>
+
+        <Button
+            android:id="@+id/room_up_SHELL"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/room_create_SHELL"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/left"
+            android:textSize="25sp"></Button>
+</RelativeLayout>

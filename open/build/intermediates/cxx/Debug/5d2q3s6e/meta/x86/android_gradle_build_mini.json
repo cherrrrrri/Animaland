@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "D:\\Animaland\\open\\libcxx_helper\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "D:\\android SDK\\AndroidSDK\\cmake\\3.18.1\\bin\\ninja.exe",
+      "-C",
+      "D:\\Animaland\\open\\.cxx\\Debug\\5d2q3s6e\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "D:\\android SDK\\AndroidSDK\\cmake\\3.18.1\\bin\\ninja.exe",
+    "-C",
+    "D:\\Animaland\\open\\.cxx\\Debug\\5d2q3s6e\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "opencv_jni_shared::@6890427a1f51a3e7e1df": {
+      "artifactName": "opencv_jni_shared",
+      "abi": "x86",
+      "output": "D:\\Animaland\\open\\.cxx\\Debug\\5d2q3s6e\\x86\\libopencv_jni_shared.a",
+      "runtimeFiles": []
+    }
+  }
+}

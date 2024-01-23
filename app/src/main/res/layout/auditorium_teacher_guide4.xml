@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="450dp"
+        android:layout_height="400dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide_pudding" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="145dp"
+        android:fontFamily="@font/font2"
+        android:text="布丁"
+        android:textColor="@color/dark"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/大讲堂老师端3"
+        android:fontFamily="@font/font2"
+        android:textSize="19dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/dark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="继续"
+        android:fontFamily="@font/font2"
+        android:textSize="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="285dp"
+        android:textColor="@color/dark"/>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+\hypertarget{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer}{}\doxysection{agora\+::rtc\+::I\+Audio\+Encoded\+Frame\+Observer Class Reference}
+\label{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer}\index{agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_a98ee307f615f6f0ed627b372c52e314d}{On\+Record\+Audio\+Encoded\+Frame}} (const uint8\+\_\+t $\ast$frame\+Buffer, int length, const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&audio\+Encoded\+Frame\+Info)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_a9ff421e7fac9c0c07630c3a047a6bf59}{On\+Playback\+Audio\+Encoded\+Frame}} (const uint8\+\_\+t $\ast$frame\+Buffer, int length, const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&audio\+Encoded\+Frame\+Info)=0
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_abdda86077e50d4baf6d179a82aa2a676}{On\+Mixed\+Audio\+Encoded\+Frame}} (const uint8\+\_\+t $\ast$frame\+Buffer, int length, const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&audio\+Encoded\+Frame\+Info)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_a98ee307f615f6f0ed627b372c52e314d}\label{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_a98ee307f615f6f0ed627b372c52e314d}} 
+\index{agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}!OnRecordAudioEncodedFrame@{OnRecordAudioEncodedFrame}}
+\index{OnRecordAudioEncodedFrame@{OnRecordAudioEncodedFrame}!agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}}
+\doxysubsubsection{\texorpdfstring{OnRecordAudioEncodedFrame()}{OnRecordAudioEncodedFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Encoded\+Frame\+Observer\+::\+On\+Record\+Audio\+Encoded\+Frame (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{frame\+Buffer,  }\item[{int}]{length,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&}]{audio\+Encoded\+Frame\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs each time the S\+DK receives an encoded recorded audio frame. 
+\begin{DoxyParams}{Parameters}
+{\em frame\+Buffer} & The pointer to the audio frame buffer. \\
+\hline
+{\em length} & The data length of the audio frame. \\
+\hline
+{\em audio\+Encoded\+Frame\+Info} & The information of the encoded audio frame\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_a9ff421e7fac9c0c07630c3a047a6bf59}\label{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_a9ff421e7fac9c0c07630c3a047a6bf59}} 
+\index{agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}!OnPlaybackAudioEncodedFrame@{OnPlaybackAudioEncodedFrame}}
+\index{OnPlaybackAudioEncodedFrame@{OnPlaybackAudioEncodedFrame}!agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}}
+\doxysubsubsection{\texorpdfstring{OnPlaybackAudioEncodedFrame()}{OnPlaybackAudioEncodedFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Encoded\+Frame\+Observer\+::\+On\+Playback\+Audio\+Encoded\+Frame (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{frame\+Buffer,  }\item[{int}]{length,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&}]{audio\+Encoded\+Frame\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs each time the S\+DK receives an encoded playback audio frame. 
+\begin{DoxyParams}{Parameters}
+{\em frame\+Buffer} & The pointer to the audio frame buffer. \\
+\hline
+{\em length} & The data length of the audio frame. \\
+\hline
+{\em audio\+Encoded\+Frame\+Info} & The information of the encoded audio frame\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_abdda86077e50d4baf6d179a82aa2a676}\label{classagora_1_1rtc_1_1_i_audio_encoded_frame_observer_abdda86077e50d4baf6d179a82aa2a676}} 
+\index{agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}!OnMixedAudioEncodedFrame@{OnMixedAudioEncodedFrame}}
+\index{OnMixedAudioEncodedFrame@{OnMixedAudioEncodedFrame}!agora::rtc::IAudioEncodedFrameObserver@{agora::rtc::IAudioEncodedFrameObserver}}
+\doxysubsubsection{\texorpdfstring{OnMixedAudioEncodedFrame()}{OnMixedAudioEncodedFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Audio\+Encoded\+Frame\+Observer\+::\+On\+Mixed\+Audio\+Encoded\+Frame (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t $\ast$}]{frame\+Buffer,  }\item[{int}]{length,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}} \&}]{audio\+Encoded\+Frame\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Occurs each time the S\+DK receives an encoded mixed audio frame. 
+\begin{DoxyParams}{Parameters}
+{\em frame\+Buffer} & The pointer to the audio frame buffer. \\
+\hline
+{\em length} & The data length of the audio frame. \\
+\hline
+{\em audio\+Encoded\+Frame\+Info} & The information of the encoded audio frame\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_encoded_audio_frame_info}{Encoded\+Audio\+Frame\+Info}}. \\
+\hline
+\end{DoxyParams}

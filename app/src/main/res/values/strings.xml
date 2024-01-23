@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Animaland</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desk">desk</string>
+    <string name="大讲堂学生端">首先！点击前两个按钮就可以<u>下载文件\n</u>和<u>点赞</u>啦</string>
+    <string name="大讲堂学生端2">第三个按钮有两种功能：\n<u>短按</u>会直接在弹幕中<u>生成问号</u>，代表你有疑问\n而<u>长按</u>则可以发送<u>具体的问题</u>到弹幕中</string>
+    <string name="大讲堂学生端3">第四个按钮是<u>评论区</u>，\n评论区有三种留言类型，分别是<u>聊天</u>、\n<u>提问</u>和<u>回答</u></string>
+    <string name="大讲堂学生端4">最后两个按钮分别是<u>开关评论区</u>和\n<u>查看房间信息</u>\n你都记住了嘛乁( ˙ ω˙乁)</string>
+    <string name="大讲堂老师端1">点击第一个按钮就可以<u>全体禁言</u>，\n您有权利让不乖的孩子安静下来</string>
+    <string name="大讲堂老师端2">还有要特别注意第四个按钮,\n里面的数字代表学生的<u>疑问数量</u>\n如果<u>5分钟</u>内学生的疑问积攒到一定\n规模，会有<u>响铃</u>来提示您\n</string>
+    <string name="大讲堂老师端3"><u>短按</u>该按钮可以设置<u>疑问阈值</u>，\n即决定疑问达到多少时才会响铃\n<u>长按</u>可以将当前的<u>疑问数量清零</u>，\n请确保您确实已经回答了学生们的疑问再操作</string>
+
+
+</resources>

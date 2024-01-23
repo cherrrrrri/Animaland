@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="-20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide_pudding4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="115dp"
+        android:fontFamily="@font/font2"
+        android:text="布丁"
+        android:textColor="@color/dark"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是不是很好奇底下这么多按钮究竟\n是干什么哒 唔...就让我勉为\n其难地告诉你吧！"
+        android:fontFamily="@font/font2"
+        android:textSize="19dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="151dp"
+        android:textColor="@color/dark"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="继续"
+        android:fontFamily="@font/font2"
+        android:textSize="19dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="225dp"
+        android:textColor="@color/dark"/>
+
+</RelativeLayout>

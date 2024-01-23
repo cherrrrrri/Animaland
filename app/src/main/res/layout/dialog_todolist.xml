@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_dialog_lightcolor"
+    android:padding="30dp"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/todo_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="开始今天的计划吧！"
+            android:fontFamily="@font/font2"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    <ScrollView
+        android:id="@+id/scv_todolist"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/todo_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/todo_addFlag"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/add" />
+
+    </LinearLayout>
+</LinearLayout>

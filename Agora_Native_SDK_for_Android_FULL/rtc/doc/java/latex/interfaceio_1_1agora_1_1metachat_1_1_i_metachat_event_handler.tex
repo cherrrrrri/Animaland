@@ -1,0 +1,26 @@
+\hypertarget{interfaceio_1_1agora_1_1metachat_1_1_i_metachat_event_handler}{}\doxysection{io.\+agora.\+metachat.\+I\+Metachat\+Event\+Handler Interface Reference}
+\label{interfaceio_1_1agora_1_1metachat_1_1_i_metachat_event_handler}\index{io.agora.metachat.IMetachatEventHandler@{io.agora.metachat.IMetachatEventHandler}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_1_1_connection_changed_reason}{Connection\+Changed\+Reason}}
+\item 
+class \mbox{\hyperlink{classio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_1_1_connection_state}{Connection\+State}}
+\item 
+class \mbox{\hyperlink{classio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_1_1_scene_download_state}{Scene\+Download\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_adfeec4973a2829748a5fdbe3c641128e}\label{interfaceio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_adfeec4973a2829748a5fdbe3c641128e}} 
+void {\bfseries on\+Connection\+State\+Changed} (int state, int reason)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_acdc9cc50ed24ea096cf70092ab2a511d}\label{interfaceio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_acdc9cc50ed24ea096cf70092ab2a511d}} 
+void {\bfseries on\+Request\+Token} ()
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_adce034dd3fa059e7f2a09339937541ab}\label{interfaceio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_adce034dd3fa059e7f2a09339937541ab}} 
+void {\bfseries on\+Get\+Scenes\+Result} (\mbox{\hyperlink{classio_1_1agora_1_1metachat_1_1_metachat_scene_info}{Metachat\+Scene\+Info}}\mbox{[}$\,$\mbox{]} scenes, int error\+Code)
+\item 
+\mbox{\Hypertarget{interfaceio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_a19c561c74ce8f5248adaef7170672aff}\label{interfaceio_1_1agora_1_1metachat_1_1_i_metachat_event_handler_a19c561c74ce8f5248adaef7170672aff}} 
+void {\bfseries on\+Download\+Scene\+Progress} (\mbox{\hyperlink{classio_1_1agora_1_1metachat_1_1_metachat_scene_info}{Metachat\+Scene\+Info}} scene\+Info, int progress, int state)
+\end{DoxyCompactItemize}

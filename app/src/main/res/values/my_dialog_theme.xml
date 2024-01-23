@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><style name="my_dialog_theme" parent="@style/Theme.AppCompat.Dialog">
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowBackground"></item>    //这句话不能少，否则dialog会出现黑色边框
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+</style>
+</resources>

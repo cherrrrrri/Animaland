@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/music_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEFDB"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="35dp"
+        android:layout_height="0dp">
+        <androidx.cardview.widget.CardView
+            android:layout_centerVertical="true"
+            android:id="@+id/head_1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="#F0E5D0"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/headImage1"
+                android:layout_gravity="center"
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:src="@drawable/head1"
+                android:clickable="true"
+                android:onClick="onClick"
+                />
+
+            <ImageView
+                android:id="@+id/head_lock1"
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/lock2"
+                app:tint="@color/colorAccent" />
+
+            <TextView
+                android:layout_marginTop="53dp"
+                android:layout_marginLeft="43dp"
+                android:textSize="13dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:text="10$"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/head_stroke1"
+            android:layout_marginTop="25dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/stroke"
+            android:visibility="invisible"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/head_2"
+            android:layout_centerVertical="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/head_1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="#F0E5D0"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/headImage2"
+                android:layout_gravity="center"
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:src="@drawable/head2"
+                android:clickable="true"
+                android:onClick="onClick"/>
+            <ImageView
+                android:id="@+id/head_lock2"
+                android:layout_gravity="center"
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:src="@drawable/lock2"
+                android:clickable="true"
+                android:onClick="onClick"
+                app:tint="@color/colorAccent" />
+            <TextView
+                android:layout_marginTop="53dp"
+                android:layout_marginLeft="43dp"
+                android:textSize="13dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:text="10$"/>
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/head_stroke2"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/stroke"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/head_3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#F0E5D0"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/headImage3"
+                android:layout_gravity="center"
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:src="@drawable/head3"
+                android:clickable="true"
+                android:onClick="onClick"/>
+            <ImageView
+                android:id="@+id/head_lock3"
+                android:layout_gravity="center"
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:src="@drawable/lock2"
+                android:clickable="true"
+                android:onClick="onClick"
+                app:tint="@color/colorAccent" />
+            <TextView
+                android:layout_marginTop="53dp"
+                android:layout_marginLeft="43dp"
+                android:textSize="13dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:text="10$"/>
+
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/head_stroke3"
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/stroke"
+            android:visibility="invisible"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_toRightOf="@+id/head_3"
+            android:id="@+id/head_4"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            app:cardBackgroundColor="#F0E5D0"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/headImage4"
+                android:layout_gravity="center"
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:src="@drawable/head4"
+                android:clickable="true"
+                android:onClick="onClick"/>
+            <ImageView
+                android:id="@+id/head_lock4"
+                android:layout_gravity="center"
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:src="@drawable/lock2"
+                android:clickable="true"
+                android:onClick="onClick"
+                app:tint="@color/colorAccent" />
+            <TextView
+                android:layout_marginTop="53dp"
+                android:layout_marginLeft="43dp"
+                android:textSize="13dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:text="10$"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/head_stroke4"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/stroke"
+            android:visibility="invisible"
+            />
+       <ImageView
+           android:layout_marginTop="120dp"
+           android:layout_marginLeft="130dp"
+           android:layout_width="50dp"
+           android:layout_height="30dp"
+           android:background="@drawable/shape_search_bg"
+           android:backgroundTint="@color/dark">
+
+       </ImageView>
+        <TextView
+            android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:layout_marginLeft="132dp"
+            android:padding="8dp"
+            android:text="解锁"
+            android:textColor="@color/light"
+            android:clickable="true"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

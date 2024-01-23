@@ -1,0 +1,218 @@
+\hypertarget{classagora_1_1rtc_1_1_i_remote_audio_track}{}\doxysection{agora\+::rtc\+::I\+Remote\+Audio\+Track Class Reference}
+\label{classagora_1_1rtc_1_1_i_remote_audio_track}\index{agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Audio\+Track.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Remote\+Audio\+Track\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classagora_1_1rtc_1_1_i_remote_audio_track}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_a7fa3cd504b1fdc3c06e133d358ab04e1}{get\+Statistics}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_remote_audio_track_stats}{Remote\+Audio\+Track\+Stats}} \&stats)=0
+\item 
+virtual R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+TE \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_abcf5b94e335602c43a25ac8e6c479bc5}{get\+State}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_ace3584c0dd884c9286178296e71ee9cd}{register\+Media\+Packet\+Receiver}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}} $\ast$packet\+Receiver)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_a8b22c1b4590029b24aebcfef64d25f5c}{unregister\+Media\+Packet\+Receiver}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}} $\ast$packet\+Receiver)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_a6590efd45d43902d1a96d59943b39c3d}{register\+Audio\+Encoded\+Frame\+Receiver}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver}{I\+Audio\+Encoded\+Frame\+Receiver}} $\ast$packet\+Receiver)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_a691dc49d709e561225bf3c4eb9f9e134}{unregister\+Audio\+Encoded\+Frame\+Receiver}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver}{I\+Audio\+Encoded\+Frame\+Receiver}} $\ast$packet\+Receiver)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_af20977fd653a2c0a14643ee61da0d7c7}{set\+Remote\+Voice\+Position}} (float pan, float gain)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_ac0d8ea2f7ae10f51dd89457f46b17b3f}{enable\+Spatial\+Audio}} (bool enabled)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track_a85d932553c3bac02a2fd97c938be5f38}{set\+Remote\+User\+Spatial\+Audio\+Params}} (const \mbox{\hyperlink{structagora_1_1_spatial_audio_params}{agora\+::\+Spatial\+Audio\+Params}} \&params)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_remote_audio_track}{I\+Remote\+Audio\+Track}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_audio_track_a7fa3cd504b1fdc3c06e133d358ab04e1}\label{classagora_1_1rtc_1_1_i_remote_audio_track_a7fa3cd504b1fdc3c06e133d358ab04e1}} 
+\index{agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}!getStatistics@{getStatistics}}
+\index{getStatistics@{getStatistics}!agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}}
+\doxysubsubsection{\texorpdfstring{getStatistics()}{getStatistics()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Remote\+Audio\+Track\+::get\+Statistics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_remote_audio_track_stats}{Remote\+Audio\+Track\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the statistics of the remote audio track. 
+\begin{DoxyParams}{Parameters}
+{\em stats} & A reference to the statistics of the remote audio track\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_audio_track_stats}{Remote\+Audio\+Track\+Stats}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_audio_track_abcf5b94e335602c43a25ac8e6c479bc5}\label{classagora_1_1rtc_1_1_i_remote_audio_track_abcf5b94e335602c43a25ac8e6c479bc5}} 
+\index{agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}!getState@{getState}}
+\index{getState@{getState}!agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily virtual R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+TE agora\+::rtc\+::\+I\+Remote\+Audio\+Track\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the state of the remote audio. \begin{DoxyReturn}{Returns}
+The state of the remote audio\+: \#\+R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+TE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_audio_track_ace3584c0dd884c9286178296e71ee9cd}\label{classagora_1_1rtc_1_1_i_remote_audio_track_ace3584c0dd884c9286178296e71ee9cd}} 
+\index{agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}!registerMediaPacketReceiver@{registerMediaPacketReceiver}}
+\index{registerMediaPacketReceiver@{registerMediaPacketReceiver}!agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}}
+\doxysubsubsection{\texorpdfstring{registerMediaPacketReceiver()}{registerMediaPacketReceiver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Audio\+Track\+::register\+Media\+Packet\+Receiver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}} $\ast$}]{packet\+Receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}}} object.
+
+You need to implement the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}}} class in this method. Once you successfully register the media packet receiver, the S\+DK triggers the {\ttfamily on\+Media\+Packet\+Received} callback when it receives an audio packet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+Receiver} & The pointer to the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_audio_track_a8b22c1b4590029b24aebcfef64d25f5c}\label{classagora_1_1rtc_1_1_i_remote_audio_track_a8b22c1b4590029b24aebcfef64d25f5c}} 
+\index{agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}!unregisterMediaPacketReceiver@{unregisterMediaPacketReceiver}}
+\index{unregisterMediaPacketReceiver@{unregisterMediaPacketReceiver}!agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}}
+\doxysubsubsection{\texorpdfstring{unregisterMediaPacketReceiver()}{unregisterMediaPacketReceiver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Audio\+Track\+::unregister\+Media\+Packet\+Receiver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}} $\ast$}]{packet\+Receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}}} object. 
+\begin{DoxyParams}{Parameters}
+{\em packet\+Receiver} & The pointer to the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_packet_receiver}{I\+Media\+Packet\+Receiver}}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_audio_track_a6590efd45d43902d1a96d59943b39c3d}\label{classagora_1_1rtc_1_1_i_remote_audio_track_a6590efd45d43902d1a96d59943b39c3d}} 
+\index{agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}!registerAudioEncodedFrameReceiver@{registerAudioEncodedFrameReceiver}}
+\index{registerAudioEncodedFrameReceiver@{registerAudioEncodedFrameReceiver}!agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}}
+\doxysubsubsection{\texorpdfstring{registerAudioEncodedFrameReceiver()}{registerAudioEncodedFrameReceiver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Audio\+Track\+::register\+Audio\+Encoded\+Frame\+Receiver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver}{I\+Audio\+Encoded\+Frame\+Receiver}} $\ast$}]{packet\+Receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver}{I\+Audio\+Encoded\+Frame\+Receiver}}} object.
+
+You need to implement the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver}{I\+Audio\+Encoded\+Frame\+Receiver}}} class in this method. Once you successfully register the media packet receiver, the S\+DK triggers the {\ttfamily on\+Encoded\+Audio\+Frame\+Received} callback when it receives an audio packet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+Receiver} & The pointer to the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver}{I\+Audio\+Encoded\+Frame\+Receiver}}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_audio_track_a691dc49d709e561225bf3c4eb9f9e134}\label{classagora_1_1rtc_1_1_i_remote_audio_track_a691dc49d709e561225bf3c4eb9f9e134}} 
+\index{agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}!unregisterAudioEncodedFrameReceiver@{unregisterAudioEncodedFrameReceiver}}
+\index{unregisterAudioEncodedFrameReceiver@{unregisterAudioEncodedFrameReceiver}!agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}}
+\doxysubsubsection{\texorpdfstring{unregisterAudioEncodedFrameReceiver()}{unregisterAudioEncodedFrameReceiver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Audio\+Track\+::unregister\+Audio\+Encoded\+Frame\+Receiver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver}{I\+Audio\+Encoded\+Frame\+Receiver}} $\ast$}]{packet\+Receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver}{I\+Audio\+Encoded\+Frame\+Receiver}}} object. 
+\begin{DoxyParams}{Parameters}
+{\em packet\+Receiver} & The pointer to the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_audio_encoded_frame_receiver}{I\+Audio\+Encoded\+Frame\+Receiver}}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_audio_track_af20977fd653a2c0a14643ee61da0d7c7}\label{classagora_1_1rtc_1_1_i_remote_audio_track_af20977fd653a2c0a14643ee61da0d7c7}} 
+\index{agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}!setRemoteVoicePosition@{setRemoteVoicePosition}}
+\index{setRemoteVoicePosition@{setRemoteVoicePosition}!agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}}
+\doxysubsubsection{\texorpdfstring{setRemoteVoicePosition()}{setRemoteVoicePosition()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Audio\+Track\+::set\+Remote\+Voice\+Position (\begin{DoxyParamCaption}\item[{float}]{pan,  }\item[{float}]{gain }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the sound position and gain
+
+
+\begin{DoxyParams}{Parameters}
+{\em pan} & The sound position of the remote user. The value ranges from -\/1.\+0 to 1.\+0\+:
+\begin{DoxyItemize}
+\item 0.\+0\+: the remote sound comes from the front.
+\item -\/1.\+0\+: the remote sound comes from the left.
+\item 1.\+0\+: the remote sound comes from the right. 
+\end{DoxyItemize}\\
+\hline
+{\em gain} & Gain of the remote user. The value ranges from 0.\+0 to 100.\+0. The default value is 100.\+0 (the original gain of the remote user). The smaller the value, the less the gain.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_audio_track_ac0d8ea2f7ae10f51dd89457f46b17b3f}\label{classagora_1_1rtc_1_1_i_remote_audio_track_ac0d8ea2f7ae10f51dd89457f46b17b3f}} 
+\index{agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}!enableSpatialAudio@{enableSpatialAudio}}
+\index{enableSpatialAudio@{enableSpatialAudio}!agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}}
+\doxysubsubsection{\texorpdfstring{enableSpatialAudio()}{enableSpatialAudio()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Audio\+Track\+::enable\+Spatial\+Audio (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+enable spatial audio
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & enable/disable spatial audio\+:
+\begin{DoxyItemize}
+\item true\+: enable spatial audio.
+\item false\+: disable spatial audio. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_remote_audio_track_a85d932553c3bac02a2fd97c938be5f38}\label{classagora_1_1rtc_1_1_i_remote_audio_track_a85d932553c3bac02a2fd97c938be5f38}} 
+\index{agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}!setRemoteUserSpatialAudioParams@{setRemoteUserSpatialAudioParams}}
+\index{setRemoteUserSpatialAudioParams@{setRemoteUserSpatialAudioParams}!agora::rtc::IRemoteAudioTrack@{agora::rtc::IRemoteAudioTrack}}
+\doxysubsubsection{\texorpdfstring{setRemoteUserSpatialAudioParams()}{setRemoteUserSpatialAudioParams()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Remote\+Audio\+Track\+::set\+Remote\+User\+Spatial\+Audio\+Params (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1_spatial_audio_params}{agora\+::\+Spatial\+Audio\+Params}} \&}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets remote user parameters for spatial audio
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & spatial audio parameters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}

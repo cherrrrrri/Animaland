@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a1c4fd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.animaland.PassThroughButton
+            android:id="@+id/room_school"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_school"></com.example.animaland.PassThroughButton>
+
+
+        <com.example.animaland.PassThroughButton
+            android:id="@+id/room_below"
+            android:layout_width="440dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_below">
+        </com.example.animaland.PassThroughButton>
+
+        <com.example.animaland.PassThroughButton
+            android:id="@+id/room_treehouse"
+            android:layout_width="290dp"
+            android:layout_height="400dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_tree"></com.example.animaland.PassThroughButton>
+
+        <com.example.animaland.PassThroughButton
+            android:id="@+id/room_cave"
+            android:layout_width="290dp"
+            android:layout_height="400dp"
+            android:layout_toRightOf="@+id/room_treehouse"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/btn_cave">
+
+        </com.example.animaland.PassThroughButton>
+
+        <com.example.animaland.PassThroughButton
+            android:id="@+id/room_shell"
+            android:layout_width="290dp"
+            android:layout_height="400dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_beach"></com.example.animaland.PassThroughButton>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/closet_arrow"
+        ></Button>
+</RelativeLayout>

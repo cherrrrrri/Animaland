@@ -1,0 +1,1673 @@
+\hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler}{}\doxysection{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler Class Reference}
+\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler}\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+
+
+{\ttfamily \#include $<$I\+Agora\+Rtc\+Engine.\+h$>$}
+
+Inheritance diagram for agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classagora_1_1rtc_1_1_i_rtc_engine_event_handler}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9c9dd9062eb94ff1659f4e62d801281b}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9c9dd9062eb94ff1659f4e62d801281b}} 
+virtual const char $\ast$ {\bfseries event\+Handler\+Type} () const
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aafceb1f91ae9bd82317bf25981e6851b}{on\+Join\+Channel\+Success}} (const char $\ast$channel, uid\+\_\+t uid, int elapsed)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a89b17edd14a8bbf0bb67d0478a92fbc5}{on\+Rejoin\+Channel\+Success}} (const char $\ast$channel, uid\+\_\+t uid, int elapsed)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a6c0ae1f75c9b1711e7ab32c8949e1605}{on\+Proxy\+Connected}} (const char $\ast$channel, uid\+\_\+t uid, P\+R\+O\+X\+Y\+\_\+\+T\+Y\+PE proxy\+Type, const char $\ast$local\+Proxy\+Ip, int elapsed)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a1775762d8ac3b7357ea130bfd600883c}{on\+Error}} (int err, const char $\ast$msg)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a36ad42975f3545382de07875016fb7fa}{on\+Audio\+Quality}} (uid\+\_\+t uid, int quality, unsigned short delay, unsigned short lost)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a44134dfda5d412831fa8e44fa533fca5}{on\+Lastmile\+Probe\+Result}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_result}{Lastmile\+Probe\+Result}} \&result)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aab1184a2b276f509870c055a9ff8fac4}{on\+Audio\+Volume\+Indication}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_volume_info}{Audio\+Volume\+Info}} $\ast$speakers, unsigned int speaker\+Number, int total\+Volume)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a98f832d175dfc044b31f0ec5874460fb}{on\+Leave\+Channel}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_stats}{Rtc\+Stats}} \&stats)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ada38743982296a75879018c5773f08a1}{on\+Rtc\+Stats}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_stats}{Rtc\+Stats}} \&stats)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad2c6869aad679efab62b1cbeb276f964}{on\+Audio\+Device\+State\+Changed}} (const char $\ast$device\+Id, int device\+Type, int device\+State)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2423a5f76054fdbf35985f3357b0fda2}{on\+Audio\+Mixing\+Position\+Changed}} (int64\+\_\+t position)
+\begin{DoxyCompactList}\small\item\em Reports current Audio\+Mixing progress. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a844b1585ecc0c86471d7dd5a462eaaf3}{on\+Audio\+Mixing\+Finished}} () \+\_\+\+\_\+deprecated
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ab329b207f42408b3f673837a5de3b9e5}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ab329b207f42408b3f673837a5de3b9e5}} 
+virtual void {\bfseries on\+Audio\+Effect\+Finished} (int sound\+Id)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9a7c5dbb1b7452eed2dc32dbbe8e2ce9}{on\+Video\+Device\+State\+Changed}} (const char $\ast$device\+Id, int device\+Type, int device\+State)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_adcd2acf9d79dd74499a8f40a64846f38}{on\+Media\+Device\+Changed}} (int device\+Type)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a80003ae8cce02039f3aa0e8ffad7deed}{on\+Network\+Quality}} (uid\+\_\+t uid, int tx\+Quality, int rx\+Quality)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2747779b0e8f7eb644069d134affd433}{on\+Intra\+Request\+Received}} ()
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aa229c7b7832a13901683705e5371c40a}{on\+Uplink\+Network\+Info\+Updated}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_uplink_network_info}{Uplink\+Network\+Info}} \&info)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a85c27ea644f3202014b415b32580fc90}{on\+Downlink\+Network\+Info\+Updated}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_downlink_network_info}{Downlink\+Network\+Info}} \&info)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac7e14d1a26eb35ef236a0662d28d2b33}{on\+Lastmile\+Quality}} (int quality)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a15cb3afe45c869c129451c54b4383619}{on\+First\+Local\+Video\+Frame}} (V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE source, int width, int height, int elapsed)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a734c39289a40a97bc3dcd7df9413034a}{on\+First\+Local\+Video\+Frame\+Published}} (V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE source, int elapsed)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad8083c52d15135762a31c48192ad64f2}{on\+First\+Remote\+Video\+Decoded}} (uid\+\_\+t uid, int width, int height, int elapsed) \+\_\+\+\_\+deprecated
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a3ef9bc5dd7c16c92ed1707cca4594bfb}{on\+Video\+Size\+Changed}} (V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE source\+Type, uid\+\_\+t uid, int width, int height, int rotation)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a97094758e1540a527c13f366e1c81dbf}{on\+Local\+Video\+State\+Changed}} (V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE source, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE state, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+OR error)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae69799238c6a6cd9f017274dd630b74e}{on\+Remote\+Video\+State\+Changed}} (uid\+\_\+t uid, R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+TE state, R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+ON reason, int elapsed)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a1f9e708b49ecca35a88d0b656c8a3d68}{on\+First\+Remote\+Video\+Frame}} (uid\+\_\+t user\+Id, int width, int height, int elapsed)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a985a675469baf9d54feb8781732e0ca8}{on\+User\+Joined}} (uid\+\_\+t uid, int elapsed)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9602593c05a16eafa7c094aa330c0719}{on\+User\+Offline}} (uid\+\_\+t uid, U\+S\+E\+R\+\_\+\+O\+F\+F\+L\+I\+N\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE reason)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a00433467903bd28b77631179a89a5bc6}{on\+User\+Mute\+Audio}} (uid\+\_\+t uid, bool muted)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a42dc566926966cc7b922d10b81bfd48e}{on\+User\+Mute\+Video}} (uid\+\_\+t user\+Id, bool muted) \+\_\+\+\_\+deprecated
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a5e16c8ea4e8321e82eeec1413b880c0e}{on\+User\+Enable\+Video}} (uid\+\_\+t uid, bool enabled) \+\_\+\+\_\+deprecated
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a4183cd7a8e496d940a2b521b888356fb}{on\+User\+State\+Changed}} (uid\+\_\+t uid, uint32\+\_\+t state)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a199de5107bfc84c056998e2e45bba772}{on\+User\+Enable\+Local\+Video}} (uid\+\_\+t uid, bool enabled) \+\_\+\+\_\+deprecated
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7152a4ec975c9bebcd720741072c26d2}{on\+Api\+Call\+Executed}} (int err, const char $\ast$api, const char $\ast$result)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0cb47df6a8ef7acee229eb307d6f32c3}{on\+Local\+Audio\+Stats}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_local_audio_stats}{Local\+Audio\+Stats}} \&stats)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af8a59626a9265264fb4638e048091d3a}{on\+Remote\+Audio\+Stats}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_audio_stats}{Remote\+Audio\+Stats}} \&stats)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a3476915aca1141cb7821dba9da41af2b}{on\+Local\+Video\+Stats}} (V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE source, const \mbox{\hyperlink{structagora_1_1rtc_1_1_local_video_stats}{Local\+Video\+Stats}} \&stats)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7163ffb650852be270ba0215b596d968}{on\+Remote\+Video\+Stats}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats}{Remote\+Video\+Stats}} \&stats)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae03ab1ef35f1103cf3b98278a5e06cba}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae03ab1ef35f1103cf3b98278a5e06cba}} 
+virtual void {\bfseries on\+Camera\+Ready} ()
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0e048d57ff13f946be1a1334d11f0ac6}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0e048d57ff13f946be1a1334d11f0ac6}} 
+virtual void {\bfseries on\+Camera\+Focus\+Area\+Changed} (int x, int y, int width, int height)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2fd62dcf7c816477ef559a9d2b3c43f3}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2fd62dcf7c816477ef559a9d2b3c43f3}} 
+virtual void {\bfseries on\+Camera\+Exposure\+Area\+Changed} (int x, int y, int width, int height)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2c8ac1741c57413b1cdfe891773663df}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2c8ac1741c57413b1cdfe891773663df}} 
+virtual void {\bfseries on\+Video\+Stopped} ()
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae2e257d7bbf120b970b600b9b3731a07}{on\+Audio\+Mixing\+State\+Changed}} (A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE state, A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE reason)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_acb7ae5a6ad1b2a8660655f227458ab6a}{on\+Rhythm\+Player\+State\+Changed}} (R\+H\+Y\+T\+H\+M\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE state, R\+H\+Y\+T\+H\+M\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE error\+Code)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ab5c110382a2ef7eb92cd069c22884727}{on\+Connection\+Lost}} ()
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9927b5cd2a67c1f48f17b5ed2303f483}{on\+Connection\+Interrupted}} ()
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a38e9d403ae4732dff71110b454149404}{on\+Connection\+Banned}} ()
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a21a21169a2bdb13607774bcc11c57b12}{on\+Stream\+Message}} (uid\+\_\+t user\+Id, int stream\+Id, const char $\ast$data, size\+\_\+t length, uint64\+\_\+t sent\+Ts)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aabaee632f4e457fd2e8b3a7580406d76}{on\+Stream\+Message\+Error}} (uid\+\_\+t user\+Id, int stream\+Id, int code, int missed, int cached)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aa7b456b750f56ca8fdfee8611572310e}{on\+Request\+Token}} ()
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac401db99e49d5f240f553087cb90571d}{on\+Token\+Privilege\+Will\+Expire}} (const char $\ast$token)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a03058e62a0a4a41e80ecf0279975ab99}{on\+First\+Local\+Audio\+Frame\+Published}} (int elapsed)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a01e0410967b025adc803d1ba0eb8ef97}{on\+First\+Remote\+Audio\+Frame}} (uid\+\_\+t uid, int elapsed)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7d375e7467bd099ad2d4c9cfc0a6c242}{on\+First\+Remote\+Audio\+Decoded}} (uid\+\_\+t uid, int elapsed)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9296c329331eb83b3af1315c52e7f91a}{on\+Local\+Audio\+State\+Changed}} (L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE state, L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+OR error)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aa168380f86f1dc2df1c269a785c56612}{on\+Remote\+Audio\+State\+Changed}} (uid\+\_\+t uid, R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+TE state, R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+ON reason, int elapsed)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0645729cf136ecef439f17fe7e52a461}{on\+Active\+Speaker}} (uid\+\_\+t user\+Id)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2479344eff97d9eecc19637008fa5092}{on\+Content\+Inspect\+Result}} (media\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+I\+N\+S\+P\+E\+C\+T\+\_\+\+R\+E\+S\+U\+LT result)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a6b8144c5a1591e06d6d854f703e97648}{on\+Snapshot\+Taken}} (uid\+\_\+t uid, const char $\ast$file\+Path, int width, int height, int err\+Code)
+\begin{DoxyCompactList}\small\item\em snapshot taken callback \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a36d3f45184cbb37ed2c4846654a14368}{on\+Client\+Role\+Changed}} (C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE old\+Role, C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE new\+Role)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7f7424742197df2e199981b7e0e50f4f}{on\+Client\+Role\+Change\+Failed}} (C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+R\+E\+A\+S\+ON reason, C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE current\+Role)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0f99efc9aebf1242c2e8a49966ae21ae}{on\+Audio\+Device\+Volume\+Changed}} (M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE device\+Type, int volume, bool muted)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af27a73d944f0c8f4d60d8e18ee937972}{on\+Rtmp\+Streaming\+State\+Changed}} (const char $\ast$url, R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE state, R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE err\+Code)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aa2beb17562a3be9b5ddbe9366245cb0e}{on\+Rtmp\+Streaming\+Event}} (const char $\ast$url, R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+E\+V\+E\+NT event\+Code)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0583fb2aecbd4c51bba1af97ce1aa318}{on\+Transcoding\+Updated}} ()
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a5ad747e71cd7f57052a5240513af1949}{on\+Audio\+Routing\+Changed}} (int routing)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a1891ed124db5f74747e74ca3b3eb23e9}{on\+Channel\+Media\+Relay\+State\+Changed}} (int state, int code)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a84b745fed79dc81b3c568b239f68a0a4}{on\+Channel\+Media\+Relay\+Event}} (int code)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ace4279c4d87c23a1fecc3eb8e862a513}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ace4279c4d87c23a1fecc3eb8e862a513}} 
+virtual void {\bfseries on\+Local\+Publish\+Fallback\+To\+Audio\+Only} (bool is\+Fallback\+Or\+Recover)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7ee343146ad6e3f120bd04a7a6fdda74}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7ee343146ad6e3f120bd04a7a6fdda74}} 
+virtual void {\bfseries on\+Remote\+Subscribe\+Fallback\+To\+Audio\+Only} (uid\+\_\+t uid, bool is\+Fallback\+Or\+Recover)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad79bcd56075fa9c9f907bb4a7462352d}{on\+Remote\+Audio\+Transport\+Stats}} (uid\+\_\+t uid, unsigned short delay, unsigned short lost, unsigned short rx\+K\+Bit\+Rate)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a3b8fd883a31d4a504ac3cbd50b1c5d0f}{on\+Remote\+Video\+Transport\+Stats}} (uid\+\_\+t uid, unsigned short delay, unsigned short lost, unsigned short rx\+K\+Bit\+Rate)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af409b2e721d345a65a2c600cea2f5eb4}{on\+Connection\+State\+Changed}} (C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE state, C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE reason)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af80a5dee99c2953c64d8dbacc64ea908}{on\+Wl\+Acc\+Message}} (W\+L\+A\+C\+C\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+A\+S\+ON reason, W\+L\+A\+C\+C\+\_\+\+S\+U\+G\+G\+E\+S\+T\+\_\+\+A\+C\+T\+I\+ON action, const char $\ast$wl\+Acc\+Msg)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac991b2d0588314123e5eabc8a68d9dfe}{on\+Wl\+Acc\+Stats}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_wl_acc_stats}{Wl\+Acc\+Stats}} current\+Stats, \mbox{\hyperlink{structagora_1_1rtc_1_1_wl_acc_stats}{Wl\+Acc\+Stats}} average\+Stats)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af71617b59ba8564963dfdd642f4e36a4}{on\+Network\+Type\+Changed}} (N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+Y\+PE type)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad64b65c8bbb78624316770b01f2ee9bd}{on\+Encryption\+Error}} (E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE error\+Type)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac3f1dae447118e5cb261bd10ea9edfa2}{on\+Permission\+Error}} (P\+E\+R\+M\+I\+S\+S\+I\+O\+N\+\_\+\+T\+Y\+PE permission\+Type)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a919404869f86412e1945c730e5219b20}{on\+Local\+User\+Registered}} (uid\+\_\+t uid, const char $\ast$user\+Account)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad086cc4d8e5555cc75a0ab264c16d5ff}{on\+User\+Info\+Updated}} (uid\+\_\+t uid, const \mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{User\+Info}} \&info)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a5f97ca5105b02f4381af3603d5a87ccf}{on\+Upload\+Log\+Result}} (const char $\ast$request\+Id, bool success, U\+P\+L\+O\+A\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+S\+ON reason)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae3f517bd166a9e34aa77f9fbf137a7b9}{on\+Audio\+Subscribe\+State\+Changed}} (const char $\ast$channel, uid\+\_\+t uid, S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE old\+State, S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE new\+State, int elapse\+Since\+Last\+State)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aebedc2b484b4e6b9f5d9a28aea997d65}{on\+Video\+Subscribe\+State\+Changed}} (const char $\ast$channel, uid\+\_\+t uid, S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE old\+State, S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE new\+State, int elapse\+Since\+Last\+State)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af5188bdc817fa62aac51b3dc627dfb64}{on\+Audio\+Publish\+State\+Changed}} (const char $\ast$channel, S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE old\+State, S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE new\+State, int elapse\+Since\+Last\+State)
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae7b1f0d07f6c601717e38b101eda9d6c}{on\+Video\+Publish\+State\+Changed}} (V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE source, const char $\ast$channel, S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE old\+State, S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE new\+State, int elapse\+Since\+Last\+State)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a37a3550003d391dfb29de4744ed9c484}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a37a3550003d391dfb29de4744ed9c484}} 
+virtual void {\bfseries on\+Extension\+Event} (const char $\ast$provider, const char $\ast$extension, const char $\ast$key, const char $\ast$value)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad7c9415d7220e20c606b9118ce615273}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad7c9415d7220e20c606b9118ce615273}} 
+virtual void {\bfseries on\+Extension\+Started} (const char $\ast$provider, const char $\ast$extension)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a8f0b02bb5f5ef679b15e3d7e0fad0a59}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a8f0b02bb5f5ef679b15e3d7e0fad0a59}} 
+virtual void {\bfseries on\+Extension\+Stopped} (const char $\ast$provider, const char $\ast$extension)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_abb1a3630b34a1489e4f2a6d406d1c255}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_abb1a3630b34a1489e4f2a6d406d1c255}} 
+virtual void {\bfseries on\+Extension\+Error} (const char $\ast$provider, const char $\ast$extension, int error, const char $\ast$message)
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_acbd8141eb8257ec5e1c24c2fd978c229}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_acbd8141eb8257ec5e1c24c2fd978c229}} 
+virtual void {\bfseries on\+User\+Account\+Updated} (uid\+\_\+t uid, const char $\ast$user\+Account)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler}{I\+Rtc\+Engine\+Event\+Handler}} class.
+
+The S\+DK uses this class to send callback event notifications to the app, and the app inherits the methods in this class to retrieve these event notifications.
+
+All methods in this class have their default (empty) implementations, and the app can inherit only some of the required events instead of all. In the callback methods, the app should avoid time-\/consuming tasks or calling blocking A\+P\+Is, otherwise the S\+DK may not work properly. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aafceb1f91ae9bd82317bf25981e6851b}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aafceb1f91ae9bd82317bf25981e6851b}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onJoinChannelSuccess@{onJoinChannelSuccess}}
+\index{onJoinChannelSuccess@{onJoinChannelSuccess}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onJoinChannelSuccess()}{onJoinChannelSuccess()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Join\+Channel\+Success (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel,  }\item[{uid\+\_\+t}]{uid,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user successfully joins the specified channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name. \\
+\hline
+{\em uid} & The user ID.
+\begin{DoxyItemize}
+\item If you specified a {\ttfamily uid} in the {\ttfamily join\+Channel} method, the S\+DK returns the specified ID;
+\item If not, this callback returns an ID that is automatically assigned by the Agora server. 
+\end{DoxyItemize}\\
+\hline
+{\em elapsed} & The time elapsed (ms) from the local user calling {\ttfamily join\+Channel} until this event occurs. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a89b17edd14a8bbf0bb67d0478a92fbc5}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a89b17edd14a8bbf0bb67d0478a92fbc5}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onRejoinChannelSuccess@{onRejoinChannelSuccess}}
+\index{onRejoinChannelSuccess@{onRejoinChannelSuccess}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRejoinChannelSuccess()}{onRejoinChannelSuccess()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Rejoin\+Channel\+Success (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel,  }\item[{uid\+\_\+t}]{uid,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user rejoins the channel after being disconnected due to network problems.
+
+When the app loses connection with the server because of network problems, the S\+DK automatically tries to reconnect to the server, and triggers this callback method upon reconnection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name. \\
+\hline
+{\em uid} & The user ID. \\
+\hline
+{\em elapsed} & Time elapsed (ms) from starting to reconnect until this callback is triggered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a6c0ae1f75c9b1711e7ab32c8949e1605}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a6c0ae1f75c9b1711e7ab32c8949e1605}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onProxyConnected@{onProxyConnected}}
+\index{onProxyConnected@{onProxyConnected}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onProxyConnected()}{onProxyConnected()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Proxy\+Connected (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel,  }\item[{uid\+\_\+t}]{uid,  }\item[{P\+R\+O\+X\+Y\+\_\+\+T\+Y\+PE}]{proxy\+Type,  }\item[{const char $\ast$}]{local\+Proxy\+Ip,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when join success after calling \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a00358b706ea747938165984198b16009}{set\+Local\+Access\+Point}} or \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_aff1329c23bbcaff769101ae08f91b869}{set\+Cloud\+Proxy}} 
+\begin{DoxyParams}{Parameters}
+{\em channel} & Channel name. \\
+\hline
+{\em uid} & User ID of the user joining the channel. \\
+\hline
+{\em proxy\+Type} & type of proxy agora sdk connected, proxy\+Type will be N\+O\+N\+E\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+T\+Y\+PE if not connected to proxy(fallback). \\
+\hline
+{\em local\+Proxy\+Ip} & local proxy ip. if not join local proxy, it will be \char`\"{}\char`\"{}. \\
+\hline
+{\em elapsed} & Time elapsed (ms) from the user calling the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_adc937172e59bd2695ea171553a88188c}{join\+Channel}} method until the S\+DK triggers this callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a1775762d8ac3b7357ea130bfd600883c}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a1775762d8ac3b7357ea130bfd600883c}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onError@{onError}}
+\index{onError@{onError}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onError()}{onError()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Error (\begin{DoxyParamCaption}\item[{int}]{err,  }\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+An error occurs during the S\+DK runtime.
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & The error code\+: \#\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em msg} & The detailed error message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a36ad42975f3545382de07875016fb7fa}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a36ad42975f3545382de07875016fb7fa}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onAudioQuality@{onAudioQuality}}
+\index{onAudioQuality@{onAudioQuality}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioQuality()}{onAudioQuality()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Quality (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{int}]{quality,  }\item[{unsigned short}]{delay,  }\item[{unsigned short}]{lost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the statistics of the audio stream from each remote user/broadcaster.
+
+The S\+DK triggers this callback once every two seconds to report the audio quality of each remote user/host sending an audio stream. If a channel has multiple remote users/hosts sending audio streams, the S\+DK triggers this callback as many times.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & The user ID of the speaker. \\
+\hline
+{\em quality} & The audio quality of the user\+: \#\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE \\
+\hline
+{\em delay} & The time delay (ms) of the audio packet from the sender to the receiver. \\
+\hline
+{\em lost} & The audio packet loss rate (\%) from the sender to the receiver. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a44134dfda5d412831fa8e44fa533fca5}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a44134dfda5d412831fa8e44fa533fca5}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onLastmileProbeResult@{onLastmileProbeResult}}
+\index{onLastmileProbeResult@{onLastmileProbeResult}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLastmileProbeResult()}{onLastmileProbeResult()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Lastmile\+Probe\+Result (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_result}{Lastmile\+Probe\+Result}} \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the result of the last-\/mile network probe result. The S\+DK triggers this callback within 30 seconds after the app calls the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_adb3ab7a20afca02f5a5ab6fafe026f2b}{start\+Lastmile\+Probe\+Test}} method. 
+\begin{DoxyParams}{Parameters}
+{\em result} & The uplink and downlink last-\/mile network probe test result\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_lastmile_probe_result}{Lastmile\+Probe\+Result}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aab1184a2b276f509870c055a9ff8fac4}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aab1184a2b276f509870c055a9ff8fac4}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onAudioVolumeIndication@{onAudioVolumeIndication}}
+\index{onAudioVolumeIndication@{onAudioVolumeIndication}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioVolumeIndication()}{onAudioVolumeIndication()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Volume\+Indication (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_volume_info}{Audio\+Volume\+Info}} $\ast$}]{speakers,  }\item[{unsigned int}]{speaker\+Number,  }\item[{int}]{total\+Volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports which users are speaking and the speaker‘s volume.
+
+This callback reports the I\+Ds and volumes of the loudest speakers at the moment in the channel, and whether the local user is speaking. Once enabled, this callback is triggered at the set interval, regardless of whether a user speaks or not.
+
+The S\+DK triggers two independent {\ttfamily on\+Audio\+Volume\+Indication} callbacks at one time, which separately report the volume information of the local user and all the remote speakers. For more information, see the detailed parameter descriptions.
+
+Calling the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a08a34d5b85a225390a18467c92a7b6f9}{mute\+Local\+Audio\+Stream}} method affects the S\+DK\textquotesingle{}s behavior.
+\begin{DoxyItemize}
+\item If the local user calls the {\ttfamily mute\+Local\+Audio\+Stream} method, the S\+DK stops triggering the local user\textquotesingle{}s callback.
+\item 20 seconds after a remote speaker calls the {\ttfamily mute\+Local\+Audio\+Stream} method, the remote speakers\textquotesingle{} callback does not include information of this remote user; 20 seconds after all remote users call the {\ttfamily mute\+Local\+Audio\+Stream} method, the S\+DK stops triggering the remote speakers\textquotesingle{} callback.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em speakers} & An array containing the user ID and volume information for each speaker\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_volume_info}{Audio\+Volume\+Info}}.
+\begin{DoxyItemize}
+\item In the local user\textquotesingle{}s callback, this array contains the following members\+:
+\begin{DoxyItemize}
+\item {\ttfamily uid} = 0,
+\item {\ttfamily volume} = {\ttfamily total\+Volume}, which reports the sum of the voice volume and audio-\/mixing volume of the local user.
+\end{DoxyItemize}
+\item In the remote users\textquotesingle{} callback, this array contains the following members\+:
+\begin{DoxyItemize}
+\item {\ttfamily uid} of each remote speaker.
+\item {\ttfamily volume}, which reports the sum of the voice volume and audio-\/mixing volume of each remote speaker.
+\end{DoxyItemize}
+
+An empty {\ttfamily speakers} array in the callback indicates that no remote user is speaking at the moment. 
+\end{DoxyItemize}\\
+\hline
+{\em speaker\+Number} & The total number of speakers. The value range is \mbox{[}0, 3\mbox{]}.
+\begin{DoxyItemize}
+\item In the local user\textquotesingle{}s callback, {\ttfamily speaker\+Number} = `, regardless of whether the local user speaks or not.
+\item In the remote speakers' callback, the callback reports the I\+Ds and volumes of the three loudest speakers when there are more than three remote users in the channel, and {\ttfamily speaker\+Number} = 3. 
+\end{DoxyItemize}\\
+\hline
+{\em total\+Volume} & The total volume after audio mixing. The value ranges between 0 (the lowest volume) and 255 (the highest volume).
+\begin{DoxyItemize}
+\item In the local user\textquotesingle{}s callback, {\ttfamily total\+Volume} is the sum of the voice volume and audio-\/mixing volume of the local user.
+\item In the remote users\textquotesingle{} callback, {\ttfamily total\+Volume} is the sum of the voice volume and audio-\/mixing volume of all the remote speakers. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a98f832d175dfc044b31f0ec5874460fb}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a98f832d175dfc044b31f0ec5874460fb}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onLeaveChannel@{onLeaveChannel}}
+\index{onLeaveChannel@{onLeaveChannel}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLeaveChannel()}{onLeaveChannel()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Leave\+Channel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_stats}{Rtc\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user successfully leaves the channel.
+
+When the user successfully leaves the channel after calling \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a51c12d209373650638bfd82e28777081}{leave\+Channel}}, the S\+DK uses this callback to notify the app that the user has left the channel.
+
+This callback also reports information such as the call duration and the statistics of data received or transmitted by the S\+DK.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & The statistics on the call\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_stats}{Rtc\+Stats}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ada38743982296a75879018c5773f08a1}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ada38743982296a75879018c5773f08a1}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onRtcStats@{onRtcStats}}
+\index{onRtcStats@{onRtcStats}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRtcStats()}{onRtcStats()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Rtc\+Stats (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_stats}{Rtc\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the statistics of the current call.
+
+This callback is triggered once every two seconds after the user joins the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & The statistics of the current call\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_stats}{Rtc\+Stats}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad2c6869aad679efab62b1cbeb276f964}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad2c6869aad679efab62b1cbeb276f964}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onAudioDeviceStateChanged@{onAudioDeviceStateChanged}}
+\index{onAudioDeviceStateChanged@{onAudioDeviceStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioDeviceStateChanged()}{onAudioDeviceStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Device\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{device\+Id,  }\item[{int}]{device\+Type,  }\item[{int}]{device\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the audio device state changes.
+
+This callback notifies the application that the system\textquotesingle{}s audio device state is changed. For example, a headset is unplugged from the device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & Pointer to the device ID. \\
+\hline
+{\em device\+Type} & Device type\+: \#\+M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em device\+State} & Device state\+: \#\+M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2423a5f76054fdbf35985f3357b0fda2}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2423a5f76054fdbf35985f3357b0fda2}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onAudioMixingPositionChanged@{onAudioMixingPositionChanged}}
+\index{onAudioMixingPositionChanged@{onAudioMixingPositionChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioMixingPositionChanged()}{onAudioMixingPositionChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Mixing\+Position\+Changed (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reports current Audio\+Mixing progress. 
+
+The callback occurs once every one second during the playback and reports the current playback progress. 
+\begin{DoxyParams}{Parameters}
+{\em position} & Current Audio\+Mixing progress (millisecond). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a844b1585ecc0c86471d7dd5a462eaaf3}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a844b1585ecc0c86471d7dd5a462eaaf3}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onAudioMixingFinished@{onAudioMixingFinished}}
+\index{onAudioMixingFinished@{onAudioMixingFinished}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioMixingFinished()}{onAudioMixingFinished()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Mixing\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the audio mixing file playback finishes. \begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000008}{Deprecated}}]This method is deprecated, use on\+Audio\+Mixing\+State\+Changed instead.\end{DoxyRefDesc}
+
+
+You can start an audio mixing file playback by calling the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a8739ebb08c6d97c1ee708889ef834d5f}{start\+Audio\+Mixing}} method. The S\+DK triggers this callback when the audio mixing file playback finishes. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9a7c5dbb1b7452eed2dc32dbbe8e2ce9}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9a7c5dbb1b7452eed2dc32dbbe8e2ce9}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onVideoDeviceStateChanged@{onVideoDeviceStateChanged}}
+\index{onVideoDeviceStateChanged@{onVideoDeviceStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onVideoDeviceStateChanged()}{onVideoDeviceStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Video\+Device\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{device\+Id,  }\item[{int}]{device\+Type,  }\item[{int}]{device\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the video device state changes.
+
+This callback notifies the application that the system\textquotesingle{}s video device state is changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & Pointer to the device ID. \\
+\hline
+{\em device\+Type} & Device type\+: \#\+M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em device\+State} & Device state\+: \#\+M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_adcd2acf9d79dd74499a8f40a64846f38}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_adcd2acf9d79dd74499a8f40a64846f38}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onMediaDeviceChanged@{onMediaDeviceChanged}}
+\index{onMediaDeviceChanged@{onMediaDeviceChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onMediaDeviceChanged()}{onMediaDeviceChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Media\+Device\+Changed (\begin{DoxyParamCaption}\item[{int}]{device\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the device changes.
+
+This callback notifies the application that the system\textquotesingle{}s video device state is changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Type} & Device type\+: \#\+M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a80003ae8cce02039f3aa0e8ffad7deed}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a80003ae8cce02039f3aa0e8ffad7deed}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onNetworkQuality@{onNetworkQuality}}
+\index{onNetworkQuality@{onNetworkQuality}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onNetworkQuality()}{onNetworkQuality()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Network\+Quality (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{int}]{tx\+Quality,  }\item[{int}]{rx\+Quality }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the network quality of each user.
+
+This callback is triggered once every two seconds after the user joins the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & The user ID. If {\ttfamily uid} is 0, the S\+DK reports the local network quality. \\
+\hline
+{\em tx\+Quality} & The transmission quality of the user\+: \#\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em rx\+Quality} & The receiving quality of the user\+: \#\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2747779b0e8f7eb644069d134affd433}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2747779b0e8f7eb644069d134affd433}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onIntraRequestReceived@{onIntraRequestReceived}}
+\index{onIntraRequestReceived@{onIntraRequestReceived}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onIntraRequestReceived()}{onIntraRequestReceived()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Intra\+Request\+Received (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when intra request from remote user is received.
+
+This callback is triggered once remote user needs one Key frame. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aa229c7b7832a13901683705e5371c40a}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aa229c7b7832a13901683705e5371c40a}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onUplinkNetworkInfoUpdated@{onUplinkNetworkInfoUpdated}}
+\index{onUplinkNetworkInfoUpdated@{onUplinkNetworkInfoUpdated}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUplinkNetworkInfoUpdated()}{onUplinkNetworkInfoUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Uplink\+Network\+Info\+Updated (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_uplink_network_info}{Uplink\+Network\+Info}} \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when uplink network info is updated.
+
+This callback is used for notifying user to adjust the send pace based on the target bitrate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & The uplink network info collections. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a85c27ea644f3202014b415b32580fc90}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a85c27ea644f3202014b415b32580fc90}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onDownlinkNetworkInfoUpdated@{onDownlinkNetworkInfoUpdated}}
+\index{onDownlinkNetworkInfoUpdated@{onDownlinkNetworkInfoUpdated}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onDownlinkNetworkInfoUpdated()}{onDownlinkNetworkInfoUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Downlink\+Network\+Info\+Updated (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_downlink_network_info}{Downlink\+Network\+Info}} \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when downlink network info is updated.
+
+This callback is used for notifying user to switch major/minor stream if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & The downlink network info collections. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac7e14d1a26eb35ef236a0662d28d2b33}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac7e14d1a26eb35ef236a0662d28d2b33}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onLastmileQuality@{onLastmileQuality}}
+\index{onLastmileQuality@{onLastmileQuality}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLastmileQuality()}{onLastmileQuality()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Lastmile\+Quality (\begin{DoxyParamCaption}\item[{int}]{quality }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the last-\/mile network quality of the local user.
+
+This callback is triggered once after \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_adb3ab7a20afca02f5a5ab6fafe026f2b}{start\+Lastmile\+Probe\+Test}} is called.
+
+When the user is not in a channel and the last-\/mile network test is enabled (by calling {\ttfamily start\+Lastmile\+Probe\+Test}), this callback function is triggered to update the app on the network connection quality of the local user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quality} & The network quality\+: \#\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a15cb3afe45c869c129451c54b4383619}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a15cb3afe45c869c129451c54b4383619}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onFirstLocalVideoFrame@{onFirstLocalVideoFrame}}
+\index{onFirstLocalVideoFrame@{onFirstLocalVideoFrame}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onFirstLocalVideoFrame()}{onFirstLocalVideoFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+First\+Local\+Video\+Frame (\begin{DoxyParamCaption}\item[{V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE}]{source,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the first local video frame is rendered on the local video view.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width (px) of the first local video frame. \\
+\hline
+{\em height} & Height (px) of the first local video frame. \\
+\hline
+{\em elapsed} & Time elapsed (ms) from the local user calling the {\ttfamily join\+Channel} method until the S\+DK triggers this callback. If you call the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_aabd5f0d670a6cd26badc316083519512}{start\+Preview}} method before calling the {\ttfamily join\+Channel} method, then {\ttfamily elapsed} is the time elapsed from calling the {\ttfamily start\+Preview} method until the S\+DK triggers this callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a734c39289a40a97bc3dcd7df9413034a}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a734c39289a40a97bc3dcd7df9413034a}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onFirstLocalVideoFramePublished@{onFirstLocalVideoFramePublished}}
+\index{onFirstLocalVideoFramePublished@{onFirstLocalVideoFramePublished}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onFirstLocalVideoFramePublished()}{onFirstLocalVideoFramePublished()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+First\+Local\+Video\+Frame\+Published (\begin{DoxyParamCaption}\item[{V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE}]{source,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the first local video frame is published. 
+\begin{DoxyParams}{Parameters}
+{\em source} & source type of the originated video source. \\
+\hline
+{\em elapsed} & The time elapsed (ms) from the local user calling \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_adc937172e59bd2695ea171553a88188c}{join\+Channel}} to the S\+DK triggers this callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad8083c52d15135762a31c48192ad64f2}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad8083c52d15135762a31c48192ad64f2}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onFirstRemoteVideoDecoded@{onFirstRemoteVideoDecoded}}
+\index{onFirstRemoteVideoDecoded@{onFirstRemoteVideoDecoded}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onFirstRemoteVideoDecoded()}{onFirstRemoteVideoDecoded()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+First\+Remote\+Video\+Decoded (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the first remote video frame is received and decoded.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000009}{Deprecated}}]This callback is deprecated since v3.\+1.\+200. Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae69799238c6a6cd9f017274dd630b74e}{on\+Remote\+Video\+State\+Changed}} instead.\end{DoxyRefDesc}
+
+
+This callback is triggered upon the S\+DK receiving and successfully decoding the first video frame from a remote video. The app can configure the user view settings in this callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & ID of the user whose video streams are received. \\
+\hline
+{\em width} & The width (pixels) of the video stream. \\
+\hline
+{\em height} & The height (pixels) of the video stream. \\
+\hline
+{\em elapsed} & The time elapsed (ms) from the local user calling {\ttfamily join\+Channel} until this callback is triggered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a3ef9bc5dd7c16c92ed1707cca4594bfb}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a3ef9bc5dd7c16c92ed1707cca4594bfb}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onVideoSizeChanged@{onVideoSizeChanged}}
+\index{onVideoSizeChanged@{onVideoSizeChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onVideoSizeChanged()}{onVideoSizeChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Video\+Size\+Changed (\begin{DoxyParamCaption}\item[{V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE}]{source\+Type,  }\item[{uid\+\_\+t}]{uid,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local or remote video size or rotation has changed. 
+\begin{DoxyParams}{Parameters}
+{\em source\+Type} & The video source type. \\
+\hline
+{\em uid} & The user ID. 0 indicates the local user. \\
+\hline
+{\em width} & The new width (pixels) of the video. \\
+\hline
+{\em height} & The new height (pixels) of the video. \\
+\hline
+{\em rotation} & The rotation information of the video. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a97094758e1540a527c13f366e1c81dbf}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a97094758e1540a527c13f366e1c81dbf}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onLocalVideoStateChanged@{onLocalVideoStateChanged}}
+\index{onLocalVideoStateChanged@{onLocalVideoStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLocalVideoStateChanged()}{onLocalVideoStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Local\+Video\+State\+Changed (\begin{DoxyParamCaption}\item[{V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE}]{source,  }\item[{L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE}]{state,  }\item[{L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+OR}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local video stream state changes
+
+This callback indicates the state of the local video stream, including camera capturing and video encoding, and allows you to troubleshoot issues when exceptions occur.
+
+\begin{DoxyNote}{Note}
+For some device models, the S\+DK will not trigger this callback when the state of the local video changes while the local video capturing device is in use, so you have to make your own timeout judgment.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & source type of the orignated video source. \\
+\hline
+{\em state} & State type \#\+L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE. When the state is L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED (3), see the {\ttfamily error} parameter for details. \\
+\hline
+{\em error} & The detailed error information\+: \#\+L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+OR. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae69799238c6a6cd9f017274dd630b74e}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae69799238c6a6cd9f017274dd630b74e}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onRemoteVideoStateChanged@{onRemoteVideoStateChanged}}
+\index{onRemoteVideoStateChanged@{onRemoteVideoStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRemoteVideoStateChanged()}{onRemoteVideoStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Remote\+Video\+State\+Changed (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+TE}]{state,  }\item[{R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+ON}]{reason,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the remote video state has changed.
+
+\begin{DoxyNote}{Note}
+This callback does not work properly when the number of users (in the {\ttfamily C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+ON} profile) or hosts (in the {\ttfamily L\+I\+V\+E\+\_\+\+B\+R\+O\+A\+D\+C\+A\+S\+T\+I\+NG} profile) in the channel exceeds 17.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & ID of the user whose video state has changed. \\
+\hline
+{\em state} & The remote video state\+: \#\+R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em reason} & The reason of the remote video state change\+: \#\+R\+E\+M\+O\+T\+E\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+ON. \\
+\hline
+{\em elapsed} & The time elapsed (ms) from the local client calling {\ttfamily join\+Channel} until this callback is triggered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a1f9e708b49ecca35a88d0b656c8a3d68}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a1f9e708b49ecca35a88d0b656c8a3d68}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onFirstRemoteVideoFrame@{onFirstRemoteVideoFrame}}
+\index{onFirstRemoteVideoFrame@{onFirstRemoteVideoFrame}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onFirstRemoteVideoFrame()}{onFirstRemoteVideoFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+First\+Remote\+Video\+Frame (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{user\+Id,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the first remote video frame is rendered.
+
+The S\+DK triggers this callback when the first frame of the remote video is rendered in the user\textquotesingle{}s video window.
+
+The application can retrieve the time elapsed from a user joining the channel until the first video frame is rendered.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID of the remote user sending the video stream. \\
+\hline
+{\em width} & Width (px) of the video frame. \\
+\hline
+{\em height} & Height (px) of the video stream. \\
+\hline
+{\em elapsed} & Time elapsed (ms) from the local user calling the {\ttfamily join\+Channel} method until the S\+DK triggers this callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a985a675469baf9d54feb8781732e0ca8}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a985a675469baf9d54feb8781732e0ca8}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onUserJoined@{onUserJoined}}
+\index{onUserJoined@{onUserJoined}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUserJoined()}{onUserJoined()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+User\+Joined (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when a remote user or broadcaster joins the channel.
+
+If other users are already in the channel, the S\+DK also reports to the app on the existing users.
+
+The S\+DK triggers this callback under one of the following circumstances\+:
+\begin{DoxyItemize}
+\item A broadcaster joins the channel by calling {\ttfamily join\+Channel}.
+\item A remote user switches the user role to broadcaster by calling \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a89ca6a15d5a388f3c82038e74bad4040}{set\+Client\+Role}} after joining the channel.
+\item A remote user or broadcaster rejoins the channel after a network interruption.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+When a Web app joins the channel, this callback is triggered as long as the app publishes a stream.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & ID of the remote user or broadcaster joining the channel. \\
+\hline
+{\em elapsed} & The time elapsed (ms) from the local user calling {\ttfamily join\+Channel} or {\ttfamily set\+Client\+Role} until this callback is triggered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9602593c05a16eafa7c094aa330c0719}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9602593c05a16eafa7c094aa330c0719}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onUserOffline@{onUserOffline}}
+\index{onUserOffline@{onUserOffline}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUserOffline()}{onUserOffline()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+User\+Offline (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{U\+S\+E\+R\+\_\+\+O\+F\+F\+L\+I\+N\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when a remote user or broadcaster goes offline.
+
+There are two reasons for a user to go offline\+:
+\begin{DoxyItemize}
+\item Leave the channel\+: When the user leaves the channel, the user sends a goodbye message. When this message is received, the S\+DK determines that the user leaves the channel.
+\item Drop offline\+: When no data packet of the user is received for a certain period of time, the S\+DK assumes that the user drops offline. A poor network connection may lead to false detection, so we recommend using the R\+TM S\+DK for reliable offline detection.
+\item The user switches the user role from a broadcaster to an audience.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & ID of the remote user or broadcaster who leaves the channel or drops offline. \\
+\hline
+{\em reason} & The reason why the remote user goes offline\+: \#\+U\+S\+E\+R\+\_\+\+O\+F\+F\+L\+I\+N\+E\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a00433467903bd28b77631179a89a5bc6}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a00433467903bd28b77631179a89a5bc6}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onUserMuteAudio@{onUserMuteAudio}}
+\index{onUserMuteAudio@{onUserMuteAudio}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUserMuteAudio()}{onUserMuteAudio()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+User\+Mute\+Audio (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{bool}]{muted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when a remote user\textquotesingle{}s audio stream playback pauses/resumes.
+
+The S\+DK triggers this callback when the remote user stops or resumes sending the audio stream by calling the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a08a34d5b85a225390a18467c92a7b6f9}{mute\+Local\+Audio\+Stream}} method.
+
+\begin{DoxyNote}{Note}
+This callback does not work properly when the number of users (in the {\ttfamily C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+ON} profile) or hosts (in the {\ttfamily L\+I\+V\+E\+\_\+\+B\+R\+O\+A\+D\+C\+A\+S\+T\+I\+NG} profile) in the channel exceeds 17.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & User ID of the remote user. \\
+\hline
+{\em muted} & Whether the remote user\textquotesingle{}s audio stream is muted/unmuted\+:
+\begin{DoxyItemize}
+\item true\+: Muted.
+\item false\+: Unmuted. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a42dc566926966cc7b922d10b81bfd48e}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a42dc566926966cc7b922d10b81bfd48e}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onUserMuteVideo@{onUserMuteVideo}}
+\index{onUserMuteVideo@{onUserMuteVideo}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUserMuteVideo()}{onUserMuteVideo()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+User\+Mute\+Video (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{user\+Id,  }\item[{bool}]{muted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when a remote user pauses or resumes sending the video stream.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000010}{Deprecated}}]This callback is deprecated since v3.\+1.\+200. Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae69799238c6a6cd9f017274dd630b74e}{on\+Remote\+Video\+State\+Changed}} instead.\end{DoxyRefDesc}
+
+
+\begin{DoxyNote}{Note}
+This callback is invalid when the number of users or broadacasters in a channel exceeds 20.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID of the remote user. \\
+\hline
+{\em muted} & bool
+\begin{DoxyItemize}
+\item True\+: The remote user has paused sending the video stream.
+\item False\+: The remote user has resumed sending the video stream. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a5e16c8ea4e8321e82eeec1413b880c0e}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a5e16c8ea4e8321e82eeec1413b880c0e}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onUserEnableVideo@{onUserEnableVideo}}
+\index{onUserEnableVideo@{onUserEnableVideo}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUserEnableVideo()}{onUserEnableVideo()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+User\+Enable\+Video (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when a remote user enables or disables the video module.
+
+Once the video function is disabled, the users cannot see any video.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000011}{Deprecated}}]This callback is deprecated since v3.\+1.\+200. Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae69799238c6a6cd9f017274dd630b74e}{on\+Remote\+Video\+State\+Changed}} instead.\end{DoxyRefDesc}
+
+
+\begin{DoxyNote}{Note}
+This callback is invalid when the number of users or broadcasters in a channel exceeds 20.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & ID of the remote user. \\
+\hline
+{\em enabled} & bool
+\begin{DoxyItemize}
+\item True\+: The remote user has enabled the video module.
+\item False\+: The remote user has disabled the video module. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a4183cd7a8e496d940a2b521b888356fb}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a4183cd7a8e496d940a2b521b888356fb}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onUserStateChanged@{onUserStateChanged}}
+\index{onUserStateChanged@{onUserStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUserStateChanged()}{onUserStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+User\+State\+Changed (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{uint32\+\_\+t}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the remote user state is updated. 
+\begin{DoxyParams}{Parameters}
+{\em uid} & The uid of the remote user. \\
+\hline
+{\em state} & The remote user state. Just \& \#\+R\+E\+M\+O\+T\+E\+\_\+\+U\+S\+E\+R\+\_\+\+S\+T\+A\+TE \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a199de5107bfc84c056998e2e45bba772}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a199de5107bfc84c056998e2e45bba772}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onUserEnableLocalVideo@{onUserEnableLocalVideo}}
+\index{onUserEnableLocalVideo@{onUserEnableLocalVideo}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUserEnableLocalVideo()}{onUserEnableLocalVideo()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+User\+Enable\+Local\+Video (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when a remote user enables or disables the local video function.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000012}{Deprecated}}]This callback is deprecated since v3.\+1.\+200. Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae69799238c6a6cd9f017274dd630b74e}{on\+Remote\+Video\+State\+Changed}} instead.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & ID of the remote user. \\
+\hline
+{\em enabled} & bool
+\begin{DoxyItemize}
+\item True\+: The remote user has enabled the local video function.
+\item False\+: The remote user has disabled the local video function. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7152a4ec975c9bebcd720741072c26d2}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7152a4ec975c9bebcd720741072c26d2}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onApiCallExecuted@{onApiCallExecuted}}
+\index{onApiCallExecuted@{onApiCallExecuted}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onApiCallExecuted()}{onApiCallExecuted()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Api\+Call\+Executed (\begin{DoxyParamCaption}\item[{int}]{err,  }\item[{const char $\ast$}]{api,  }\item[{const char $\ast$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when an A\+PI method is executed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & The A\+PI method that the S\+DK executes. \\
+\hline
+{\em err} & The error code that the S\+DK returns when the method call fails. \\
+\hline
+{\em result} & The result of the method call. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0cb47df6a8ef7acee229eb307d6f32c3}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0cb47df6a8ef7acee229eb307d6f32c3}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onLocalAudioStats@{onLocalAudioStats}}
+\index{onLocalAudioStats@{onLocalAudioStats}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLocalAudioStats()}{onLocalAudioStats()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Local\+Audio\+Stats (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_local_audio_stats}{Local\+Audio\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the statistics of the local audio stream.
+
+The S\+DK triggers this callback once every two seconds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & The statistics of the local audio stream. See \mbox{\hyperlink{structagora_1_1rtc_1_1_local_audio_stats}{Local\+Audio\+Stats}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af8a59626a9265264fb4638e048091d3a}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af8a59626a9265264fb4638e048091d3a}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onRemoteAudioStats@{onRemoteAudioStats}}
+\index{onRemoteAudioStats@{onRemoteAudioStats}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRemoteAudioStats()}{onRemoteAudioStats()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Remote\+Audio\+Stats (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_audio_stats}{Remote\+Audio\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the statistics of the audio stream from each remote user/host.
+
+This callback replaces the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a36ad42975f3545382de07875016fb7fa}{on\+Audio\+Quality}} callback.
+
+The S\+DK triggers this callback once every two seconds for each remote user/host. If a channel includes multiple remote users, the S\+DK triggers this callback as many times.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & Statistics of the received remote audio streams. See \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_audio_stats}{Remote\+Audio\+Stats}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a3476915aca1141cb7821dba9da41af2b}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a3476915aca1141cb7821dba9da41af2b}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onLocalVideoStats@{onLocalVideoStats}}
+\index{onLocalVideoStats@{onLocalVideoStats}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLocalVideoStats()}{onLocalVideoStats()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Local\+Video\+Stats (\begin{DoxyParamCaption}\item[{V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE}]{source,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_local_video_stats}{Local\+Video\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the statistics of the local video stream.
+
+The S\+DK triggers this callback once every two seconds for each user/host. If there are multiple users/hosts in the channel, the S\+DK triggers this callback as many times.
+
+\begin{DoxyNote}{Note}
+If you have called the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a72846f5bf13726e7a61497e2fef65972}{enable\+Dual\+Stream\+Mode}} method, this callback reports the statistics of the high-\/video stream (high bitrate, and high-\/resolution video stream).
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & source type of the originated video source \\
+\hline
+{\em stats} & Statistics of the local video stream. See \mbox{\hyperlink{structagora_1_1rtc_1_1_local_video_stats}{Local\+Video\+Stats}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7163ffb650852be270ba0215b596d968}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7163ffb650852be270ba0215b596d968}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onRemoteVideoStats@{onRemoteVideoStats}}
+\index{onRemoteVideoStats@{onRemoteVideoStats}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRemoteVideoStats()}{onRemoteVideoStats()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Remote\+Video\+Stats (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats}{Remote\+Video\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the statistics of the video stream from each remote user/host.
+
+The S\+DK triggers this callback once every two seconds for each remote user/host. If a channel includes multiple remote users, the S\+DK triggers this callback as many times.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stats} & Statistics of the remote video stream. See \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats}{Remote\+Video\+Stats}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae2e257d7bbf120b970b600b9b3731a07}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae2e257d7bbf120b970b600b9b3731a07}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onAudioMixingStateChanged@{onAudioMixingStateChanged}}
+\index{onAudioMixingStateChanged@{onAudioMixingStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioMixingStateChanged()}{onAudioMixingStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Mixing\+State\+Changed (\begin{DoxyParamCaption}\item[{A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}]{state,  }\item[{A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the state of the local user\textquotesingle{}s audio mixing file changes. When you call the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a8739ebb08c6d97c1ee708889ef834d5f}{start\+Audio\+Mixing}} method and the state of audio mixing file changes, the S\+DK triggers this callback.
+
+
+\begin{DoxyItemize}
+\item When the audio mixing file plays, pauses playing, or stops playing, this callback returns 710, 711, or 713 in {\ttfamily state}, and 0 in {\ttfamily error\+Code}.
+\item When exceptions occur during playback, this callback returns 714 in {\ttfamily state} and an error in {\ttfamily error\+Code}.
+\item If the local audio mixing file does not exist, or if the S\+DK does not support the file format or cannot access the music file U\+RL, the S\+DK returns \#\+W\+A\+R\+N\+\_\+\+A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+O\+P\+E\+N\+\_\+\+E\+R\+R\+OR (701).
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The state code. See \#\+A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em reason} & The reason for the change of the music file playback state. See \#\+A\+U\+D\+I\+O\+\_\+\+M\+I\+X\+I\+N\+G\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_acb7ae5a6ad1b2a8660655f227458ab6a}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_acb7ae5a6ad1b2a8660655f227458ab6a}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onRhythmPlayerStateChanged@{onRhythmPlayerStateChanged}}
+\index{onRhythmPlayerStateChanged@{onRhythmPlayerStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRhythmPlayerStateChanged()}{onRhythmPlayerStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Rhythm\+Player\+State\+Changed (\begin{DoxyParamCaption}\item[{R\+H\+Y\+T\+H\+M\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}]{state,  }\item[{R\+H\+Y\+T\+H\+M\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE}]{error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the state of the rhythm player changes. When you call the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a2899990fedbf999432466b3f8ddaea1f}{start\+Rhythm\+Player}} method and the state of rhythm player changes, the S\+DK triggers this callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The state code. See \#\+R\+H\+Y\+T\+H\+M\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em error\+Code} & The error code. See \#\+R\+H\+Y\+T\+H\+M\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ab5c110382a2ef7eb92cd069c22884727}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ab5c110382a2ef7eb92cd069c22884727}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onConnectionLost@{onConnectionLost}}
+\index{onConnectionLost@{onConnectionLost}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onConnectionLost()}{onConnectionLost()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Connection\+Lost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the S\+DK cannot reconnect to the server 10 seconds after its connection to the server is interrupted.
+
+The S\+DK triggers this callback when it cannot connect to the server 10 seconds after calling {\ttfamily join\+Channel}, regardless of whether it is in the channel or not. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9927b5cd2a67c1f48f17b5ed2303f483}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9927b5cd2a67c1f48f17b5ed2303f483}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onConnectionInterrupted@{onConnectionInterrupted}}
+\index{onConnectionInterrupted@{onConnectionInterrupted}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onConnectionInterrupted()}{onConnectionInterrupted()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Connection\+Interrupted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the connection between the S\+DK and the server is interrupted.
+
+The S\+DK triggers this callback when it loses connection with the serer for more than 4 seconds after the connection is established. After triggering this callback, the S\+DK tries to reconnect to the server. If the reconnection fails within a certain period (10 seconds by default), the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ab5c110382a2ef7eb92cd069c22884727}{on\+Connection\+Lost()}} callback is triggered.
+
+Once the connection is lost, the S\+DK continues to reconnect until the app calls \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a51c12d209373650638bfd82e28777081}{leave\+Channel}}. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a38e9d403ae4732dff71110b454149404}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a38e9d403ae4732dff71110b454149404}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onConnectionBanned@{onConnectionBanned}}
+\index{onConnectionBanned@{onConnectionBanned}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onConnectionBanned()}{onConnectionBanned()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Connection\+Banned (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when your connection is banned by the Agora Server. \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a21a21169a2bdb13607774bcc11c57b12}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a21a21169a2bdb13607774bcc11c57b12}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onStreamMessage@{onStreamMessage}}
+\index{onStreamMessage@{onStreamMessage}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onStreamMessage()}{onStreamMessage()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Stream\+Message (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{user\+Id,  }\item[{int}]{stream\+Id,  }\item[{const char $\ast$}]{data,  }\item[{size\+\_\+t}]{length,  }\item[{uint64\+\_\+t}]{sent\+Ts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the user receives the data stream.
+
+The S\+DK triggers this callback when the user receives the data stream that another user sends by calling the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a7006214f7ca3c08d83cc0a4ebcb9febc}{send\+Stream\+Message}} method within 5 seconds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID of the user who sends the data stream. \\
+\hline
+{\em stream\+Id} & The ID of the stream data. \\
+\hline
+{\em data} & The data stream. \\
+\hline
+{\em length} & The length (byte) of the data stream. \\
+\hline
+{\em sent\+Ts} & The time of the data stream sent. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aabaee632f4e457fd2e8b3a7580406d76}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aabaee632f4e457fd2e8b3a7580406d76}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onStreamMessageError@{onStreamMessageError}}
+\index{onStreamMessageError@{onStreamMessageError}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onStreamMessageError()}{onStreamMessageError()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Stream\+Message\+Error (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{user\+Id,  }\item[{int}]{stream\+Id,  }\item[{int}]{code,  }\item[{int}]{missed,  }\item[{int}]{cached }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the user fails to receive the data stream.
+
+The S\+DK triggers this callback when the user does not receive the data stream that another user sends by calling the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a7006214f7ca3c08d83cc0a4ebcb9febc}{send\+Stream\+Message}} method within 5 seconds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID of the user who sends the data stream. \\
+\hline
+{\em stream\+Id} & The ID of the stream data. \\
+\hline
+{\em code} & The error code\+: \#\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em missed} & The number of lost messages. \\
+\hline
+{\em cached} & The number of incoming cached messages when the data stream is interrupted. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aa7b456b750f56ca8fdfee8611572310e}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aa7b456b750f56ca8fdfee8611572310e}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onRequestToken@{onRequestToken}}
+\index{onRequestToken@{onRequestToken}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRequestToken()}{onRequestToken()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Request\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the token has expired.
+
+If a token is specified when calling the {\ttfamily join\+Channel} method, the token expires after a certain period of time and you need a new token to reconnect to the server.
+
+Upon receiving this callback, generate a new token at your app server and call \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a8f25b5ff97e2a070a69102e379295739}{renew\+Token}} to pass the new token to the S\+DK.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://docs.agora.io/en/Interactive\%20Broadcast/token_server_cpp?platform=CPP}{\texttt{ How to generate a token}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac401db99e49d5f240f553087cb90571d}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac401db99e49d5f240f553087cb90571d}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onTokenPrivilegeWillExpire@{onTokenPrivilegeWillExpire}}
+\index{onTokenPrivilegeWillExpire@{onTokenPrivilegeWillExpire}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onTokenPrivilegeWillExpire()}{onTokenPrivilegeWillExpire()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Token\+Privilege\+Will\+Expire (\begin{DoxyParamCaption}\item[{const char $\ast$}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the token will expire in 30 seconds.
+
+If the token you specified when calling {\ttfamily join\+Channel} expires, the user will drop offline. This callback is triggered 30 seconds before the token expires, to remind you to renew the token.
+
+Upon receiving this callback, generate a new token at your app server and call \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a8f25b5ff97e2a070a69102e379295739}{renew\+Token}} to pass the new Token to the S\+DK.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://docs.agora.io/en/Interactive\%20Broadcast/token_server_cpp?platform=CPP}{\texttt{ How to generate a token}}.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The token that will expire in 30 seconds. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a03058e62a0a4a41e80ecf0279975ab99}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a03058e62a0a4a41e80ecf0279975ab99}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onFirstLocalAudioFramePublished@{onFirstLocalAudioFramePublished}}
+\index{onFirstLocalAudioFramePublished@{onFirstLocalAudioFramePublished}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onFirstLocalAudioFramePublished()}{onFirstLocalAudioFramePublished()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+First\+Local\+Audio\+Frame\+Published (\begin{DoxyParamCaption}\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the first local audio frame is published.
+
+
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & The time elapsed (ms) from the local user calling {\ttfamily join\+Channel} to the S\+DK triggers this callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a01e0410967b025adc803d1ba0eb8ef97}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a01e0410967b025adc803d1ba0eb8ef97}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onFirstRemoteAudioFrame@{onFirstRemoteAudioFrame}}
+\index{onFirstRemoteAudioFrame@{onFirstRemoteAudioFrame}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onFirstRemoteAudioFrame()}{onFirstRemoteAudioFrame()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+First\+Remote\+Audio\+Frame (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the first remote audio frame is received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & ID of the remote user. \\
+\hline
+{\em elapsed} & The time elapsed (ms) from the loca user calling \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_adc937172e59bd2695ea171553a88188c}{join\+Channel()}} until this callback is triggered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7d375e7467bd099ad2d4c9cfc0a6c242}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7d375e7467bd099ad2d4c9cfc0a6c242}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onFirstRemoteAudioDecoded@{onFirstRemoteAudioDecoded}}
+\index{onFirstRemoteAudioDecoded@{onFirstRemoteAudioDecoded}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onFirstRemoteAudioDecoded()}{onFirstRemoteAudioDecoded()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+First\+Remote\+Audio\+Decoded (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the S\+DK decodes the first remote audio frame for playback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & User ID of the remote user sending the audio stream. \\
+\hline
+{\em elapsed} & The time elapsed (ms) from the loca user calling \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_adc937172e59bd2695ea171553a88188c}{join\+Channel()}} until this callback is triggered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9296c329331eb83b3af1315c52e7f91a}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a9296c329331eb83b3af1315c52e7f91a}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onLocalAudioStateChanged@{onLocalAudioStateChanged}}
+\index{onLocalAudioStateChanged@{onLocalAudioStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLocalAudioStateChanged()}{onLocalAudioStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Local\+Audio\+State\+Changed (\begin{DoxyParamCaption}\item[{L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE}]{state,  }\item[{L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+OR}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local audio state changes.
+
+This callback indicates the state change of the local audio stream, including the state of the audio recording and encoding, and allows you to troubleshoot issues when exceptions occur.
+
+\begin{DoxyNote}{Note}
+When the state is \#\+L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED (3), see the {\ttfamily error} parameter for details.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em state} & State of the local audio. See \#\+L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em error} & The error information of the local audio. See \#\+L\+O\+C\+A\+L\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+OR. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aa168380f86f1dc2df1c269a785c56612}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aa168380f86f1dc2df1c269a785c56612}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onRemoteAudioStateChanged@{onRemoteAudioStateChanged}}
+\index{onRemoteAudioStateChanged@{onRemoteAudioStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRemoteAudioStateChanged()}{onRemoteAudioStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Remote\+Audio\+State\+Changed (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+TE}]{state,  }\item[{R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+ON}]{reason,  }\item[{int}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the remote audio state changes.
+
+This callback indicates the state change of the remote audio stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & ID of the remote user whose audio state changes. \\
+\hline
+{\em state} & State of the remote audio. See \#\+R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em reason} & The reason of the remote audio state change. See \#\+R\+E\+M\+O\+T\+E\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+A\+S\+ON. \\
+\hline
+{\em elapsed} & Time elapsed (ms) from the local user calling the {\ttfamily join\+Channel} method until the S\+DK triggers this callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0645729cf136ecef439f17fe7e52a461}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0645729cf136ecef439f17fe7e52a461}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onActiveSpeaker@{onActiveSpeaker}}
+\index{onActiveSpeaker@{onActiveSpeaker}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onActiveSpeaker()}{onActiveSpeaker()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Active\+Speaker (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when an active speaker is detected.
+
+You can add relative functions on your app, for example, the active speaker, once detected, will have the portrait zoomed in.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item The active speaker means the user ID of the speaker who speaks at the highest volume during a certain period of time.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the active speaker. A {\ttfamily uid} of 0 means the local user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2479344eff97d9eecc19637008fa5092}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a2479344eff97d9eecc19637008fa5092}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onContentInspectResult@{onContentInspectResult}}
+\index{onContentInspectResult@{onContentInspectResult}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onContentInspectResult()}{onContentInspectResult()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Content\+Inspect\+Result (\begin{DoxyParamCaption}\item[{media\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+I\+N\+S\+P\+E\+C\+T\+\_\+\+R\+E\+S\+U\+LT}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports result of Content Inspect \mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a6b8144c5a1591e06d6d854f703e97648}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a6b8144c5a1591e06d6d854f703e97648}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onSnapshotTaken@{onSnapshotTaken}}
+\index{onSnapshotTaken@{onSnapshotTaken}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onSnapshotTaken()}{onSnapshotTaken()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Snapshot\+Taken (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{const char $\ast$}]{file\+Path,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{err\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+snapshot taken callback 
+
+Occurs when take\+Snapshot A\+PI result is obtained
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & channel name \\
+\hline
+{\em uid} & user id \\
+\hline
+{\em file\+Path} & image is saveed file path \\
+\hline
+{\em width} & image width \\
+\hline
+{\em height} & image height \\
+\hline
+{\em err\+Code} & 0 is ok negative is error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a36d3f45184cbb37ed2c4846654a14368}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a36d3f45184cbb37ed2c4846654a14368}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onClientRoleChanged@{onClientRoleChanged}}
+\index{onClientRoleChanged@{onClientRoleChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onClientRoleChanged()}{onClientRoleChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Client\+Role\+Changed (\begin{DoxyParamCaption}\item[{C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE}]{old\+Role,  }\item[{C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE}]{new\+Role }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the user role in a Live-\/\+Broadcast channel has switched, for example, from a broadcaster to an audience or vice versa.
+
+
+\begin{DoxyParams}{Parameters}
+{\em old\+Role} & The old role of the user\+: \#\+C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em new\+Role} & The new role of the user\+: \#\+C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7f7424742197df2e199981b7e0e50f4f}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a7f7424742197df2e199981b7e0e50f4f}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onClientRoleChangeFailed@{onClientRoleChangeFailed}}
+\index{onClientRoleChangeFailed@{onClientRoleChangeFailed}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onClientRoleChangeFailed()}{onClientRoleChangeFailed()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Client\+Role\+Change\+Failed (\begin{DoxyParamCaption}\item[{C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+R\+E\+A\+S\+ON}]{reason,  }\item[{C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE}]{current\+Role }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the user role in a Live-\/\+Broadcast channel has switched, for example, from a broadcaster to an audience or vice versa.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reason} & The reason of changing client role\textquotesingle{}s failure\+: \#\+C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+R\+E\+A\+S\+ON. \\
+\hline
+{\em current\+Role} & The current role of the user\+: \#\+C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0f99efc9aebf1242c2e8a49966ae21ae}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0f99efc9aebf1242c2e8a49966ae21ae}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onAudioDeviceVolumeChanged@{onAudioDeviceVolumeChanged}}
+\index{onAudioDeviceVolumeChanged@{onAudioDeviceVolumeChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioDeviceVolumeChanged()}{onAudioDeviceVolumeChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Device\+Volume\+Changed (\begin{DoxyParamCaption}\item[{M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}]{device\+Type,  }\item[{int}]{volume,  }\item[{bool}]{muted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the audio device volume changes. 
+\begin{DoxyParams}{Parameters}
+{\em device\+Type} & The device type, see \#\+M\+E\+D\+I\+A\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE \\
+\hline
+{\em volume} & The volume of the audio device. \\
+\hline
+{\em muted} & Whether the audio device is muted\+:
+\begin{DoxyItemize}
+\item true\+: The audio device is muted.
+\item false\+: The audio device is not muted. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af27a73d944f0c8f4d60d8e18ee937972}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af27a73d944f0c8f4d60d8e18ee937972}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onRtmpStreamingStateChanged@{onRtmpStreamingStateChanged}}
+\index{onRtmpStreamingStateChanged@{onRtmpStreamingStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRtmpStreamingStateChanged()}{onRtmpStreamingStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Rtmp\+Streaming\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url,  }\item[{R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE}]{state,  }\item[{R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE}]{err\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the state of the R\+T\+MP streaming changes.
+
+The S\+DK triggers this callback to report the result of the local user calling the add\+Publish\+Stream\+Url or remove\+Publish\+Stream\+Url method.
+
+This callback indicates the state of the R\+T\+MP streaming. When exceptions occur, you can troubleshoot issues by referring to the detailed error descriptions in the {\ttfamily err\+Code} parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The R\+T\+MP U\+RL address. \\
+\hline
+{\em state} & The R\+T\+MP streaming state. See\+: \#\+R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em err\+Code} & The detailed error information for streaming\+: \#\+R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aa2beb17562a3be9b5ddbe9366245cb0e}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aa2beb17562a3be9b5ddbe9366245cb0e}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onRtmpStreamingEvent@{onRtmpStreamingEvent}}
+\index{onRtmpStreamingEvent@{onRtmpStreamingEvent}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRtmpStreamingEvent()}{onRtmpStreamingEvent()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Rtmp\+Streaming\+Event (\begin{DoxyParamCaption}\item[{const char $\ast$}]{url,  }\item[{R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+E\+V\+E\+NT}]{event\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports events during the R\+T\+MP or R\+T\+M\+PS streaming.
+
+\begin{DoxySince}{Since}
+v3.\+1.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The R\+T\+MP or R\+T\+M\+PS streaming U\+RL. \\
+\hline
+{\em event\+Code} & The event code. See \#\+R\+T\+M\+P\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G\+\_\+\+E\+V\+E\+NT \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0583fb2aecbd4c51bba1af97ce1aa318}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a0583fb2aecbd4c51bba1af97ce1aa318}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onTranscodingUpdated@{onTranscodingUpdated}}
+\index{onTranscodingUpdated@{onTranscodingUpdated}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onTranscodingUpdated()}{onTranscodingUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Transcoding\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the publisher\textquotesingle{}s transcoding settings are updated.
+
+When the {\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_live_transcoding}{Live\+Transcoding}}} class in set\+Live\+Transcoding updates, the S\+DK triggers this callback to report the update information.
+
+\begin{DoxyNote}{Note}
+If you call the {\ttfamily set\+Live\+Transcoding} method to set the {\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_live_transcoding}{Live\+Transcoding}}} class for the first time, the S\+DK does not trigger this callback. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a5ad747e71cd7f57052a5240513af1949}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a5ad747e71cd7f57052a5240513af1949}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onAudioRoutingChanged@{onAudioRoutingChanged}}
+\index{onAudioRoutingChanged@{onAudioRoutingChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioRoutingChanged()}{onAudioRoutingChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Routing\+Changed (\begin{DoxyParamCaption}\item[{int}]{routing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local audio route changes (for Android and i\+OS only).
+
+The S\+DK triggers this callback when the local audio route switches to an earpiece, speakerphone, headset, or Bluetooth device. 
+\begin{DoxyParams}{Parameters}
+{\em routing} & Audio output routing\+:
+\begin{DoxyItemize}
+\item -\/1\+: Default.
+\item 0\+: Headset.
+\item 1\+: Earpiece.
+\item 2\+: Headset with no microphone.
+\item 3\+: Speakerphone.
+\item 4\+: Loudspeaker.
+\item 5\+: Bluetooth headset. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a1891ed124db5f74747e74ca3b3eb23e9}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a1891ed124db5f74747e74ca3b3eb23e9}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onChannelMediaRelayStateChanged@{onChannelMediaRelayStateChanged}}
+\index{onChannelMediaRelayStateChanged@{onChannelMediaRelayStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onChannelMediaRelayStateChanged()}{onChannelMediaRelayStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Channel\+Media\+Relay\+State\+Changed (\begin{DoxyParamCaption}\item[{int}]{state,  }\item[{int}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the state of the media stream relay changes.
+
+The S\+DK reports the state of the current media relay and possible error messages in this callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The state code\+:
+\begin{DoxyItemize}
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E(0)}\+: The S\+DK is initializing.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+N\+G(1)}\+: The S\+DK tries to relay the media stream to the destination channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+U\+N\+N\+I\+N\+G(2)}\+: The S\+DK successfully relays the media stream to the destination channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+A\+I\+L\+U\+R\+E(3)}\+: A failure occurs. See the details in {\ttfamily code}. 
+\end{DoxyItemize}\\
+\hline
+{\em code} & The error code\+:
+\begin{DoxyItemize}
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+O\+K(0)}\+: The state is normal.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E(1)}\+: An error occurs in the server response.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+N\+O\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E(2)}\+: No server response. You can call the leave\+Channel method to leave the channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E(3)}\+: The S\+DK fails to access the service, probably due to limited resources of the server.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+J\+O\+I\+N\+\_\+\+S\+R\+C(4)}\+: Fails to send the relay request.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+J\+O\+I\+N\+\_\+\+D\+E\+S\+T(5)}\+: Fails to accept the relay request.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+R\+E\+C\+E\+I\+V\+E\+D\+\_\+\+F\+R\+O\+M\+\_\+\+S\+R\+C(6)}\+: The server fails to receive the media stream.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+E\+N\+T\+\_\+\+T\+O\+\_\+\+D\+E\+S\+T(7)}\+: The server fails to send the media stream.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+L\+O\+S\+T(8)}\+: The S\+DK disconnects from the server due to poor network connections. You can call the leave\+Channel method to leave the channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+O\+R(9)}\+: An internal error occurs in the server.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+R\+C\+\_\+\+T\+O\+K\+E\+N\+\_\+\+E\+X\+P\+I\+R\+E\+D(10)}\+: The token of the source channel has expired.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+E\+S\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+E\+X\+P\+I\+R\+E\+D(11)}\+: The token of the destination channel has expired. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a84b745fed79dc81b3c568b239f68a0a4}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a84b745fed79dc81b3c568b239f68a0a4}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onChannelMediaRelayEvent@{onChannelMediaRelayEvent}}
+\index{onChannelMediaRelayEvent@{onChannelMediaRelayEvent}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onChannelMediaRelayEvent()}{onChannelMediaRelayEvent()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Channel\+Media\+Relay\+Event (\begin{DoxyParamCaption}\item[{int}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports events during the media stream relay.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The event code for media stream relay\+:
+\begin{DoxyItemize}
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+N\+E\+T\+W\+O\+R\+K\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D(0)}\+: The user disconnects from the server due to poor network connections.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+N\+E\+T\+W\+O\+R\+K\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D(1)}\+: The network reconnects.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+J\+O\+I\+N\+E\+D\+\_\+\+S\+R\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L(2)}\+: The user joins the source channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+J\+O\+I\+N\+E\+D\+\_\+\+D\+E\+S\+T\+\_\+\+C\+H\+A\+N\+N\+E\+L(3)}\+: The user joins the destination channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+E\+N\+T\+\_\+\+T\+O\+\_\+\+D\+E\+S\+T\+\_\+\+C\+H\+A\+N\+N\+E\+L(4)}\+: The S\+DK starts relaying the media stream to the destination channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+R\+E\+C\+E\+I\+V\+E\+D\+\_\+\+V\+I\+D\+E\+O\+\_\+\+F\+R\+O\+M\+\_\+\+S\+R\+C(5)}\+: The server receives the video stream from the source channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+R\+E\+C\+E\+I\+V\+E\+D\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+O\+M\+\_\+\+S\+R\+C(6)}\+: The server receives the audio stream from the source channel.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+D\+E\+S\+T\+\_\+\+C\+H\+A\+N\+N\+E\+L(7)}\+: The destination channel is updated.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+D\+E\+S\+T\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+R\+E\+F\+U\+S\+E\+D(8)}\+: The destination channel update fails due to internal reasons.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+D\+E\+S\+T\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+O\+T\+\_\+\+C\+H\+A\+N\+G\+E(9)}\+: The destination channel does not change, which means that the destination channel fails to be updated.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+D\+E\+S\+T\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+I\+S\+\_\+\+N\+U\+L\+L(10)}\+: The destination channel name is N\+U\+LL.
+\item {\ttfamily R\+E\+L\+A\+Y\+\_\+\+E\+V\+E\+N\+T\+\_\+\+V\+I\+D\+E\+O\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+U\+P\+D\+A\+T\+E(11)}\+: The video profile is sent to the server. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad79bcd56075fa9c9f907bb4a7462352d}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad79bcd56075fa9c9f907bb4a7462352d}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onRemoteAudioTransportStats@{onRemoteAudioTransportStats}}
+\index{onRemoteAudioTransportStats@{onRemoteAudioTransportStats}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRemoteAudioTransportStats()}{onRemoteAudioTransportStats()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Remote\+Audio\+Transport\+Stats (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{unsigned short}]{delay,  }\item[{unsigned short}]{lost,  }\item[{unsigned short}]{rx\+K\+Bit\+Rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the transport-\/layer statistics of each remote audio stream.
+
+This callback is triggered every two seconds once the user has received the audio data packet sent from a remote user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & ID of the remote user whose audio data packet is received. \\
+\hline
+{\em delay} & The network time delay (ms) from the remote user sending the audio packet to the local user. \\
+\hline
+{\em lost} & The Packet loss rate (\%) of the audio packet sent from the remote user. \\
+\hline
+{\em rx\+K\+Bit\+Rate} & Received bitrate (Kbps) of the audio packet sent from the remote user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a3b8fd883a31d4a504ac3cbd50b1c5d0f}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a3b8fd883a31d4a504ac3cbd50b1c5d0f}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onRemoteVideoTransportStats@{onRemoteVideoTransportStats}}
+\index{onRemoteVideoTransportStats@{onRemoteVideoTransportStats}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onRemoteVideoTransportStats()}{onRemoteVideoTransportStats()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Remote\+Video\+Transport\+Stats (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{unsigned short}]{delay,  }\item[{unsigned short}]{lost,  }\item[{unsigned short}]{rx\+K\+Bit\+Rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the transport-\/layer statistics of each remote video stream.
+
+This callback is triggered every two seconds once the user has received the video data packet sent from a remote user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & ID of the remote user whose video packet is received. \\
+\hline
+{\em delay} & The network time delay (ms) from the remote user sending the video packet to the local user. \\
+\hline
+{\em lost} & The packet loss rate (\%) of the video packet sent from the remote user. \\
+\hline
+{\em rx\+K\+Bit\+Rate} & The Received bitrate (Kbps) of the video packet sent from the remote user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af409b2e721d345a65a2c600cea2f5eb4}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af409b2e721d345a65a2c600cea2f5eb4}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onConnectionStateChanged@{onConnectionStateChanged}}
+\index{onConnectionStateChanged@{onConnectionStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onConnectionStateChanged()}{onConnectionStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Connection\+State\+Changed (\begin{DoxyParamCaption}\item[{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}]{state,  }\item[{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the connection state of the S\+DK to the server is changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & See \#\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em reason} & See \#\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af80a5dee99c2953c64d8dbacc64ea908}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af80a5dee99c2953c64d8dbacc64ea908}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onWlAccMessage@{onWlAccMessage}}
+\index{onWlAccMessage@{onWlAccMessage}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onWlAccMessage()}{onWlAccMessage()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Wl\+Acc\+Message (\begin{DoxyParamCaption}\item[{W\+L\+A\+C\+C\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+R\+E\+A\+S\+ON}]{reason,  }\item[{W\+L\+A\+C\+C\+\_\+\+S\+U\+G\+G\+E\+S\+T\+\_\+\+A\+C\+T\+I\+ON}]{action,  }\item[{const char $\ast$}]{wl\+Acc\+Msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the W\+I\+FI message need be sent to the user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reason} & The reason of notifying the user of a message. \\
+\hline
+{\em action} & Suggest an action for the user. \\
+\hline
+{\em wl\+Acc\+Msg} & The message content of notifying the user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac991b2d0588314123e5eabc8a68d9dfe}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac991b2d0588314123e5eabc8a68d9dfe}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onWlAccStats@{onWlAccStats}}
+\index{onWlAccStats@{onWlAccStats}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onWlAccStats()}{onWlAccStats()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Wl\+Acc\+Stats (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_wl_acc_stats}{Wl\+Acc\+Stats}}}]{current\+Stats,  }\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_wl_acc_stats}{Wl\+Acc\+Stats}}}]{average\+Stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when S\+DK statistics wifi acceleration optimization effect.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Stats} & Instantaneous value of optimization effect. \\
+\hline
+{\em average\+Stats} & Average value of cumulative optimization effect. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af71617b59ba8564963dfdd642f4e36a4}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af71617b59ba8564963dfdd642f4e36a4}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onNetworkTypeChanged@{onNetworkTypeChanged}}
+\index{onNetworkTypeChanged@{onNetworkTypeChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onNetworkTypeChanged()}{onNetworkTypeChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Network\+Type\+Changed (\begin{DoxyParamCaption}\item[{N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+Y\+PE}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the network type is changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & See \#\+N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad64b65c8bbb78624316770b01f2ee9bd}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad64b65c8bbb78624316770b01f2ee9bd}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onEncryptionError@{onEncryptionError}}
+\index{onEncryptionError@{onEncryptionError}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onEncryptionError()}{onEncryptionError()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Encryption\+Error (\begin{DoxyParamCaption}\item[{E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE}]{error\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the error type of encryption.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Type} & See \#\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac3f1dae447118e5cb261bd10ea9edfa2}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ac3f1dae447118e5cb261bd10ea9edfa2}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onPermissionError@{onPermissionError}}
+\index{onPermissionError@{onPermissionError}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onPermissionError()}{onPermissionError()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Permission\+Error (\begin{DoxyParamCaption}\item[{P\+E\+R\+M\+I\+S\+S\+I\+O\+N\+\_\+\+T\+Y\+PE}]{permission\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the permission error type related device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em permission\+Type} & See \#\+P\+E\+R\+M\+I\+S\+S\+I\+O\+N\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a919404869f86412e1945c730e5219b20}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a919404869f86412e1945c730e5219b20}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onLocalUserRegistered@{onLocalUserRegistered}}
+\index{onLocalUserRegistered@{onLocalUserRegistered}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onLocalUserRegistered()}{onLocalUserRegistered()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Local\+User\+Registered (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{const char $\ast$}]{user\+Account }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the local user successfully registers a user account by calling the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a0d44b74ced4005ee86353c13186f870d}{register\+Local\+User\+Account}} method or joins a channel by calling the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a14f8c308c6c57c55653552b939a8527a}{join\+Channel\+With\+User\+Account}} method. This callback reports the user ID and user account of the local user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & The ID of the local user. \\
+\hline
+{\em user\+Account} & The user account of the local user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad086cc4d8e5555cc75a0ab264c16d5ff}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad086cc4d8e5555cc75a0ab264c16d5ff}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onUserInfoUpdated@{onUserInfoUpdated}}
+\index{onUserInfoUpdated@{onUserInfoUpdated}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUserInfoUpdated()}{onUserInfoUpdated()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+User\+Info\+Updated (\begin{DoxyParamCaption}\item[{uid\+\_\+t}]{uid,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{User\+Info}} \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the S\+DK gets the user ID and user account of the remote user.
+
+After a remote user joins the channel, the S\+DK gets the U\+ID and user account of the remote user, caches them in a mapping table object ({\ttfamily user\+Info}), and triggers this callback on the local client.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uid} & The ID of the remote user. \\
+\hline
+{\em info} & The {\ttfamily \mbox{\hyperlink{structagora_1_1rtc_1_1_user_info}{User\+Info}}} object that contains the user ID and user account of the remote user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a5f97ca5105b02f4381af3603d5a87ccf}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a5f97ca5105b02f4381af3603d5a87ccf}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onUploadLogResult@{onUploadLogResult}}
+\index{onUploadLogResult@{onUploadLogResult}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onUploadLogResult()}{onUploadLogResult()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Upload\+Log\+Result (\begin{DoxyParamCaption}\item[{const char $\ast$}]{request\+Id,  }\item[{bool}]{success,  }\item[{U\+P\+L\+O\+A\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+S\+ON}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Reports the user log upload result 
+\begin{DoxyParams}{Parameters}
+{\em request\+Id} & Request\+Id of the upload \\
+\hline
+{\em success} & Is upload success \\
+\hline
+{\em reason} & Reason of the upload, 0\+: OK, 1 Network Error, 2 Server Error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae3f517bd166a9e34aa77f9fbf137a7b9}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae3f517bd166a9e34aa77f9fbf137a7b9}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onAudioSubscribeStateChanged@{onAudioSubscribeStateChanged}}
+\index{onAudioSubscribeStateChanged@{onAudioSubscribeStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioSubscribeStateChanged()}{onAudioSubscribeStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Subscribe\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel,  }\item[{uid\+\_\+t}]{uid,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE}]{old\+State,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE}]{new\+State,  }\item[{int}]{elapse\+Since\+Last\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the audio subscribe state changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name of user joined. \\
+\hline
+{\em uid} & The remote user ID that is subscribed to. \\
+\hline
+{\em old\+State} & The old state of the audio stream subscribe \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em new\+State} & The new state of the audio stream subscribe \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em elapse\+Since\+Last\+State} & The time elapsed (ms) from the old state to the new state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aebedc2b484b4e6b9f5d9a28aea997d65}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_aebedc2b484b4e6b9f5d9a28aea997d65}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onVideoSubscribeStateChanged@{onVideoSubscribeStateChanged}}
+\index{onVideoSubscribeStateChanged@{onVideoSubscribeStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onVideoSubscribeStateChanged()}{onVideoSubscribeStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Video\+Subscribe\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel,  }\item[{uid\+\_\+t}]{uid,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE}]{old\+State,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE}]{new\+State,  }\item[{int}]{elapse\+Since\+Last\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the video subscribe state changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name of user joined. \\
+\hline
+{\em uid} & The remote user ID that is subscribed to. \\
+\hline
+{\em old\+State} & The old state of the video stream subscribe \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em new\+State} & The new state of the video stream subscribe \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em elapse\+Since\+Last\+State} & The time elapsed (ms) from the old state to the new state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af5188bdc817fa62aac51b3dc627dfb64}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_af5188bdc817fa62aac51b3dc627dfb64}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onAudioPublishStateChanged@{onAudioPublishStateChanged}}
+\index{onAudioPublishStateChanged@{onAudioPublishStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onAudioPublishStateChanged()}{onAudioPublishStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Publish\+State\+Changed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{channel,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE}]{old\+State,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE}]{new\+State,  }\item[{int}]{elapse\+Since\+Last\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the audio publish state changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel name of user joined. \\
+\hline
+{\em old\+State} & The old state of the audio stream publish \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em new\+State} & The new state of the audio stream publish \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em elapse\+Since\+Last\+State} & The time elapsed (ms) from the old state to the new state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae7b1f0d07f6c601717e38b101eda9d6c}\label{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae7b1f0d07f6c601717e38b101eda9d6c}} 
+\index{agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}!onVideoPublishStateChanged@{onVideoPublishStateChanged}}
+\index{onVideoPublishStateChanged@{onVideoPublishStateChanged}!agora::rtc::IRtcEngineEventHandler@{agora::rtc::IRtcEngineEventHandler}}
+\doxysubsubsection{\texorpdfstring{onVideoPublishStateChanged()}{onVideoPublishStateChanged()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Rtc\+Engine\+Event\+Handler\+::on\+Video\+Publish\+State\+Changed (\begin{DoxyParamCaption}\item[{V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+PE}]{source,  }\item[{const char $\ast$}]{channel,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE}]{old\+State,  }\item[{S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE}]{new\+State,  }\item[{int}]{elapse\+Since\+Last\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Occurs when the video publish state changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & source type of the originated video source. \\
+\hline
+{\em channel} & The channel name of user joined. \\
+\hline
+{\em old\+State} & The old state of the video stream publish \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em new\+State} & The new state of the video stream publish \+: \#\+S\+T\+R\+E\+A\+M\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+S\+T\+A\+TE. \\
+\hline
+{\em elapse\+Since\+Last\+State} & The time elapsed (ms) from the old state to the new state. \\
+\hline
+\end{DoxyParams}

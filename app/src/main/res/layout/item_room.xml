@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="297dp"
+    android:layout_height="411dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <com.example.animaland.PassThroughButton
+            android:id="@+id/room_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/room3_2"
+            android:scaleType="fitXY"
+            ></com.example.animaland.PassThroughButton>
+
+    <TextView
+        android:id="@+id/roomshow_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="140dp"
+        android:text="(房间名称)"
+        android:fontFamily="@font/cute_font"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:paddingHorizontal="40dp"
+        android:layout_alignBottom="@+id/room_background"
+        android:layout_alignRight="@id/room_background">
+
+        <TextView
+            android:id="@+id/room_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ID:12345"
+            android:fontFamily="@font/cute_font"
+            android:textColor="#000000"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/room_memberNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="1/4"
+            android:fontFamily="@font/cute_font"
+            android:textColor="#000000"
+            android:textSize="20sp"></TextView>
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

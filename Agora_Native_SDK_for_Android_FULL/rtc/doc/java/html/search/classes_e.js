@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['range_1864',['Range',['../enumio_1_1agora_1_1base_1_1_video_frame_1_1_color_space_1_1_range.html',1,'io::agora::base::VideoFrame::ColorSpace']]],
+  ['recorderinfo_1865',['RecorderInfo',['../classio_1_1agora_1_1rtc2_1_1_recorder_info.html',1,'io::agora::rtc2']]],
+  ['rectangle_1866',['Rectangle',['../classio_1_1agora_1_1rtc2_1_1video_1_1_watermark_options_1_1_rectangle.html',1,'io::agora::rtc2::video::WatermarkOptions']]],
+  ['region_1867',['Region',['../classio_1_1agora_1_1rtc2_1_1video_1_1_video_compositing_layout_1_1_region.html',1,'io::agora::rtc2::video::VideoCompositingLayout']]],
+  ['remote_5faudio_5fstate_1868',['REMOTE_AUDIO_STATE',['../enumio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_r_e_m_o_t_e___a_u_d_i_o___s_t_a_t_e.html',1,'io::agora::rtc2::IRtcEngineEventHandler']]],
+  ['remote_5faudio_5fstate_5freason_1869',['REMOTE_AUDIO_STATE_REASON',['../enumio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_r_e_m_o_t_e___a_u_d_i_o___s_t_a_t_e___r_e_a_s_o_n.html',1,'io::agora::rtc2::IRtcEngineEventHandler']]],
+  ['remote_5fuser_5fstate_1870',['REMOTE_USER_STATE',['../enumio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_r_e_m_o_t_e___u_s_e_r___s_t_a_t_e.html',1,'io::agora::rtc2::IRtcEngineEventHandler']]],
+  ['remote_5fvideo_5fstream_5ftype_1871',['REMOTE_VIDEO_STREAM_TYPE',['../enumio_1_1agora_1_1rtc2_1_1video_1_1_video_subscription_options_1_1_r_e_m_o_t_e___v_i_d_e_o___s_t_r_e_a_m___t_y_p_e.html',1,'io::agora::rtc2::video::VideoSubscriptionOptions']]],
+  ['remoteaudiostats_1872',['RemoteAudioStats',['../classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_remote_audio_stats.html',1,'io::agora::rtc2::IRtcEngineEventHandler']]],
+  ['remotevideostats_1873',['RemoteVideoStats',['../classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_remote_video_stats.html',1,'io::agora::rtc2::IRtcEngineEventHandler']]],
+  ['remotevoicepositioninfo_1874',['RemoteVoicePositionInfo',['../classio_1_1agora_1_1spatialaudio_1_1_remote_voice_position_info.html',1,'io::agora::spatialaudio']]],
+  ['rgbabuffer_1875',['RgbaBuffer',['../interfaceio_1_1agora_1_1base_1_1_video_frame_1_1_rgba_buffer.html',1,'io::agora::base::VideoFrame']]],
+  ['rhythm_5fplayer_5ferror_5ftype_1876',['RHYTHM_PLAYER_ERROR_TYPE',['../enumio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_r_h_y_t_h_m___p_l_a_y_e_r___e_r_r_o_r___t_y_p_e.html',1,'io::agora::rtc2::IRtcEngineEventHandler']]],
+  ['rhythm_5fplayer_5fstate_5ftype_1877',['RHYTHM_PLAYER_STATE_TYPE',['../enumio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_r_h_y_t_h_m___p_l_a_y_e_r___s_t_a_t_e___t_y_p_e.html',1,'io::agora::rtc2::IRtcEngineEventHandler']]],
+  ['rtcconnection_1878',['RtcConnection',['../classio_1_1agora_1_1rtc2_1_1_rtc_connection.html',1,'io::agora::rtc2']]],
+  ['rtcengine_1879',['RtcEngine',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html',1,'io::agora::rtc2']]],
+  ['rtcengineconfig_1880',['RtcEngineConfig',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine_config.html',1,'io::agora::rtc2']]],
+  ['rtcengineex_1881',['RtcEngineEx',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine_ex.html',1,'io::agora::rtc2']]],
+  ['rtcengineinternal_1882',['RtcEngineInternal',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine_internal.html',1,'io::agora::rtc2']]],
+  ['rtcstats_1883',['RtcStats',['../classio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_rtc_stats.html',1,'io::agora::rtc2::IRtcEngineEventHandler']]],
+  ['rtmp_5fstream_5fpublish_5ferror_5ftype_1884',['RTMP_STREAM_PUBLISH_ERROR_TYPE',['../enumio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_r_t_m_p___s_t_r_e_a_m___p_u_b_l_i_s_h___e_r_r_o_r___t_y_p_e.html',1,'io::agora::rtc2::IRtcEngineEventHandler']]],
+  ['rtmp_5fstream_5fpublish_5fstate_1885',['RTMP_STREAM_PUBLISH_STATE',['../enumio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_r_t_m_p___s_t_r_e_a_m___p_u_b_l_i_s_h___s_t_a_t_e.html',1,'io::agora::rtc2::IRtcEngineEventHandler']]],
+  ['rtmp_5fstreaming_5fevent_1886',['RTMP_STREAMING_EVENT',['../enumio_1_1agora_1_1rtc2_1_1_i_rtc_engine_event_handler_1_1_r_t_m_p___s_t_r_e_a_m_i_n_g___e_v_e_n_t.html',1,'io::agora::rtc2::IRtcEngineEventHandler']]]
+];

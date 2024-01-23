@@ -1,0 +1,90 @@
+
+\begin{DoxyRefList}
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_af18d93c630d863bd7b5bb697aac82626}{agora\+::rtc\+::I\+Rtc\+Engine\+::set\+Default\+Mute\+All\+Remote\+Video\+Streams}} (bool mute) \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000015}%
+\Hypertarget{deprecated__deprecated000015}%
+This method is deprecated. To set whether to receive remote video streams by default, call \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a897a09788641f26252be642bb7045ee4}{mute\+All\+Remote\+Video\+Streams}} before calling {\ttfamily join\+Channel}. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_a047ce5af28f376ca05f753ac4c38b118}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Local\+Video\+Stats}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, const \mbox{\hyperlink{structagora_1_1rtc_1_1_local_video_stats}{Local\+Video\+Stats}} \&stats)]\label{deprecated__deprecated000028}%
+\Hypertarget{deprecated__deprecated000028}%
+4.\+0.\+0 This callback is deprecated, use void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a3476915aca1141cb7821dba9da41af2b}{on\+Local\+Video\+Stats(\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+P\+E source, const Local\+Video\+Stats\& stats)}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_a66b49b1c133f8624676c2ad8e821665a}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+User\+Enable\+Local\+Video}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, uid\+\_\+t remote\+Uid, bool enabled) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000027}%
+\Hypertarget{deprecated__deprecated000027}%
+Use on\+Remote\+Video\+State\+Changed instead of.  
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_a839e3a4b0dc22bb0ce44742921e53880}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+User\+Enable\+Video}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, uid\+\_\+t remote\+Uid, bool enabled) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000026}%
+\Hypertarget{deprecated__deprecated000026}%
+Use on\+Remote\+Video\+State\+Changed instead of.  
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_ad07373878b712614f586692417f8804c}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+User\+Mute\+Video}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, uid\+\_\+t remote\+Uid, bool muted) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000025}%
+\Hypertarget{deprecated__deprecated000025}%
+Use on\+Remote\+Video\+State\+Changed instead of.  
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_a8403bcae82d7beaf4d0e7360e5e372f9}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+User\+Mute\+Audio}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, uid\+\_\+t remote\+Uid, bool muted) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000024}%
+\Hypertarget{deprecated__deprecated000024}%
+Use on\+Remote\+Audio\+State\+Changed instead of.  
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_a75be046e99fd8da7a912722cf970d29c}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+Local\+Video\+State\+Changed}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+TE state, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+OR error\+Code)]\label{deprecated__deprecated000023}%
+\Hypertarget{deprecated__deprecated000023}%
+4.\+0.\+0 This callback is deprecated, use void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a97094758e1540a527c13f366e1c81dbf}{on\+Local\+Video\+State\+Changed(\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+P\+E source, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+A\+T\+E state, L\+O\+C\+A\+L\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+O\+R error)}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_aaedd115287ecc8e6c949477534f781c2}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+First\+Local\+Video\+Frame\+Published}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, int elapsed)]\label{deprecated__deprecated000022}%
+\Hypertarget{deprecated__deprecated000022}%
+4.\+0.\+0 This callback is deprecated, use void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a734c39289a40a97bc3dcd7df9413034a}{on\+First\+Local\+Video\+Frame\+Published(\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+P\+E source, int elapsed)}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ex_adaf805b9818ac9f6e068df93dc758f5a}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+Ex\+::on\+First\+Local\+Video\+Frame}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_connection}{Rtc\+Connection}} \&connection, int width, int height, int elapsed)]\label{deprecated__deprecated000021}%
+\Hypertarget{deprecated__deprecated000021}%
+4.\+0.\+0 This callback is deprecated, use void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a15cb3afe45c869c129451c54b4383619}{on\+First\+Local\+Video\+Frame(\+V\+I\+D\+E\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+T\+Y\+P\+E source, int width, int height, int elapsed)}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a5ac70d12ca9b204410c02a9cc1159606}{agora\+::rtc\+::I\+Rtc\+Engine\+::enable\+Web\+Sdk\+Interoperability}} (bool enabled) \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000020}%
+\Hypertarget{deprecated__deprecated000020}%
+The Agora NG S\+DK enables the interoperablity with the Web S\+DK. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a566a23231286f5286fdb137966093e9f}{agora\+::rtc\+::I\+Rtc\+Engine\+::resume\+Audio}} () \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000019}%
+\Hypertarget{deprecated__deprecated000019}%
+Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a996401c7ba33c6ec59527c5d109f548f}{enable\+Audio()}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a7729c859bb2ae7f565ab7a57cf7b6158}{agora\+::rtc\+::I\+Rtc\+Engine\+::pause\+Audio}} () \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000018}%
+\Hypertarget{deprecated__deprecated000018}%
+Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a1929f01411e983ed776275fe8e8ad45e}{disable\+Audio()}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_aab978f8dbbffab2828b0ce856c8be529}{agora\+::rtc\+::I\+Rtc\+Engine\+::set\+Encryption\+Secret}} (const char $\ast$secret) \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000017}%
+\Hypertarget{deprecated__deprecated000017}%
+This method is deprecated. Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ad5ea5f0dfd8117f38d9c4b12fe01fece}{enable\+Encryption(bool enabled, const Encryption\+Config\&)}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a8ff6889c4e3d86a15b7dea0ae13a5300}{agora\+::rtc\+::I\+Rtc\+Engine\+::set\+Encryption\+Mode}} (const char $\ast$encryption\+Mode) \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000016}%
+\Hypertarget{deprecated__deprecated000016}%
+This method is deprecated. Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ad5ea5f0dfd8117f38d9c4b12fe01fece}{enable\+Encryption(bool enabled, const Encryption\+Config\&)}} instead. 
+\item[" ]\label{deprecated__deprecated000001}%
+\Hypertarget{deprecated__deprecated000001}%
+This profile is deprecated.  
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a2a865bf8830c9ab8b600fa01d61fb4ab}{agora\+::rtc\+::I\+Rtc\+Engine\+::set\+Default\+Mute\+All\+Remote\+Audio\+Streams}} (bool mute) \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000014}%
+\Hypertarget{deprecated__deprecated000014}%
+This method is deprecated. To set whether to receive remote audio streams by default, call \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ac061a3c81eba2d203a7511e59466e6a0}{mute\+All\+Remote\+Audio\+Streams}} before calling {\ttfamily join\+Channel} 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_a7c9aef3f4c8f9cb62e5ae3c4aa7ed81a}{agora\+::rtc\+::I\+Rtc\+Engine\+::set\+Audio\+Profile}} (A\+U\+D\+I\+O\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE profile, A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE scenario) \+\_\+\+\_\+deprecated=0]\label{deprecated__deprecated000013}%
+\Hypertarget{deprecated__deprecated000013}%
+This method is deprecated. You can use the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_afe8ac8023a1ef976fc983213308b80f3}{set\+Audio\+Profile}} method instead. To set the audio scenario, call the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ac71db65e66942e4e0a0550e95c16890f}{initialize}} method and pass value in the {\ttfamily audio\+Scenario} member in the \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context}{Rtc\+Engine\+Context}} struct. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a199de5107bfc84c056998e2e45bba772}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+User\+Enable\+Local\+Video}} (uid\+\_\+t uid, bool enabled) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000012}%
+\Hypertarget{deprecated__deprecated000012}%
+This callback is deprecated since v3.\+1.\+200. Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae69799238c6a6cd9f017274dd630b74e}{on\+Remote\+Video\+State\+Changed}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a5e16c8ea4e8321e82eeec1413b880c0e}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+User\+Enable\+Video}} (uid\+\_\+t uid, bool enabled) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000011}%
+\Hypertarget{deprecated__deprecated000011}%
+This callback is deprecated since v3.\+1.\+200. Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae69799238c6a6cd9f017274dd630b74e}{on\+Remote\+Video\+State\+Changed}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a42dc566926966cc7b922d10b81bfd48e}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+User\+Mute\+Video}} (uid\+\_\+t user\+Id, bool muted) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000010}%
+\Hypertarget{deprecated__deprecated000010}%
+This callback is deprecated since v3.\+1.\+200. Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae69799238c6a6cd9f017274dd630b74e}{on\+Remote\+Video\+State\+Changed}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ad8083c52d15135762a31c48192ad64f2}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+First\+Remote\+Video\+Decoded}} (uid\+\_\+t uid, int width, int height, int elapsed) \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000009}%
+\Hypertarget{deprecated__deprecated000009}%
+This callback is deprecated since v3.\+1.\+200. Use \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_ae69799238c6a6cd9f017274dd630b74e}{on\+Remote\+Video\+State\+Changed}} instead. 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler_a844b1585ecc0c86471d7dd5a462eaaf3}{agora\+::rtc\+::I\+Rtc\+Engine\+Event\+Handler\+::on\+Audio\+Mixing\+Finished}} () \+\_\+\+\_\+deprecated]\label{deprecated__deprecated000008}%
+\Hypertarget{deprecated__deprecated000008}%
+This method is deprecated, use on\+Audio\+Mixing\+State\+Changed instead. 
+\item[Member \mbox{\hyperlink{structagora_1_1rtc_1_1_remote_video_stats_a0a0f8269be3dfe782aa5d0cf7dc074f0}{agora\+::rtc\+::Remote\+Video\+Stats\+::\+\_\+\+\_\+deprecated}} ]\label{deprecated__deprecated000007}%
+\Hypertarget{deprecated__deprecated000007}%
+Time delay (ms). 
+\item[Member \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_player_source_a615d51990acbcb28e6753dca86e32edd}{agora\+::rtc\+::I\+Media\+Player\+Source\+::open\+With\+Custom\+Source}} (int64\+\_\+t start\+Pos, \mbox{\hyperlink{classagora_1_1media_1_1base_1_1_i_media_player_custom_data_provider}{media\+::base\+::\+I\+Media\+Player\+Custom\+Data\+Provider}} $\ast$provider)=0]\label{deprecated__deprecated000006}%
+\Hypertarget{deprecated__deprecated000006}%
+  
+\item[" ]\label{deprecated__deprecated000005}%
+\Hypertarget{deprecated__deprecated000005}%
+ 3\+: This mode is deprecated. 
+
+\label{deprecated__deprecated000004}%
+\Hypertarget{deprecated__deprecated000004}%
+This member is deprecated. 
+
+\label{deprecated__deprecated000003}%
+\Hypertarget{deprecated__deprecated000003}%
+This profile is deprecated. 
+
+\label{deprecated__deprecated000002}%
+\Hypertarget{deprecated__deprecated000002}%
+This profile is deprecated. 
+\end{DoxyRefList}

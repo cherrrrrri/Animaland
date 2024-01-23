@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_dialog_lightcolor"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/roomshow_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:text="确定退出？"
+        android:fontFamily="@font/font2"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:text="离开后房间将自动解散"
+        android:fontFamily="@font/font2"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/room_exitYes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_dialog_darkcolor"
+            android:text="确认离开"
+            android:fontFamily="@font/font2"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="10dp"/>
+
+        <Button
+            android:id="@+id/room_exitNo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_dialog_darkcolor"
+            android:text="我再想想"
+            android:fontFamily="@font/font2"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

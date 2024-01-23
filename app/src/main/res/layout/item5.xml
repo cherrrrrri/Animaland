@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp">
+    <com.cxd.chatview.moudle.ChatView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        xmlns:chat="http://schemas.android.com/apk/res-auto"
+        chat:arrow_direction="right"
+        chat:is_arrow_center="true"
+        chat:arrow_up_distance = "10dp"
+        chat:arrow_width = "5dp"
+        chat:arrow_height = "12dp"
+        chat:stroke_width = "1px"
+        chat:stroke_color = "@color/lightYello"
+        chat:fill_color = "@color/lightYello"
+        chat:press_stroke_color = "@color/lightYello"
+        chat:press_fill_color = "@color/lightYello"
+        chat:conner_radius = "6dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+                chat:tint="@color/colorAccent" />
+
+            <TextView
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/text"
+                android:gravity="center"
+                android:text="聊天"
+                android:fontFamily="@font/cute_font"
+                android:textColor="#4a4a4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </com.cxd.chatview.moudle.ChatView>
+</LinearLayout>

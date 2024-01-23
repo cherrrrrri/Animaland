@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark"
+    tools:context=".MainActivity" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="1626dp"
+    android:background="@drawable/background_content_top"></RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="130dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     />
+<ImageView
+    android:id="@+id/back_chat"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginStart="20dp"
+    android:padding="5dp"
+    android:src="@drawable/baseline_arrow_back_ios_24"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+    app:tint="@color/dark" />
+    <ImageView
+        android:id="@+id/info_chat"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_marginLeft="785dp"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/baseline_info_24"
+        app:tint="@color/dark" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1626dp">
+        <FrameLayout
+            android:layout_width="705dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="11dp"
+            android:layout_height="110sp"
+            android:background="@drawable/background_chat_input">
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="700dp"
+                android:layout_height="110dp"
+                android:padding="10dp"
+                android:textSize="40dp"
+                android:textColor="@color/dark"
+                android:layout_marginLeft="5dp"
+                android:hint="Enter Message"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/speak_image"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="940dp"
+                android:src="@drawable/baseline_mic_24"
+                android:tint="@color/dark"
+                android:clickable="true"/>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_sent"
+            android:layout_width="110sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="150sp">
+          <androidx.appcompat.widget.AppCompatImageView
+              android:id="@+id/sent_image"
+              android:layout_width="100sp"
+              android:layout_height="100sp"
+              android:layout_marginStart="6sp"
+              android:layout_marginTop="5dp"
+              android:padding="5sp"
+              android:background="@drawable/background_chat_input"
+              android:src="@drawable/send"
+              android:tint="@color/dark"
+              android:clickable="true"/>
+
+
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

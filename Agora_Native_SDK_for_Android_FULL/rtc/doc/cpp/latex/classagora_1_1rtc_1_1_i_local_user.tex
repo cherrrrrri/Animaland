@@ -1,0 +1,1425 @@
+\hypertarget{classagora_1_1rtc_1_1_i_local_user}{}\doxysection{agora\+::rtc\+::I\+Local\+User Class Reference}
+\label{classagora_1_1rtc_1_1_i_local_user}\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+
+
+{\ttfamily \#include $<$N\+G\+I\+Agora\+Local\+User.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_a_n_a_stats}{A\+N\+A\+Stats}}
+\item 
+struct \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_audio_processing_stats}{Audio\+Processing\+Stats}}
+\item 
+struct \mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_local_audio_detailed_stats}{Local\+Audio\+Detailed\+Stats}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a213d4d7246151dfc0e3e7244a7fdad2f}{set\+User\+Role}} (rtc\+::\+C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE role)=0
+\item 
+virtual C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a910b5120b7db6570999611cc70625d06}{get\+User\+Role}} ()=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a9ba801acb40bf16c655a13201b439bc3}\label{classagora_1_1rtc_1_1_i_local_user_a9ba801acb40bf16c655a13201b439bc3}} 
+virtual void {\bfseries set\+Audience\+Latency\+Level} (A\+U\+D\+I\+E\+N\+C\+E\+\_\+\+L\+A\+T\+E\+N\+C\+Y\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+Y\+PE level)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a995c007b274976c2a17c28f80d070489}\label{classagora_1_1rtc_1_1_i_local_user_a995c007b274976c2a17c28f80d070489}} 
+virtual A\+U\+D\+I\+E\+N\+C\+E\+\_\+\+L\+A\+T\+E\+N\+C\+Y\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+Y\+PE {\bfseries get\+Audience\+Latency\+Level} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a156667be527479d090010ad9b3fb06fb}{set\+Audio\+Encoder\+Configuration}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_encoder_configuration}{rtc\+::\+Audio\+Encoder\+Configuration}} \&config)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a855a467cbe9c6b377521a766d768bfe1}{set\+Audio\+Scenario}} (A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE scenario)=0
+\item 
+virtual bool \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a7c1fd759e10a5803b32d1af68bc18286}{get\+Local\+Audio\+Statistics}} (\mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_local_audio_detailed_stats}{Local\+Audio\+Detailed\+Stats}} \&stats)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a575b2e9632bb70e90f7f053146f53767}{publish\+Audio}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}} $>$ audio\+Track)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a16790ab0de9f1585285527089a3b618c}{unpublish\+Audio}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}} $>$ audio\+Track)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a741888815ed463dd2b2d3afbdf4a6d67}{publish\+Video}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}} $>$ video\+Track)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a62a3e9aa830dbc551ec0c9ddc6df32fe}{unpublish\+Video}} (\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}} $>$ video\+Track)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ac0ce1d32649f5218afccd7683baa1b26}{subscribe\+Audio}} (user\+\_\+id\+\_\+t user\+Id)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a07cb08b6fed3b98db417721dfd822720}{subscribe\+All\+Audio}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a30727be6e6603d935fb08607e9e0b5e4}{unsubscribe\+Audio}} (user\+\_\+id\+\_\+t user\+Id)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a8197a68ab38b026463bda82df9541e47}{unsubscribe\+All\+Audio}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ac03c2d3d3fd8945a032a1d518088c82b}{adjust\+Playback\+Signal\+Volume}} (int volume)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a3c8bf14bd8560082288ebe9f2eb81a09}{get\+Playback\+Signal\+Volume}} (int $\ast$volume)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a6fb2d575954fa585eac387c542b4f956}\label{classagora_1_1rtc_1_1_i_local_user_a6fb2d575954fa585eac387c542b4f956}} 
+virtual int {\bfseries adjust\+User\+Playback\+Signal\+Volume} (user\+\_\+id\+\_\+t user\+Id, int volume)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a5566c50ec104c74856d655853f5903fa}{get\+User\+Playback\+Signal\+Volume}} (user\+\_\+id\+\_\+t user\+Id, int $\ast$volume)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a80cba84734dd436b91656fc5ed7431ec}{enable\+Sound\+Position\+Indication}} (bool enabled)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a28fcc40974110721bfd52e03e9bda65d}{set\+Remote\+Voice\+Position}} (user\+\_\+id\+\_\+t user\+Id, double pan, double gain)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a8840c75ab9c4cb4603b39bb7fc24d2e1}{enable\+Spatial\+Audio}} (bool enabled)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_aafc42fcbd81659195c6a9e8ee91121bd}{set\+Remote\+User\+Spatial\+Audio\+Params}} (user\+\_\+id\+\_\+t user\+Id, const \mbox{\hyperlink{structagora_1_1_spatial_audio_params}{agora\+::\+Spatial\+Audio\+Params}} \&param)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_af7bf29eb0712c96bda7129a20f5243ff}{set\+Playback\+Audio\+Frame\+Parameters}} (size\+\_\+t number\+Of\+Channels, uint32\+\_\+t sample\+Rate\+Hz, R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE mode=R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+O\+N\+LY, int samples\+Per\+Call=0)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a4a277c45d141b09675453b064712e429}{set\+Recording\+Audio\+Frame\+Parameters}} (size\+\_\+t number\+Of\+Channels, uint32\+\_\+t sample\+Rate\+Hz, R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE mode=R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+O\+N\+LY, int samples\+Per\+Call=0)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ad3173832cf140747eb7f79bd398ee254}{set\+Mixed\+Audio\+Frame\+Parameters}} (size\+\_\+t number\+Of\+Channels, uint32\+\_\+t sample\+Rate\+Hz, int samples\+Per\+Call=0)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a1e4bdba66ad60f3f02b9a95b1cdacdb6}{set\+Ear\+Monitoring\+Audio\+Frame\+Parameters}} (bool enabled, size\+\_\+t number\+Of\+Channels, uint32\+\_\+t sample\+Rate\+Hz, R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE mode=R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+A\+D\+\_\+\+O\+N\+LY, int samples\+Per\+Call=0)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ab4dc9a3cba978dece161341bb13c5a26}{set\+Playback\+Audio\+Frame\+Before\+Mixing\+Parameters}} (size\+\_\+t number\+Of\+Channels, uint32\+\_\+t sample\+Rate\+Hz)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a0dfd85d24eeb3b7ad65fdc0d4914b6da}{register\+Audio\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base}{agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_aab2c70c722e492385a719dd9ab457406}{unregister\+Audio\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base}{agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a76e00c4f2ebbc5c8fafe9d4a00a09841}{enable\+Audio\+Spectrum\+Monitor}} (int interval\+In\+MS=100)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a607b6bb2fa5da530a1ea2d9a5c4b3cc2}{disable\+Audio\+Spectrum\+Monitor}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a016702f3bf19ec46b74e6691c484836d}{register\+Audio\+Spectrum\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_spectrum_observer}{agora\+::media\+::\+I\+Audio\+Spectrum\+Observer}} $\ast$observer, void($\ast$safe\+Deleter)(\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_spectrum_observer}{agora\+::media\+::\+I\+Audio\+Spectrum\+Observer}} $\ast$))=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_aab8d8408c4ed4484d18e912f123bb674}{unregister\+Audio\+Spectrum\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_spectrum_observer}{agora\+::media\+::\+I\+Audio\+Spectrum\+Observer}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a3ce7e4a6d6fca5e84ac8696e8c65987a}{register\+Local\+Video\+Encoded\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_abf0e5b58719c99b57295fe53991c7f54}{unregister\+Local\+Video\+Encoded\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a302654c89f32c144fe6fc9d39e5ad7f0}{force\+Next\+Intra\+Frame}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ac873ccc19b1873c260d8c78fbb02f763}{register\+Video\+Encoded\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_abefbf3506f0cdbbc6d914ecba3eb71c3}{unregister\+Video\+Encoded\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a22a2231a1d9e33e464e8f16730e38e86}{register\+Video\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_observer2}{I\+Video\+Frame\+Observer2}} $\ast$observer)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ab243950d6f4b63d94380139ae1dfda9d}{unregister\+Video\+Frame\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_observer2}{I\+Video\+Frame\+Observer2}} $\ast$observer)=0
+\item 
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_aa8710bf8d2a378261befb51a50afef26}\label{classagora_1_1rtc_1_1_i_local_user_aa8710bf8d2a378261befb51a50afef26}} 
+virtual int {\bfseries set\+Video\+Subscription\+Options} (user\+\_\+id\+\_\+t user\+Id, const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_subscription_options}{Video\+Subscription\+Options}} \&options)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a7e65ee3135e0d0bb290470b6ca97e358}{set\+Subscribe\+Audio\+Blacklist}} (user\+\_\+id\+\_\+t $\ast$user\+List, int user\+Number)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_af6cfb73cacb898de9b58a7818f1bab9e}{set\+Subscribe\+Audio\+Whitelist}} (user\+\_\+id\+\_\+t $\ast$user\+List, int user\+Number)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a890442a5485360c8c21f9c58cdee7ec0}{set\+Subscribe\+Video\+Blacklist}} (user\+\_\+id\+\_\+t $\ast$user\+List, int user\+Number)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_aba34ce5aa75a5d294af8f43d048f27af}{set\+Subscribe\+Video\+Whitelist}} (user\+\_\+id\+\_\+t $\ast$user\+List, int user\+Number)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a82bd9290d108acee5442465f83292d3d}{subscribe\+Video}} (user\+\_\+id\+\_\+t user\+Id, const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_subscription_options}{Video\+Subscription\+Options}} \&subscription\+Options)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a8c7edb0a1997dbcc1e7ce2388837e54f}{subscribe\+All\+Video}} (const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_subscription_options}{Video\+Subscription\+Options}} \&subscription\+Options)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ac52175ca9a2769955563b6489fe8f6cb}{unsubscribe\+Video}} (user\+\_\+id\+\_\+t user\+Id)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a37cb2c7b0380a0e3d4c58d1396c13a21}{unsubscribe\+All\+Video}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a8e594e257c37ec8163c66c4bb9831a17}{set\+Audio\+Volume\+Indication\+Parameters}} (int interval\+In\+MS, int smooth, bool report\+Vad)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a9c75f3cca6e59b4d114bafc863ec13e5}{register\+Local\+User\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer}{I\+Local\+User\+Observer}} $\ast$observer, void($\ast$safe\+Deleter)(\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer}{I\+Local\+User\+Observer}} $\ast$)=N\+U\+LL)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_aa1dd761f67f1dfe30142b92be902a274}{unregister\+Local\+User\+Observer}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer}{I\+Local\+User\+Observer}} $\ast$observer)=0
+\item 
+virtual \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_sender}{I\+Media\+Control\+Packet\+Sender}} $\ast$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a0d8f919c41522de91aeab8ccaf8886db}{get\+Media\+Control\+Packet\+Sender}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a16f36ca472901da42ef773156351336a}{register\+Media\+Control\+Packet\+Receiver}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_receiver}{I\+Media\+Control\+Packet\+Receiver}} $\ast$ctrl\+Packet\+Receiver)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a29078e80a94998fbac6d1905af757bd3}{unregister\+Media\+Control\+Packet\+Receiver}} (\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_receiver}{I\+Media\+Control\+Packet\+Receiver}} $\ast$ctrl\+Packet\+Receiver)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ac984ceadc3a4414972597ecb180f1ac5}{send\+Intra\+Request}} (user\+\_\+id\+\_\+t user\+Id)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a31a8ad58df4652128f9b143139ea136b}{set\+Audio\+Filterable}} (bool filterable)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a8f009535c5bfb63c5a3d0c4aad759713}{enable\+Remote\+Audio\+Track\+Filter}} (user\+\_\+id\+\_\+t user\+Id, const char $\ast$id, bool enable)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a8731b4c92895819585a6162cf93aa049}{set\+Remote\+Audio\+Track\+Filter\+Property}} (user\+\_\+id\+\_\+t user\+Id, const char $\ast$id, const char $\ast$key, const char $\ast$json\+Value)=0
+\item 
+virtual int \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ab252942a9e65158b037dee85c6f5f4d9}{get\+Remote\+Audio\+Track\+Filter\+Property}} (user\+\_\+id\+\_\+t user\+Id, const char $\ast$id, const char $\ast$key, char $\ast$json\+Value, size\+\_\+t buf\+Size)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user}{I\+Local\+User}} class defines the behavior and state of a local user.
+
+Each R\+TC connection has its own local user. Apps can get the local user object by calling \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a1cf54986a330713047da51c1503ec86c}{I\+Rtc\+Connection\+::get\+Local\+User}}.
+
+Each local user has two user roles\+: broadcaster (publisher and subscriber) and audience (subscriber only). A publisher publishes audio and video tracks, while audience receive them. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a213d4d7246151dfc0e3e7244a7fdad2f}\label{classagora_1_1rtc_1_1_i_local_user_a213d4d7246151dfc0e3e7244a7fdad2f}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setUserRole@{setUserRole}}
+\index{setUserRole@{setUserRole}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setUserRole()}{setUserRole()}}
+{\footnotesize\ttfamily virtual void agora\+::rtc\+::\+I\+Local\+User\+::set\+User\+Role (\begin{DoxyParamCaption}\item[{rtc\+::\+C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE}]{role }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the role of the user.
+
+You can call this method either before or after connecting to an Agora channel\+:
+\begin{DoxyItemize}
+\item Before connecting\+: This method sets the user role as publisher or subscriber (default).
+\item After connecting\+: This method allows you to switch the user role between publisher and subscriber. The \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a25f2c3352be19aef2e56b4a6e78f3e2a}{on\+Change\+Role\+Success}} and \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a7c4b7ec0e3854211f85e1ac885b05b67}{on\+Change\+Role\+Failure}} callbacks indicate the result of this method call.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+If the token in the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_a035389095b76329b60b539ca43f24f17}{connect}} method does not have the same role as {\ttfamily role}, the connection fails with the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_connection_observer_a33d46c9db2a0cbff4a24aa790a69eec3}{on\+Connection\+Failure}} callback. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em role} & The role of the user. See C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a910b5120b7db6570999611cc70625d06}\label{classagora_1_1rtc_1_1_i_local_user_a910b5120b7db6570999611cc70625d06}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!getUserRole@{getUserRole}}
+\index{getUserRole@{getUserRole}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{getUserRole()}{getUserRole()}}
+{\footnotesize\ttfamily virtual C\+L\+I\+E\+N\+T\+\_\+\+R\+O\+L\+E\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+I\+Local\+User\+::get\+User\+Role (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the role of the user.
+
+\begin{DoxyReturn}{Returns}
+The role of the user\+: Success. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a156667be527479d090010ad9b3fb06fb}\label{classagora_1_1rtc_1_1_i_local_user_a156667be527479d090010ad9b3fb06fb}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setAudioEncoderConfiguration@{setAudioEncoderConfiguration}}
+\index{setAudioEncoderConfiguration@{setAudioEncoderConfiguration}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setAudioEncoderConfiguration()}{setAudioEncoderConfiguration()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Audio\+Encoder\+Configuration (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_audio_encoder_configuration}{rtc\+::\+Audio\+Encoder\+Configuration}} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Configures the audio encoder.
+
+The S\+DK applies the configurations to all the sending audio tracks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & The reference to the audio encoder configurations. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a855a467cbe9c6b377521a766d768bfe1}\label{classagora_1_1rtc_1_1_i_local_user_a855a467cbe9c6b377521a766d768bfe1}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setAudioScenario@{setAudioScenario}}
+\index{setAudioScenario@{setAudioScenario}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setAudioScenario()}{setAudioScenario()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Audio\+Scenario (\begin{DoxyParamCaption}\item[{A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE}]{scenario }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the audio parameters and application scenarios.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scenario} & Sets the audio application scenarios\+: \#\+A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a7c1fd759e10a5803b32d1af68bc18286}\label{classagora_1_1rtc_1_1_i_local_user_a7c1fd759e10a5803b32d1af68bc18286}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!getLocalAudioStatistics@{getLocalAudioStatistics}}
+\index{getLocalAudioStatistics@{getLocalAudioStatistics}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{getLocalAudioStatistics()}{getLocalAudioStatistics()}}
+{\footnotesize\ttfamily virtual bool agora\+::rtc\+::\+I\+Local\+User\+::get\+Local\+Audio\+Statistics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structagora_1_1rtc_1_1_i_local_user_1_1_local_audio_detailed_stats}{Local\+Audio\+Detailed\+Stats}} \&}]{stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the detailed statistics of the local audio.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em stats} & The reference to the detailed statistics of the local audio. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\ttfamily true}\+: Success.
+\item {\ttfamily false}\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a575b2e9632bb70e90f7f053146f53767}\label{classagora_1_1rtc_1_1_i_local_user_a575b2e9632bb70e90f7f053146f53767}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!publishAudio@{publishAudio}}
+\index{publishAudio@{publishAudio}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{publishAudio()}{publishAudio()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::publish\+Audio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}} $>$}]{audio\+Track }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Publishes a local audio track to the channel.
+
+By default, all published audio tracks are mixed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Track} & The local audio track to be published. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item -\/5(E\+R\+R\+\_\+\+R\+E\+F\+U\+S\+ED), if the role of the local user is not broadcaster. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a16790ab0de9f1585285527089a3b618c}\label{classagora_1_1rtc_1_1_i_local_user_a16790ab0de9f1585285527089a3b618c}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unpublishAudio@{unpublishAudio}}
+\index{unpublishAudio@{unpublishAudio}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unpublishAudio()}{unpublishAudio()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unpublish\+Audio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_audio_track}{I\+Local\+Audio\+Track}} $>$}]{audio\+Track }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stops publishing the local audio track to the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Track} & The local audio track that you want to stop publishing. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a741888815ed463dd2b2d3afbdf4a6d67}\label{classagora_1_1rtc_1_1_i_local_user_a741888815ed463dd2b2d3afbdf4a6d67}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!publishVideo@{publishVideo}}
+\index{publishVideo@{publishVideo}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{publishVideo()}{publishVideo()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::publish\+Video (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}} $>$}]{video\+Track }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Publishes a local video track to the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Track} & The local video track to be published. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a62a3e9aa830dbc551ec0c9ddc6df32fe}\label{classagora_1_1rtc_1_1_i_local_user_a62a3e9aa830dbc551ec0c9ddc6df32fe}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unpublishVideo@{unpublishVideo}}
+\index{unpublishVideo@{unpublishVideo}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unpublishVideo()}{unpublishVideo()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unpublish\+Video (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1agora__refptr}{agora\+\_\+refptr}}$<$ \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_video_track}{I\+Local\+Video\+Track}} $>$}]{video\+Track }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stops publishing the local video track to the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Track} & The local video track that you want to stop publishing. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_ac0ce1d32649f5218afccd7683baa1b26}\label{classagora_1_1rtc_1_1_i_local_user_ac0ce1d32649f5218afccd7683baa1b26}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!subscribeAudio@{subscribeAudio}}
+\index{subscribeAudio@{subscribeAudio}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{subscribeAudio()}{subscribeAudio()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::subscribe\+Audio (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Subscribes to the audio of a specified remote user in channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the remote user whose audio you want to subscribe to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item -\/2(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT), if no such user exists or {\ttfamily user\+Id} is invalid. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a07cb08b6fed3b98db417721dfd822720}\label{classagora_1_1rtc_1_1_i_local_user_a07cb08b6fed3b98db417721dfd822720}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!subscribeAllAudio@{subscribeAllAudio}}
+\index{subscribeAllAudio@{subscribeAllAudio}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{subscribeAllAudio()}{subscribeAllAudio()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::subscribe\+All\+Audio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Subscribes to the audio of all remote users in the channel.
+
+This method also automatically subscribes to the audio of any subsequent user.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a30727be6e6603d935fb08607e9e0b5e4}\label{classagora_1_1rtc_1_1_i_local_user_a30727be6e6603d935fb08607e9e0b5e4}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unsubscribeAudio@{unsubscribeAudio}}
+\index{unsubscribeAudio@{unsubscribeAudio}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unsubscribeAudio()}{unsubscribeAudio()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unsubscribe\+Audio (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stops subscribing to the audio of a specified remote user in the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the user whose audio you want to stop subscribing to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item -\/2(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT), if no such user exists or {\ttfamily user\+Id} is invalid. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a8197a68ab38b026463bda82df9541e47}\label{classagora_1_1rtc_1_1_i_local_user_a8197a68ab38b026463bda82df9541e47}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unsubscribeAllAudio@{unsubscribeAllAudio}}
+\index{unsubscribeAllAudio@{unsubscribeAllAudio}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unsubscribeAllAudio()}{unsubscribeAllAudio()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unsubscribe\+All\+Audio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stops subscribing to the audio of all remote users in the channel.
+
+This method automatically stops subscribing to the audio of any subsequent user, unless you explicitly call \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_ac0ce1d32649f5218afccd7683baa1b26}{subscribe\+Audio}} or \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a07cb08b6fed3b98db417721dfd822720}{subscribe\+All\+Audio}}.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_ac03c2d3d3fd8945a032a1d518088c82b}\label{classagora_1_1rtc_1_1_i_local_user_ac03c2d3d3fd8945a032a1d518088c82b}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!adjustPlaybackSignalVolume@{adjustPlaybackSignalVolume}}
+\index{adjustPlaybackSignalVolume@{adjustPlaybackSignalVolume}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{adjustPlaybackSignalVolume()}{adjustPlaybackSignalVolume()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::adjust\+Playback\+Signal\+Volume (\begin{DoxyParamCaption}\item[{int}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adjusts the playback signal volume. 
+\begin{DoxyParams}{Parameters}
+{\em volume} & The playback volume. The value ranges between 0 and 400, including the following\+: 0\+: Mute. 100\+: (Default) Original volume. 400\+: Four times the original volume with signal-\/clipping protection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a3c8bf14bd8560082288ebe9f2eb81a09}\label{classagora_1_1rtc_1_1_i_local_user_a3c8bf14bd8560082288ebe9f2eb81a09}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!getPlaybackSignalVolume@{getPlaybackSignalVolume}}
+\index{getPlaybackSignalVolume@{getPlaybackSignalVolume}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{getPlaybackSignalVolume()}{getPlaybackSignalVolume()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::get\+Playback\+Signal\+Volume (\begin{DoxyParamCaption}\item[{int $\ast$}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the current playback signal volume. 
+\begin{DoxyParams}{Parameters}
+{\em volume} & A pointer to the playback signal volume. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a5566c50ec104c74856d655853f5903fa}\label{classagora_1_1rtc_1_1_i_local_user_a5566c50ec104c74856d655853f5903fa}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!getUserPlaybackSignalVolume@{getUserPlaybackSignalVolume}}
+\index{getUserPlaybackSignalVolume@{getUserPlaybackSignalVolume}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{getUserPlaybackSignalVolume()}{getUserPlaybackSignalVolume()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::get\+User\+Playback\+Signal\+Volume (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{int $\ast$}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the current playback signal volume of specified user. 
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the Remote user. \\
+\hline
+{\em volume} & A pointer to the playback signal volume. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a80cba84734dd436b91656fc5ed7431ec}\label{classagora_1_1rtc_1_1_i_local_user_a80cba84734dd436b91656fc5ed7431ec}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!enableSoundPositionIndication@{enableSoundPositionIndication}}
+\index{enableSoundPositionIndication@{enableSoundPositionIndication}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{enableSoundPositionIndication()}{enableSoundPositionIndication()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::enable\+Sound\+Position\+Indication (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enables/\+Disables stereo panning for remote users.
+
+Ensure that you call this method before join\+Channel to enable stereo panning for remote users so that the local user can track the position of a remote user by calling \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ac5c3755a1cca201b2a8066af07a653f6}{set\+Remote\+Voice\+Position}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Sets whether or not to enable stereo panning for remote users\+:
+\begin{DoxyItemize}
+\item true\+: enables stereo panning.
+\item false\+: disables stereo panning.
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a28fcc40974110721bfd52e03e9bda65d}\label{classagora_1_1rtc_1_1_i_local_user_a28fcc40974110721bfd52e03e9bda65d}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setRemoteVoicePosition@{setRemoteVoicePosition}}
+\index{setRemoteVoicePosition@{setRemoteVoicePosition}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setRemoteVoicePosition()}{setRemoteVoicePosition()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Remote\+Voice\+Position (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{double}]{pan,  }\item[{double}]{gain }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the sound position and gain of a remote user.
+
+When the local user calls this method to set the sound position of a remote user, the sound difference between the left and right channels allows the local user to track the real-\/time position of the remote user, creating a real sense of space. This method applies to massively multiplayer online games, such as Battle Royale games.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item For this method to work, enable stereo panning for remote users by calling the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_ac3f53f474760a834fef050937c4cf7fa}{enable\+Sound\+Position\+Indication}} method before joining a channel.
+\item This method requires hardware support. For the best sound positioning, we recommend using a wired headset.
+\item Ensure that you call this method after joining a channel.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the remote user. \\
+\hline
+{\em pan} & The sound position of the remote user. The value ranges from -\/1.\+0 to 1.\+0\+:
+\begin{DoxyItemize}
+\item 0.\+0\+: the remote sound comes from the front.
+\item -\/1.\+0\+: the remote sound comes from the left.
+\item 1.\+0\+: the remote sound comes from the right. 
+\end{DoxyItemize}\\
+\hline
+{\em gain} & Gain of the remote user. The value ranges from 0.\+0 to 100.\+0. The default value is 100.\+0 (the original gain of the remote user). The smaller the value, the less the gain.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a8840c75ab9c4cb4603b39bb7fc24d2e1}\label{classagora_1_1rtc_1_1_i_local_user_a8840c75ab9c4cb4603b39bb7fc24d2e1}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!enableSpatialAudio@{enableSpatialAudio}}
+\index{enableSpatialAudio@{enableSpatialAudio}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{enableSpatialAudio()}{enableSpatialAudio()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::enable\+Spatial\+Audio (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+enable spatial audio
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & enable/disable spatial audio\+:
+\begin{DoxyItemize}
+\item true\+: enable spatial audio.
+\item false\+: disable spatial audio. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_aafc42fcbd81659195c6a9e8ee91121bd}\label{classagora_1_1rtc_1_1_i_local_user_aafc42fcbd81659195c6a9e8ee91121bd}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setRemoteUserSpatialAudioParams@{setRemoteUserSpatialAudioParams}}
+\index{setRemoteUserSpatialAudioParams@{setRemoteUserSpatialAudioParams}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setRemoteUserSpatialAudioParams()}{setRemoteUserSpatialAudioParams()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Remote\+User\+Spatial\+Audio\+Params (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{const \mbox{\hyperlink{structagora_1_1_spatial_audio_params}{agora\+::\+Spatial\+Audio\+Params}} \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets remote user parameters for spatial audio
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the remote user. \\
+\hline
+{\em param} & spatial audio parameters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_af7bf29eb0712c96bda7129a20f5243ff}\label{classagora_1_1rtc_1_1_i_local_user_af7bf29eb0712c96bda7129a20f5243ff}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setPlaybackAudioFrameParameters@{setPlaybackAudioFrameParameters}}
+\index{setPlaybackAudioFrameParameters@{setPlaybackAudioFrameParameters}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setPlaybackAudioFrameParameters()}{setPlaybackAudioFrameParameters()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Playback\+Audio\+Frame\+Parameters (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{number\+Of\+Channels,  }\item[{uint32\+\_\+t}]{sample\+Rate\+Hz,  }\item[{R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE}]{mode = {\ttfamily RAW\+\_\+AUDIO\+\_\+FRAME\+\_\+OP\+\_\+MODE\+\_\+READ\+\_\+ONLY},  }\item[{int}]{samples\+Per\+Call = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the audio frame parameters for the \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_a4687657aed2d1702b07455aa7bdb19d7}{on\+Playback\+Audio\+Frame}} callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Channels} & The number of audio channels of the audio frame in the {\ttfamily on\+Playback\+Audio\+Frame} callback.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em sample\+Rate\+Hz} & The sample rate (Hz) of the audio frame in the {\ttfamily on\+Playback\+Audio\+Frame} callback. You can set it as 8000, 16000, 32000, 44100, or 48000. \\
+\hline
+{\em mode} & Use mode of the audio frame. See \#\+R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em samples\+Per\+Call} & The number of samples of the audio frame. $\ast$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a4a277c45d141b09675453b064712e429}\label{classagora_1_1rtc_1_1_i_local_user_a4a277c45d141b09675453b064712e429}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setRecordingAudioFrameParameters@{setRecordingAudioFrameParameters}}
+\index{setRecordingAudioFrameParameters@{setRecordingAudioFrameParameters}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setRecordingAudioFrameParameters()}{setRecordingAudioFrameParameters()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Recording\+Audio\+Frame\+Parameters (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{number\+Of\+Channels,  }\item[{uint32\+\_\+t}]{sample\+Rate\+Hz,  }\item[{R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE}]{mode = {\ttfamily RAW\+\_\+AUDIO\+\_\+FRAME\+\_\+OP\+\_\+MODE\+\_\+READ\+\_\+ONLY},  }\item[{int}]{samples\+Per\+Call = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the audio frame parameters for the \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aba6a8259228745183105c71efbab86c0}{on\+Record\+Audio\+Frame}} callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Channels} & The number of channels of the audio frame in the {\ttfamily on\+Record\+Audio\+Frame} callback.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em sample\+Rate\+Hz} & The sample rate (Hz) of the audio frame in the {\ttfamily on\+Record\+Audio\+Frame} callback. You can set it as 8000, 16000, 32000, 44100, or 48000. \\
+\hline
+{\em mode} & Use mode of the audio frame. See \#\+R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em samples\+Per\+Call} & The number of samples of the audio frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_ad3173832cf140747eb7f79bd398ee254}\label{classagora_1_1rtc_1_1_i_local_user_ad3173832cf140747eb7f79bd398ee254}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setMixedAudioFrameParameters@{setMixedAudioFrameParameters}}
+\index{setMixedAudioFrameParameters@{setMixedAudioFrameParameters}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setMixedAudioFrameParameters()}{setMixedAudioFrameParameters()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Mixed\+Audio\+Frame\+Parameters (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{number\+Of\+Channels,  }\item[{uint32\+\_\+t}]{sample\+Rate\+Hz,  }\item[{int}]{samples\+Per\+Call = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the audio frame parameters for the \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aeef4ee74bbec4a46c1c67c3c07a70e6d}{on\+Mixed\+Audio\+Frame}} callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Channels} & The number of channels of the audio frame in the {\ttfamily on\+Mixed\+Audio\+Frame} callback.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em sample\+Rate\+Hz} & The sample rate (Hz) of the audio frame in the {\ttfamily on\+Mixed\+Audio\+Frame} callback. You can set it as 8000, 16000, 32000, 44100, or 48000.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a1e4bdba66ad60f3f02b9a95b1cdacdb6}\label{classagora_1_1rtc_1_1_i_local_user_a1e4bdba66ad60f3f02b9a95b1cdacdb6}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setEarMonitoringAudioFrameParameters@{setEarMonitoringAudioFrameParameters}}
+\index{setEarMonitoringAudioFrameParameters@{setEarMonitoringAudioFrameParameters}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setEarMonitoringAudioFrameParameters()}{setEarMonitoringAudioFrameParameters()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Ear\+Monitoring\+Audio\+Frame\+Parameters (\begin{DoxyParamCaption}\item[{bool}]{enabled,  }\item[{size\+\_\+t}]{number\+Of\+Channels,  }\item[{uint32\+\_\+t}]{sample\+Rate\+Hz,  }\item[{R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE}]{mode = {\ttfamily RAW\+\_\+AUDIO\+\_\+FRAME\+\_\+OP\+\_\+MODE\+\_\+READ\+\_\+ONLY},  }\item[{int}]{samples\+Per\+Call = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the audio frame parameters for the \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_a8595cdf8384578b3a87973f913185bb0}{on\+Ear\+Monitoring\+Audio\+Frame}} callback. 
+\begin{DoxyParams}{Parameters}
+{\em enabled} & Determines whether to enable ear monitoring audio frame observer.
+\begin{DoxyItemize}
+\item true\+: Enable ear monitoring audio frame observer.
+\item false\+: Disable ear monitoring audio frame observer. 
+\end{DoxyItemize}\\
+\hline
+{\em number\+Of\+Channels} & The number of audio channels of the audio frame in the {\ttfamily on\+Ear\+Monitoring\+Audio\+Frame} callback.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em sample\+Rate\+Hz} & The sample rate (Hz) of the audio frame in the {\ttfamily on\+Ear\+Monitoring\+Audio\+Frame} callback. You can set it as 8000, 16000, 32000, 44100, or 48000. \\
+\hline
+{\em mode} & Use mode of the audio frame. See \#\+R\+A\+W\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+A\+M\+E\+\_\+\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+PE. \\
+\hline
+{\em samples\+Per\+Call} & The number of samples of the audio frame. $\ast$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_ab4dc9a3cba978dece161341bb13c5a26}\label{classagora_1_1rtc_1_1_i_local_user_ab4dc9a3cba978dece161341bb13c5a26}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setPlaybackAudioFrameBeforeMixingParameters@{setPlaybackAudioFrameBeforeMixingParameters}}
+\index{setPlaybackAudioFrameBeforeMixingParameters@{setPlaybackAudioFrameBeforeMixingParameters}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setPlaybackAudioFrameBeforeMixingParameters()}{setPlaybackAudioFrameBeforeMixingParameters()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Playback\+Audio\+Frame\+Before\+Mixing\+Parameters (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{number\+Of\+Channels,  }\item[{uint32\+\_\+t}]{sample\+Rate\+Hz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the audio frame parameters for the \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_add04e053c8a76ea70f4f40c2c7276275}{on\+Playback\+Audio\+Frame\+Before\+Mixing}} callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Channels} & The number of channels of the audio frame in the {\ttfamily on\+Playback\+Audio\+Frame\+Before\+Mixing} callback.
+\begin{DoxyItemize}
+\item 1\+: Mono.
+\item 2\+: Stereo. 
+\end{DoxyItemize}\\
+\hline
+{\em sample\+Rate\+Hz} & The sample rate (Hz) of the audio frame in the {\ttfamily on\+Playback\+Audio\+Frame\+Before\+Mixing} callback. You can set it as 8000, 16000, 32000, 44100, or 48000.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a0dfd85d24eeb3b7ad65fdc0d4914b6da}\label{classagora_1_1rtc_1_1_i_local_user_a0dfd85d24eeb3b7ad65fdc0d4914b6da}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!registerAudioFrameObserver@{registerAudioFrameObserver}}
+\index{registerAudioFrameObserver@{registerAudioFrameObserver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{registerAudioFrameObserver()}{registerAudioFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::register\+Audio\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base}{agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an audio frame observer.
+
+You need to implement the {\ttfamily I\+Audio\+Frame\+Observer\+Base} class in this method, and register the following callbacks according to your scenario\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aba6a8259228745183105c71efbab86c0}{on\+Record\+Audio\+Frame}}\+: Occurs when the S\+DK receives the audio data captured by the local recording device.
+\item \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_a4687657aed2d1702b07455aa7bdb19d7}{on\+Playback\+Audio\+Frame}}\+: Occurs when the S\+DK receives the remote audio data for playback.
+\item \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_af9f96e0fb16217950c8045b54a970d90}{on\+Playback\+Audio\+Frame\+Before\+Mixing}}\+: Occurs when the S\+DK receives the remote audio data of a specified remote user before mixing.
+\item \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base_aeef4ee74bbec4a46c1c67c3c07a70e6d}{on\+Mixed\+Audio\+Frame}}\+: Occurs when the S\+DK receives the mixed data of recorded and playback audio.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & A pointer to the audio frame observer\+: \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base}{I\+Audio\+Frame\+Observer\+Base}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_aab2c70c722e492385a719dd9ab457406}\label{classagora_1_1rtc_1_1_i_local_user_aab2c70c722e492385a719dd9ab457406}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unregisterAudioFrameObserver@{unregisterAudioFrameObserver}}
+\index{unregisterAudioFrameObserver@{unregisterAudioFrameObserver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unregisterAudioFrameObserver()}{unregisterAudioFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unregister\+Audio\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base}{agora\+::media\+::\+I\+Audio\+Frame\+Observer\+Base}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the audio frame observer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the audio frame observer\+: \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_frame_observer_base}{I\+Audio\+Frame\+Observer\+Base}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a76e00c4f2ebbc5c8fafe9d4a00a09841}\label{classagora_1_1rtc_1_1_i_local_user_a76e00c4f2ebbc5c8fafe9d4a00a09841}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!enableAudioSpectrumMonitor@{enableAudioSpectrumMonitor}}
+\index{enableAudioSpectrumMonitor@{enableAudioSpectrumMonitor}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{enableAudioSpectrumMonitor()}{enableAudioSpectrumMonitor()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::enable\+Audio\+Spectrum\+Monitor (\begin{DoxyParamCaption}\item[{int}]{interval\+In\+MS = {\ttfamily 100} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enable the audio spectrum monitor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em interval\+In\+MS} & Sets the time interval(ms) between two consecutive audio spectrum callback. The default value is 100. This param should be larger than 10.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a607b6bb2fa5da530a1ea2d9a5c4b3cc2}\label{classagora_1_1rtc_1_1_i_local_user_a607b6bb2fa5da530a1ea2d9a5c4b3cc2}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!disableAudioSpectrumMonitor@{disableAudioSpectrumMonitor}}
+\index{disableAudioSpectrumMonitor@{disableAudioSpectrumMonitor}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{disableAudioSpectrumMonitor()}{disableAudioSpectrumMonitor()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::disable\+Audio\+Spectrum\+Monitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Disalbe the audio spectrum monitor.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a016702f3bf19ec46b74e6691c484836d}\label{classagora_1_1rtc_1_1_i_local_user_a016702f3bf19ec46b74e6691c484836d}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!registerAudioSpectrumObserver@{registerAudioSpectrumObserver}}
+\index{registerAudioSpectrumObserver@{registerAudioSpectrumObserver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{registerAudioSpectrumObserver()}{registerAudioSpectrumObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::register\+Audio\+Spectrum\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_spectrum_observer}{agora\+::media\+::\+I\+Audio\+Spectrum\+Observer}} $\ast$}]{observer,  }\item[{void($\ast$)(\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_spectrum_observer}{agora\+::media\+::\+I\+Audio\+Spectrum\+Observer}} $\ast$)}]{safe\+Deleter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an audio spectrum observer.
+
+You need to implement the {\ttfamily I\+Audio\+Spectrum\+Observer} class in this method, and register the following callbacks according to your scenario\+:
+\begin{DoxyItemize}
+\item on\+Audio\+Spectrum\+Computed\+: Occurs when the S\+DK receives the audio data and at set intervals.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & A pointer to the audio spectrum observer\+: \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_spectrum_observer}{I\+Audio\+Spectrum\+Observer}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_aab8d8408c4ed4484d18e912f123bb674}\label{classagora_1_1rtc_1_1_i_local_user_aab8d8408c4ed4484d18e912f123bb674}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unregisterAudioSpectrumObserver@{unregisterAudioSpectrumObserver}}
+\index{unregisterAudioSpectrumObserver@{unregisterAudioSpectrumObserver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unregisterAudioSpectrumObserver()}{unregisterAudioSpectrumObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unregister\+Audio\+Spectrum\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1_i_audio_spectrum_observer}{agora\+::media\+::\+I\+Audio\+Spectrum\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the audio spectrum observer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the audio spectrum observer\+: \mbox{\hyperlink{classagora_1_1media_1_1_i_audio_spectrum_observer}{I\+Audio\+Spectrum\+Observer}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a3ce7e4a6d6fca5e84ac8696e8c65987a}\label{classagora_1_1rtc_1_1_i_local_user_a3ce7e4a6d6fca5e84ac8696e8c65987a}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!registerLocalVideoEncodedFrameObserver@{registerLocalVideoEncodedFrameObserver}}
+\index{registerLocalVideoEncodedFrameObserver@{registerLocalVideoEncodedFrameObserver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{registerLocalVideoEncodedFrameObserver()}{registerLocalVideoEncodedFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::register\+Local\+Video\+Encoded\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an \mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{I\+Video\+Encoded\+Frame\+Observer}} object.
+
+You need to implement the {\ttfamily I\+Video\+Encoded\+Frame\+Observer} class in this method. Once you successfully register the local encoded frame observer, the S\+DK triggers the \mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer_aec70e15d73d89769b043c4466478382f}{On\+Encoded\+Video\+Frame\+Received}} callback when it receives the encoded video image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the {\ttfamily I\+Video\+Encoded\+Frame\+Observer} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_abf0e5b58719c99b57295fe53991c7f54}\label{classagora_1_1rtc_1_1_i_local_user_abf0e5b58719c99b57295fe53991c7f54}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unregisterLocalVideoEncodedFrameObserver@{unregisterLocalVideoEncodedFrameObserver}}
+\index{unregisterLocalVideoEncodedFrameObserver@{unregisterLocalVideoEncodedFrameObserver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unregisterLocalVideoEncodedFrameObserver()}{unregisterLocalVideoEncodedFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unregister\+Local\+Video\+Encoded\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{I\+Video\+Encoded\+Frame\+Observer}} object. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the {\ttfamily I\+Video\+Encoded\+Frame\+Observer} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a302654c89f32c144fe6fc9d39e5ad7f0}\label{classagora_1_1rtc_1_1_i_local_user_a302654c89f32c144fe6fc9d39e5ad7f0}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!forceNextIntraFrame@{forceNextIntraFrame}}
+\index{forceNextIntraFrame@{forceNextIntraFrame}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{forceNextIntraFrame()}{forceNextIntraFrame()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::force\+Next\+Intra\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Force trigger to intra-\/frame the next frame.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_ac873ccc19b1873c260d8c78fbb02f763}\label{classagora_1_1rtc_1_1_i_local_user_ac873ccc19b1873c260d8c78fbb02f763}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!registerVideoEncodedFrameObserver@{registerVideoEncodedFrameObserver}}
+\index{registerVideoEncodedFrameObserver@{registerVideoEncodedFrameObserver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{registerVideoEncodedFrameObserver()}{registerVideoEncodedFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::register\+Video\+Encoded\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an \mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{I\+Video\+Encoded\+Frame\+Observer}} object.
+
+You need to implement the {\ttfamily I\+Video\+Encoded\+Frame\+Observer} class in this method. Once you successfully register the encoded frame observer, the S\+DK triggers the \mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer_aec70e15d73d89769b043c4466478382f}{On\+Encoded\+Video\+Frame\+Received}} callback when it receives the encoded video image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the {\ttfamily I\+Video\+Encoded\+Frame\+Observer} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_abefbf3506f0cdbbc6d914ecba3eb71c3}\label{classagora_1_1rtc_1_1_i_local_user_abefbf3506f0cdbbc6d914ecba3eb71c3}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unregisterVideoEncodedFrameObserver@{unregisterVideoEncodedFrameObserver}}
+\index{unregisterVideoEncodedFrameObserver@{unregisterVideoEncodedFrameObserver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unregisterVideoEncodedFrameObserver()}{unregisterVideoEncodedFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unregister\+Video\+Encoded\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{agora\+::media\+::\+I\+Video\+Encoded\+Frame\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1media_1_1_i_video_encoded_frame_observer}{I\+Video\+Encoded\+Frame\+Observer}} object. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the {\ttfamily I\+Video\+Encoded\+Frame\+Observer} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a22a2231a1d9e33e464e8f16730e38e86}\label{classagora_1_1rtc_1_1_i_local_user_a22a2231a1d9e33e464e8f16730e38e86}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!registerVideoFrameObserver@{registerVideoFrameObserver}}
+\index{registerVideoFrameObserver@{registerVideoFrameObserver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{registerVideoFrameObserver()}{registerVideoFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::register\+Video\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_observer2}{I\+Video\+Frame\+Observer2}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers an \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_observer2}{I\+Video\+Frame\+Observer2}} object.
+
+You need to implement the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_observer2}{I\+Video\+Frame\+Observer2}}} class in this method. Once you successfully register the video frame observer, the S\+DK triggers the on\+Frame callback when it receives the video image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_observer2}{I\+Video\+Frame\+Observer2}}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_ab243950d6f4b63d94380139ae1dfda9d}\label{classagora_1_1rtc_1_1_i_local_user_ab243950d6f4b63d94380139ae1dfda9d}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unregisterVideoFrameObserver@{unregisterVideoFrameObserver}}
+\index{unregisterVideoFrameObserver@{unregisterVideoFrameObserver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unregisterVideoFrameObserver()}{unregisterVideoFrameObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unregister\+Video\+Frame\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_observer2}{I\+Video\+Frame\+Observer2}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_observer2}{I\+Video\+Frame\+Observer2}} object. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_video_frame_observer2}{I\+Video\+Frame\+Observer2}}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a7e65ee3135e0d0bb290470b6ca97e358}\label{classagora_1_1rtc_1_1_i_local_user_a7e65ee3135e0d0bb290470b6ca97e358}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setSubscribeAudioBlacklist@{setSubscribeAudioBlacklist}}
+\index{setSubscribeAudioBlacklist@{setSubscribeAudioBlacklist}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setSubscribeAudioBlacklist()}{setSubscribeAudioBlacklist()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Subscribe\+Audio\+Blacklist (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t $\ast$}]{user\+List,  }\item[{int}]{user\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the blacklist of subscribe remote stream audio.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+List} & The id list of users who do not subscribe to audio. \\
+\hline
+{\em user\+Number} & The number of uid in uid\+List.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If uid is in uid\+List, the remote user\textquotesingle{}s audio will not be subscribed, even if subscribe\+Audio(uid) and subscribe\+All\+Audio(true) are operated.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_af6cfb73cacb898de9b58a7818f1bab9e}\label{classagora_1_1rtc_1_1_i_local_user_af6cfb73cacb898de9b58a7818f1bab9e}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setSubscribeAudioWhitelist@{setSubscribeAudioWhitelist}}
+\index{setSubscribeAudioWhitelist@{setSubscribeAudioWhitelist}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setSubscribeAudioWhitelist()}{setSubscribeAudioWhitelist()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Subscribe\+Audio\+Whitelist (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t $\ast$}]{user\+List,  }\item[{int}]{user\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the whitelist of subscribe remote stream audio.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+List} & The id list of users who do subscribe to audio. \\
+\hline
+{\em user\+Number} & The number of uid in uid\+List.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If uid is in uid\+List, the remote user\textquotesingle{}s audio will be subscribed, even if unsubscribe\+Audio(uid) and unsubscribe\+All\+Audio(true) are operated.
+\end{DoxyNote}
+If a user is in the blacklist and whitelist at the same time, the user will not subscribe to audio.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a890442a5485360c8c21f9c58cdee7ec0}\label{classagora_1_1rtc_1_1_i_local_user_a890442a5485360c8c21f9c58cdee7ec0}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setSubscribeVideoBlacklist@{setSubscribeVideoBlacklist}}
+\index{setSubscribeVideoBlacklist@{setSubscribeVideoBlacklist}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setSubscribeVideoBlacklist()}{setSubscribeVideoBlacklist()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Subscribe\+Video\+Blacklist (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t $\ast$}]{user\+List,  }\item[{int}]{user\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the blacklist of subscribe remote stream video.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+List} & The id list of users who do not subscribe to video. \\
+\hline
+{\em user\+Number} & The number of uid in uid\+List.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If uid is in uid\+List, the remote user\textquotesingle{}s video will not be subscribed, even if subscribe\+Video(uid) and subscribe\+All\+Video(true) are operated.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_aba34ce5aa75a5d294af8f43d048f27af}\label{classagora_1_1rtc_1_1_i_local_user_aba34ce5aa75a5d294af8f43d048f27af}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setSubscribeVideoWhitelist@{setSubscribeVideoWhitelist}}
+\index{setSubscribeVideoWhitelist@{setSubscribeVideoWhitelist}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setSubscribeVideoWhitelist()}{setSubscribeVideoWhitelist()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Subscribe\+Video\+Whitelist (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t $\ast$}]{user\+List,  }\item[{int}]{user\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the whitelist of subscribe remote stream video.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+List} & The id list of users who do subscribe to video. \\
+\hline
+{\em user\+Number} & The number of uid in uid\+List.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If uid is in uid\+List, the remote user\textquotesingle{}s video will be subscribed, even if unsubscribe\+Video(uid) and unsubscribe\+All\+Video(true) are operated.
+\end{DoxyNote}
+If a user is in the blacklist and whitelist at the same time, the user will not subscribe to video.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a82bd9290d108acee5442465f83292d3d}\label{classagora_1_1rtc_1_1_i_local_user_a82bd9290d108acee5442465f83292d3d}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!subscribeVideo@{subscribeVideo}}
+\index{subscribeVideo@{subscribeVideo}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{subscribeVideo()}{subscribeVideo()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::subscribe\+Video (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_subscription_options}{Video\+Subscription\+Options}} \&}]{subscription\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Subscribes to the video of a specified remote user in the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the user whose video you want to subscribe to. \\
+\hline
+{\em subscription\+Options} & The reference to the video subscription options\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_video_subscription_options}{Video\+Subscription\+Options}}. For example, subscribing to encoded video data only or subscribing to low-\/stream video.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item -\/2(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT), if {\ttfamily user\+Id} is invalid. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a8c7edb0a1997dbcc1e7ce2388837e54f}\label{classagora_1_1rtc_1_1_i_local_user_a8c7edb0a1997dbcc1e7ce2388837e54f}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!subscribeAllVideo@{subscribeAllVideo}}
+\index{subscribeAllVideo@{subscribeAllVideo}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{subscribeAllVideo()}{subscribeAllVideo()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::subscribe\+All\+Video (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structagora_1_1rtc_1_1_video_subscription_options}{Video\+Subscription\+Options}} \&}]{subscription\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Subscribes to the video of all remote users in the channel.
+
+This method also automatically subscribes to the video of any subsequent remote user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em subscription\+Options} & The reference to the video subscription options\+: \mbox{\hyperlink{structagora_1_1rtc_1_1_video_subscription_options}{Video\+Subscription\+Options}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_ac52175ca9a2769955563b6489fe8f6cb}\label{classagora_1_1rtc_1_1_i_local_user_ac52175ca9a2769955563b6489fe8f6cb}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unsubscribeVideo@{unsubscribeVideo}}
+\index{unsubscribeVideo@{unsubscribeVideo}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unsubscribeVideo()}{unsubscribeVideo()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unsubscribe\+Video (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stops subscribing to the video of a specified remote user in the channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the user whose video you want to stop subscribing to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item -\/2(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT), if {\ttfamily user\+Id} is invalid. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a37cb2c7b0380a0e3d4c58d1396c13a21}\label{classagora_1_1rtc_1_1_i_local_user_a37cb2c7b0380a0e3d4c58d1396c13a21}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unsubscribeAllVideo@{unsubscribeAllVideo}}
+\index{unsubscribeAllVideo@{unsubscribeAllVideo}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unsubscribeAllVideo()}{unsubscribeAllVideo()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unsubscribe\+All\+Video (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stops subscribing to the video of all remote users in the channel.
+
+This method automatically stops subscribing to the video of any subsequent user, unless you explicitly call \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a82bd9290d108acee5442465f83292d3d}{subscribe\+Video}} or \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_a8c7edb0a1997dbcc1e7ce2388837e54f}{subscribe\+All\+Video}}.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a8e594e257c37ec8163c66c4bb9831a17}\label{classagora_1_1rtc_1_1_i_local_user_a8e594e257c37ec8163c66c4bb9831a17}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setAudioVolumeIndicationParameters@{setAudioVolumeIndicationParameters}}
+\index{setAudioVolumeIndicationParameters@{setAudioVolumeIndicationParameters}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setAudioVolumeIndicationParameters()}{setAudioVolumeIndicationParameters()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Audio\+Volume\+Indication\+Parameters (\begin{DoxyParamCaption}\item[{int}]{interval\+In\+MS,  }\item[{int}]{smooth,  }\item[{bool}]{report\+Vad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the time interval and the volume smoothing factor of the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer_a08499ccc9e5bd513a961f58ac84e51e7}{on\+Audio\+Volume\+Indication}} callback.
+
+By default, the S\+DK triggers the {\ttfamily on\+Audio\+Volume\+Indication} callback once every 500 ms, with a smoothing factor of 3.
+
+
+\begin{DoxyParams}{Parameters}
+{\em interval\+In\+MS} & Sets the time interval(ms) between two consecutive volume indications. The default value is 500.
+\begin{DoxyItemize}
+\item {$\le$} 10\+: Disables the volume indication.
+\item $>$ 10\+: The time interval (ms) between two consecutive callbacks.
+\end{DoxyItemize}\\
+\hline
+{\em smooth} & The smoothing factor that sets the sensitivity of the audio volume indicator. The value range is \mbox{[}0,10\mbox{]}. The greater the value, the more sensitive the indicator.\+The default value is 3.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure.
+\begin{DoxyItemize}
+\item -\/2(E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+R\+G\+U\+M\+E\+NT), if {\ttfamily interval\+In\+MS} or {\ttfamily smooth} is out of range. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a9c75f3cca6e59b4d114bafc863ec13e5}\label{classagora_1_1rtc_1_1_i_local_user_a9c75f3cca6e59b4d114bafc863ec13e5}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!registerLocalUserObserver@{registerLocalUserObserver}}
+\index{registerLocalUserObserver@{registerLocalUserObserver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{registerLocalUserObserver()}{registerLocalUserObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::register\+Local\+User\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer}{I\+Local\+User\+Observer}} $\ast$}]{observer,  }\item[{void($\ast$)(\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer}{I\+Local\+User\+Observer}} $\ast$)}]{safe\+Deleter = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers a local user observer object.
+
+You need to implement the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer}{I\+Local\+User\+Observer}} class in this method. Once registered, the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer}{I\+Local\+User\+Observer}} receives events of the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user}{I\+Local\+User}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer}{I\+Local\+User\+Observer}}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_aa1dd761f67f1dfe30142b92be902a274}\label{classagora_1_1rtc_1_1_i_local_user_aa1dd761f67f1dfe30142b92be902a274}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unregisterLocalUserObserver@{unregisterLocalUserObserver}}
+\index{unregisterLocalUserObserver@{unregisterLocalUserObserver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unregisterLocalUserObserver()}{unregisterLocalUserObserver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unregister\+Local\+User\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer}{I\+Local\+User\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer}{I\+Local\+User\+Observer}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The pointer to the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_local_user_observer}{I\+Local\+User\+Observer}}} object that you want to release. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a0d8f919c41522de91aeab8ccaf8886db}\label{classagora_1_1rtc_1_1_i_local_user_a0d8f919c41522de91aeab8ccaf8886db}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!getMediaControlPacketSender@{getMediaControlPacketSender}}
+\index{getMediaControlPacketSender@{getMediaControlPacketSender}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{getMediaControlPacketSender()}{getMediaControlPacketSender()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_sender}{I\+Media\+Control\+Packet\+Sender}}$\ast$ agora\+::rtc\+::\+I\+Local\+User\+::get\+Media\+Control\+Packet\+Sender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the media control packet sender.
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item The pointer to the media control packet sender \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_sender}{I\+Media\+Control\+Packet\+Sender}}\+: Success.
+\item A null pointer\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a16f36ca472901da42ef773156351336a}\label{classagora_1_1rtc_1_1_i_local_user_a16f36ca472901da42ef773156351336a}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!registerMediaControlPacketReceiver@{registerMediaControlPacketReceiver}}
+\index{registerMediaControlPacketReceiver@{registerMediaControlPacketReceiver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{registerMediaControlPacketReceiver()}{registerMediaControlPacketReceiver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::register\+Media\+Control\+Packet\+Receiver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_receiver}{I\+Media\+Control\+Packet\+Receiver}} $\ast$}]{ctrl\+Packet\+Receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Registers a media control packet receiver.
+
+You need to implement the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_receiver}{I\+Media\+Control\+Packet\+Receiver}}} class in this method. Once you successfully register the media control packet receiver, the S\+DK triggers the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_receiver_a21c1a1de6b8c68b321937d826b44c2c0}{on\+Media\+Control\+Packet\+Received}} callback when it receives the media control packet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctrl\+Packet\+Receiver} & The pointer to the \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_receiver}{I\+Media\+Control\+Packet\+Receiver}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a29078e80a94998fbac6d1905af757bd3}\label{classagora_1_1rtc_1_1_i_local_user_a29078e80a94998fbac6d1905af757bd3}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!unregisterMediaControlPacketReceiver@{unregisterMediaControlPacketReceiver}}
+\index{unregisterMediaControlPacketReceiver@{unregisterMediaControlPacketReceiver}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{unregisterMediaControlPacketReceiver()}{unregisterMediaControlPacketReceiver()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::unregister\+Media\+Control\+Packet\+Receiver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_receiver}{I\+Media\+Control\+Packet\+Receiver}} $\ast$}]{ctrl\+Packet\+Receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Releases the media control packet receiver. 
+\begin{DoxyParams}{Parameters}
+{\em ctrl\+Packet\+Receiver} & The pointer to the {\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_media_control_packet_receiver}{I\+Media\+Control\+Packet\+Receiver}}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_ac984ceadc3a4414972597ecb180f1ac5}\label{classagora_1_1rtc_1_1_i_local_user_ac984ceadc3a4414972597ecb180f1ac5}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!sendIntraRequest@{sendIntraRequest}}
+\index{sendIntraRequest@{sendIntraRequest}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{sendIntraRequest()}{sendIntraRequest()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::send\+Intra\+Request (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sends intra-\/frame request to the broadcaster with a specified uid.
+
+The local user receives the {\ttfamily on\+Intra\+Request\+Received} callback when the broadcaster receives the request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user ID of the target broadcaster . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a31a8ad58df4652128f9b143139ea136b}\label{classagora_1_1rtc_1_1_i_local_user_a31a8ad58df4652128f9b143139ea136b}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setAudioFilterable@{setAudioFilterable}}
+\index{setAudioFilterable@{setAudioFilterable}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setAudioFilterable()}{setAudioFilterable()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Audio\+Filterable (\begin{DoxyParamCaption}\item[{bool}]{filterable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set local audio filterable by topn
+
+The local user receives the {\ttfamily on\+Intra\+Request\+Received} callback when the broadcaster receives the request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user ID of the target broadcaster . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item $<$ 0\+: Failure. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a8f009535c5bfb63c5a3d0c4aad759713}\label{classagora_1_1rtc_1_1_i_local_user_a8f009535c5bfb63c5a3d0c4aad759713}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!enableRemoteAudioTrackFilter@{enableRemoteAudioTrackFilter}}
+\index{enableRemoteAudioTrackFilter@{enableRemoteAudioTrackFilter}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{enableRemoteAudioTrackFilter()}{enableRemoteAudioTrackFilter()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::enable\+Remote\+Audio\+Track\+Filter (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{const char $\ast$}]{id,  }\item[{bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enable / Disable specified audio filter 
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the remote user \\
+\hline
+{\em id} & id of the filter \\
+\hline
+{\em enable} & enable / disable the filter with given id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: success
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_a8731b4c92895819585a6162cf93aa049}\label{classagora_1_1rtc_1_1_i_local_user_a8731b4c92895819585a6162cf93aa049}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!setRemoteAudioTrackFilterProperty@{setRemoteAudioTrackFilterProperty}}
+\index{setRemoteAudioTrackFilterProperty@{setRemoteAudioTrackFilterProperty}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{setRemoteAudioTrackFilterProperty()}{setRemoteAudioTrackFilterProperty()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::set\+Remote\+Audio\+Track\+Filter\+Property (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{const char $\ast$}]{id,  }\item[{const char $\ast$}]{key,  }\item[{const char $\ast$}]{json\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+set the properties of the specified audio filter 
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the remote user \\
+\hline
+{\em id} & id of the filter \\
+\hline
+{\em key} & key of the property \\
+\hline
+{\em json\+Value} & json str value of the property \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: success
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classagora_1_1rtc_1_1_i_local_user_ab252942a9e65158b037dee85c6f5f4d9}\label{classagora_1_1rtc_1_1_i_local_user_ab252942a9e65158b037dee85c6f5f4d9}} 
+\index{agora::rtc::ILocalUser@{agora::rtc::ILocalUser}!getRemoteAudioTrackFilterProperty@{getRemoteAudioTrackFilterProperty}}
+\index{getRemoteAudioTrackFilterProperty@{getRemoteAudioTrackFilterProperty}!agora::rtc::ILocalUser@{agora::rtc::ILocalUser}}
+\doxysubsubsection{\texorpdfstring{getRemoteAudioTrackFilterProperty()}{getRemoteAudioTrackFilterProperty()}}
+{\footnotesize\ttfamily virtual int agora\+::rtc\+::\+I\+Local\+User\+::get\+Remote\+Audio\+Track\+Filter\+Property (\begin{DoxyParamCaption}\item[{user\+\_\+id\+\_\+t}]{user\+Id,  }\item[{const char $\ast$}]{id,  }\item[{const char $\ast$}]{key,  }\item[{char $\ast$}]{json\+Value,  }\item[{size\+\_\+t}]{buf\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+get the properties of the specified audio filter 
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The ID of the remote user \\
+\hline
+{\em id} & id of the filter \\
+\hline
+{\em key} & key of the property \\
+\hline
+{\em json\+Value} & json str value of the property \\
+\hline
+{\em buf\+Size} & max length of the json value buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 0\+: success
+\item $<$0\+: failure 
+\end{DoxyItemize}
+\end{DoxyReturn}

@@ -1,0 +1,102 @@
+\hypertarget{structagora_1_1rtc_1_1_rtc_engine_context}{}\doxysection{agora\+::rtc\+::Rtc\+Engine\+Context Struct Reference}
+\label{structagora_1_1rtc_1_1_rtc_engine_context}\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler}{I\+Rtc\+Engine\+Event\+Handler}} $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a2af55b45880c4b0e03815154191dfb68}{event\+Handler}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a912df896fff64c9d9f9e7a50fb63afce}{app\+Id}}
+\item 
+void $\ast$ \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_aa9be15669134534917de2b1682098e37}{context}}
+\item 
+C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a59c8d76415b1fd8e16b05617d1de711b}{channel\+Profile}}
+\item 
+A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a042693a6c6c1b6cd596a3e17cc8ad553}{audio\+Scenario}}
+\item 
+unsigned int \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a0921ebb3c9227b8409077cafe5f8ac45}{area\+Code}}
+\item 
+\mbox{\hyperlink{structagora_1_1commons_1_1_log_config}{commons\+::\+Log\+Config}} \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_a32a5382b0bb213edfe85aa231ca2bd6c}{log\+Config}}
+\item 
+\mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$ T\+H\+R\+E\+A\+D\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+T\+Y\+PE $>$ \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_aeaa6a3618ec0fc6d03293f4268c1d65d}{thread\+Priority}}
+\item 
+bool \mbox{\hyperlink{structagora_1_1rtc_1_1_rtc_engine_context_adce7711c43c038923cf57631e2599bf0}{use\+External\+Egl\+Context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a2af55b45880c4b0e03815154191dfb68}\label{structagora_1_1rtc_1_1_rtc_engine_context_a2af55b45880c4b0e03815154191dfb68}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!eventHandler@{eventHandler}}
+\index{eventHandler@{eventHandler}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{eventHandler}{eventHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine_event_handler}{I\+Rtc\+Engine\+Event\+Handler}}$\ast$ agora\+::rtc\+::\+Rtc\+Engine\+Context\+::event\+Handler}
+
+The event handler for \mbox{\hyperlink{classagora_1_1rtc_1_1_i_rtc_engine}{I\+Rtc\+Engine}}. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a912df896fff64c9d9f9e7a50fb63afce}\label{structagora_1_1rtc_1_1_rtc_engine_context_a912df896fff64c9d9f9e7a50fb63afce}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!appId@{appId}}
+\index{appId@{appId}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{appId}{appId}}
+{\footnotesize\ttfamily const char$\ast$ agora\+::rtc\+::\+Rtc\+Engine\+Context\+::app\+Id}
+
+The App ID issued to the developers by Agora. Apply for a new one from Agora if it is missing from your kit. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_aa9be15669134534917de2b1682098e37}\label{structagora_1_1rtc_1_1_rtc_engine_context_aa9be15669134534917de2b1682098e37}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!context@{context}}
+\index{context@{context}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily void$\ast$ agora\+::rtc\+::\+Rtc\+Engine\+Context\+::context}
+
+
+\begin{DoxyItemize}
+\item For Android, it is the context of Activity or Application.
+\item For Windows, it is the window handle of app. Once set, this parameter enables you to plug or unplug the video devices while they are powered. 
+\end{DoxyItemize}\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a59c8d76415b1fd8e16b05617d1de711b}\label{structagora_1_1rtc_1_1_rtc_engine_context_a59c8d76415b1fd8e16b05617d1de711b}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!channelProfile@{channelProfile}}
+\index{channelProfile@{channelProfile}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{channelProfile}{channelProfile}}
+{\footnotesize\ttfamily C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Rtc\+Engine\+Context\+::channel\+Profile}
+
+The channel profile. See \#\+C\+H\+A\+N\+N\+E\+L\+\_\+\+P\+R\+O\+F\+I\+L\+E\+\_\+\+T\+Y\+PE. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a042693a6c6c1b6cd596a3e17cc8ad553}\label{structagora_1_1rtc_1_1_rtc_engine_context_a042693a6c6c1b6cd596a3e17cc8ad553}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!audioScenario@{audioScenario}}
+\index{audioScenario@{audioScenario}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{audioScenario}{audioScenario}}
+{\footnotesize\ttfamily A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE agora\+::rtc\+::\+Rtc\+Engine\+Context\+::audio\+Scenario}
+
+The audio application scenario. See \#\+A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+T\+Y\+PE.
+
+\begin{DoxyNote}{Note}
+Agora recommends the following scenarios\+:
+\begin{DoxyItemize}
+\item {\ttfamily A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+D\+E\+F\+A\+U\+L\+T(0)}
+\item {\ttfamily A\+U\+D\+I\+O\+\_\+\+S\+C\+E\+N\+A\+R\+I\+O\+\_\+\+G\+A\+M\+E\+\_\+\+S\+T\+R\+E\+A\+M\+I\+N\+G(3)} 
+\end{DoxyItemize}
+\end{DoxyNote}
+\mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a0921ebb3c9227b8409077cafe5f8ac45}\label{structagora_1_1rtc_1_1_rtc_engine_context_a0921ebb3c9227b8409077cafe5f8ac45}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!areaCode@{areaCode}}
+\index{areaCode@{areaCode}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{areaCode}{areaCode}}
+{\footnotesize\ttfamily unsigned int agora\+::rtc\+::\+Rtc\+Engine\+Context\+::area\+Code}
+
+The region for connection. This advanced feature applies to scenarios that have regional restrictions.
+
+For the regions that Agora supports, see \#\+A\+R\+E\+A\+\_\+\+C\+O\+DE.
+
+After specifying the region, the S\+DK connects to the Agora servers within that region. \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_a32a5382b0bb213edfe85aa231ca2bd6c}\label{structagora_1_1rtc_1_1_rtc_engine_context_a32a5382b0bb213edfe85aa231ca2bd6c}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!logConfig@{logConfig}}
+\index{logConfig@{logConfig}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{logConfig}{logConfig}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structagora_1_1commons_1_1_log_config}{commons\+::\+Log\+Config}} agora\+::rtc\+::\+Rtc\+Engine\+Context\+::log\+Config}
+
+The config for custumer set log path, log size and log level \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_aeaa6a3618ec0fc6d03293f4268c1d65d}\label{structagora_1_1rtc_1_1_rtc_engine_context_aeaa6a3618ec0fc6d03293f4268c1d65d}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!threadPriority@{threadPriority}}
+\index{threadPriority@{threadPriority}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{threadPriority}{threadPriority}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classagora_1_1_optional}{Optional}}$<$T\+H\+R\+E\+A\+D\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+T\+Y\+PE$>$ agora\+::rtc\+::\+Rtc\+Engine\+Context\+::thread\+Priority}
+
+Thread priority for S\+DK common threads \mbox{\Hypertarget{structagora_1_1rtc_1_1_rtc_engine_context_adce7711c43c038923cf57631e2599bf0}\label{structagora_1_1rtc_1_1_rtc_engine_context_adce7711c43c038923cf57631e2599bf0}} 
+\index{agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}!useExternalEglContext@{useExternalEglContext}}
+\index{useExternalEglContext@{useExternalEglContext}!agora::rtc::RtcEngineContext@{agora::rtc::RtcEngineContext}}
+\doxysubsubsection{\texorpdfstring{useExternalEglContext}{useExternalEglContext}}
+{\footnotesize\ttfamily bool agora\+::rtc\+::\+Rtc\+Engine\+Context\+::use\+External\+Egl\+Context}
+
+Whether use egl context in current thread as sdk‘s root egl context which shared by all egl related modules. eg. camera capture, video renderer.
+
+\begin{DoxyNote}{Note}
+This property applies to Android only. 
+\end{DoxyNote}

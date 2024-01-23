@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Data1">
+        <item>中文</item>
+        <item>英语 </item>
+        <item>日语</item>
+    </string-array>
+    <string-array name="Data2">
+        <item>英语</item>
+        <item>日语 </item>
+        <item>中文</item>
+    </string-array>
+    <string-array name="Data3">
+        <item>聊天</item>
+        <item>提问</item>
+        <item>回答</item>
+    </string-array>
+</resources>

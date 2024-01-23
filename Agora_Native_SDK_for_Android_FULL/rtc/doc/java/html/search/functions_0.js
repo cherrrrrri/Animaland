@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['addbackgroundimage_1926',['addBackgroundImage',['../classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding.html#a90d871df9d9cdf70c95859d0c6759a67',1,'io::agora::rtc2::live::LiveTranscoding']]],
+  ['addhandler_1927',['addHandler',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html#a13e66c39d0c3c1395c54172b344e8eb8',1,'io::agora::rtc2::RtcEngine']]],
+  ['addinjectstreamurl_1928',['addInjectStreamUrl',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html#a3a9ca16c1cf4cd54aecd23d32ce81a4f',1,'io::agora::rtc2::RtcEngine']]],
+  ['adduser_1929',['addUser',['../classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding.html#adbf5cf514bc4115eb3b049e327db9855',1,'io::agora::rtc2::live::LiveTranscoding']]],
+  ['addvideowatermark_1930',['addVideoWatermark',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html#a68b9c77f4879d0c3a9c23b608fb34f0b',1,'io.agora.rtc2.RtcEngine.addVideoWatermark(AgoraImage watermark)'],['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html#a93cead22d8e71234dce89d55655bac90',1,'io.agora.rtc2.RtcEngine.addVideoWatermark(String watermarkUrl, WatermarkOptions options)']]],
+  ['addvideowatermarkex_1931',['addVideoWatermarkEx',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine_ex.html#afa97cb95d227e493ee984540fd7a6f08',1,'io::agora::rtc2::RtcEngineEx']]],
+  ['addwatermark_1932',['addWatermark',['../classio_1_1agora_1_1rtc2_1_1live_1_1_live_transcoding.html#a8b934a9299cd5f6afffe15bb215f08f3',1,'io::agora::rtc2::live::LiveTranscoding']]],
+  ['adjustaudiomixingplayoutvolume_1933',['adjustAudioMixingPlayoutVolume',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html#a8884d20e687221f4f1ae8315cd172d8d',1,'io::agora::rtc2::RtcEngine']]],
+  ['adjustaudiomixingpublishvolume_1934',['adjustAudioMixingPublishVolume',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html#acb4c28214a9adc6f49192d53a757911c',1,'io::agora::rtc2::RtcEngine']]],
+  ['adjustaudiomixingvolume_1935',['adjustAudioMixingVolume',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html#a4c5538d92e250748052d7617876526ea',1,'io::agora::rtc2::RtcEngine']]],
+  ['adjustcustomaudioplayoutvolume_1936',['adjustCustomAudioPlayoutVolume',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html#aa1e6e14f5f883a4a3cc166907b85666e',1,'io::agora::rtc2::RtcEngine']]],
+  ['adjustcustomaudiopublishvolume_1937',['adjustCustomAudioPublishVolume',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html#ab7626b0e7f2f8d9d5044a788bb93d05b',1,'io::agora::rtc2::RtcEngine']]],
+  ['adjustplaybacksignalvolume_1938',['adjustPlaybackSignalVolume',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html#a222d08f40629b38390606a4ee26fc3fb',1,'io::agora::rtc2::RtcEngine']]],
+  ['adjustplayoutvolume_1939',['adjustPlayoutVolume',['../interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player.html#a73edc580de06fdbc6390ff01041ccd52',1,'io::agora::mediaplayer::IMediaPlayer']]],
+  ['adjustpublishsignalvolume_1940',['adjustPublishSignalVolume',['../interfaceio_1_1agora_1_1mediaplayer_1_1_i_media_player.html#a68a2bc92b2f0dbcb91ab1728a8e7e35c',1,'io::agora::mediaplayer::IMediaPlayer']]],
+  ['adjustrecordingsignalvolume_1941',['adjustRecordingSignalVolume',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html#abaaae5da30201592da737e3c82107e38',1,'io::agora::rtc2::RtcEngine']]],
+  ['adjustuserplaybacksignalvolume_1942',['adjustUserPlaybackSignalVolume',['../classio_1_1agora_1_1rtc2_1_1_rtc_engine.html#a22fedd8b7c6484918eb7cbdad78ffcee',1,'io::agora::rtc2::RtcEngine']]],
+  ['advancedaudiooptions_1943',['AdvancedAudioOptions',['../classio_1_1agora_1_1rtc2_1_1audio_1_1_advanced_audio_options.html#a9e2e9ad95b0ebcd6462695cf6e51e12b',1,'io::agora::rtc2::audio::AdvancedAudioOptions']]],
+  ['allocate_1944',['allocate',['../classio_1_1agora_1_1base_1_1_java_i420_buffer.html#a3f6c3fb91623d589d1a749da2c0a0601',1,'io::agora::base::JavaI420Buffer']]],
+  ['applynewi420handler_1945',['applyNewI420Handler',['../classio_1_1agora_1_1base_1_1_texture_buffer.html#a3cdde866bcca847685814d32c4470474',1,'io::agora::base::TextureBuffer']]],
+  ['applytransformmatrix_1946',['applyTransformMatrix',['../classio_1_1agora_1_1base_1_1_texture_buffer.html#ab40c00bcf146c79bc3150e30f6ea18a5',1,'io::agora::base::TextureBuffer']]],
+  ['audiospectruminfo_1947',['AudioSpectrumInfo',['../classio_1_1agora_1_1rtc2_1_1audio_1_1_audio_spectrum_info.html#a67b4e01a738581ba3a664c1f9dacb806',1,'io::agora::rtc2::audio::AudioSpectrumInfo']]]
+];
